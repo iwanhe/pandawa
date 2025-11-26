@@ -924,7 +924,7 @@ Gunakan hints hanya jika benar-benar diperlukan dan terdokumentasi dengan baik.
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 1.0 | 2024-11-25 | [Your Name] | Initial version based on Insum guidelines |
+| 1.0 | 2024-11-25 | [Iwan Herdian] | Initial version based on Insum guidelines |
 
 ---
 
