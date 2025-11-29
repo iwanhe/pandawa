@@ -134,8 +134,8 @@ BEGIN
   apex_instance_admin.set_parameter('SMTP_HOST_ADDRESS', 'mail.nusamail.net');
   apex_instance_admin.set_parameter('SMTP_HOST_PORT', '587');
   apex_instance_admin.set_parameter('SMTP_FROM', 'notifications.meta@nusamail.net');
-  apex_instance_admin.set_parameter('SMTP_USERNAME', 'notifications.meta@nusamail.net');
-  apex_instance_admin.set_parameter('SMTP_PASSWORD', 'm3t@Notification');
+  apex_instance_admin.set_parameter('SMTP_USERNAME', 'username');
+  apex_instance_admin.set_parameter('SMTP_PASSWORD', 'password');
   apex_instance_admin.set_parameter('SMTP_TLS_MODE', 'N');
   COMMIT;
   
