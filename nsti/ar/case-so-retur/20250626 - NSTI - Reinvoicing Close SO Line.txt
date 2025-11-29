@@ -1,0 +1,202 @@
+--start here
+
+DECLARE
+ 
+  l_return_status_cls VARCHAR2(30);
+  l_return_status_inv VARCHAR2(30);
+  l_result VARCHAR2(30);
+  l_msg_count NUMBER;
+  l_msg_data VARCHAR2(256);
+  l_count NUMBER:= 0;
+  l_file_name VARCHAR2(250);
+  l_child_count NUMBER := 0;
+  l_count_sc	NUMBER := 0;
+  l_count_il	NUMBER := 0;
+ 
+  CURSOR LINES_TO_CLOSE
+  IS
+SELECT t1.line_id, t2.order_number, t2.SOURCE_DOCUMENT_TYPE_ID,t1.header_id,t1.org_id
+       FROM oe_order_lines_all t1,
+               oe_order_headers_all t2,
+               mtl_system_items_b itm
+       WHERE t1.flow_status_code = 'CLOSED'
+           AND t1.open_flag = 'N'
+           AND t1.line_category_code IN ('ORDER', 'RETURN')
+          AND t1.invoice_interface_status_code IS NOT NULL
+           --AND NVL(t1.invoiced_quantity, 0) > 0 --modified by Iwan 26jun25
+           AND t2.header_id = t1.header_id
+           AND t1.item_type_Code != 'INCLUDED'
+           AND NVL(t2.SOURCE_DOCUMENT_TYPE_ID ,0) != 10
+          AND t1.inventory_item_id = itm.inventory_item_id
+           AND t1.ship_from_org_id = itm.organization_id
+           AND NVL(itm.INVOICEABLE_ITEM_FLAG,'N') = 'Y'
+           AND NVL(itm. INVOICE_ENABLED_FLAG,'N') = 'Y'
+           --AND t1.line_id IN('355282')--line_id specific tergantung SO nya;
+           and t2.order_number='2519300002' --pemodelan data yg serupa utk SO Returnya
+           AND NOT EXISTS
+               (SELECT 1
+               FROM ra_customer_trx_lines_all t10
+               WHERE t10.interface_line_attribute6 = TO_CHAR(t1.line_id)
+                   AND t10.sales_order = t2.order_number
+                   AND t10.sales_order_line IS NOT NULL
+               )
+   AND NOT EXISTS
+(SELECT 1
+FROM ra_interface_lines_all t11
+WHERE t11.interface_line_attribute6 = TO_CHAR(t1.line_id)
+   AND t11.sales_order = t2.order_number
+   AND t11.sales_order_line IS NOT NULL
+);
+ 
+  WRONG_ROWS_UPDATED EXCEPTION ;
+ 
+BEGIN
+ 
+  -- Set up debugging
+ 
+  Oe_debug_pub.debug_ON;
+  Oe_debug_pub.initialize;
+  Oe_debug_pub.setdebuglevel(5);
+ 
+  l_file_name := Oe_debug_pub.set_debug_mode('FILE');
+ 
+  Dbms_Output.put_line('Debug log is located at: ' || Oe_debug_pub.g_dir || '/' ||Oe_debug_pub.g_file);
+ 
+  FOR x IN LINES_TO_CLOSE
+  LOOP
+ 
+ Oe_debug_pub.ADD('==================================================');
+ Oe_debug_pub.ADD('Selected Line ID : ' || x.line_id || ', Header ID : ' || x.header_id || ', Order# '||x.order_number);
+ Oe_debug_pub.ADD('==================================================');
+ 
+ UPDATE oe_order_lines_all
+ SET invoiced_quantity = NULL ,
+     open_flag = 'Y' ,
+     INVOICE_INTERFACE_STATUS_CODE= NULL ,
+     LAST_UPDATE_DATE = SYSDATE
+ WHERE line_id= x.line_id ;
+ 
+ 
+ IF SQL%ROWCOUNT >1 THEN
+     Oe_debug_pub.ADD('Error occurred More than one rows ');
+     RAISE WRONG_ROWS_UPDATED;
+ END IF ;
+ 
+ 
+ 
+ 
+ /* SECTION 1 - Calling APIs to run interfaces */
+ 
+ -- Set the org context
+ 
+ 
+ MO_GLOBAL.SET_POLICY_CONTEXT('S',x.org_id);
+ 
+        BEGIN
+  SELECT count(*)
+  into l_count_il
+  FROM RA_INTERFACE_LINES_ALL
+  where interface_line_attribute6 = x.line_id;
+ 
+  if l_count_il > 0 then
+   delete from RA_INTERFACE_LINES_ALL
+   where interface_line_attribute6 = x.line_id
+   AND interface_line_context='ORDER ENTRY';
+  end if;
+ 
+  l_count_il := 0;
+ EXCEPTION
+  WHEN OTHERS THEN
+   oe_debug_pub.add('No Sales Credits to delete!');
+   l_count_il := 0;
+ END;
+ 
+ 
+ BEGIN
+  SELECT count(*)
+  into l_count_sc
+  FROM RA_INTERFACE_SALESCREDITS_ALL
+  where interface_line_attribute6 = x.line_id;
+ 
+  if l_count_sc > 0 then
+   delete from RA_INTERFACE_SALESCREDITS_ALL
+   where interface_line_attribute6 = x.line_id
+   AND interface_line_context='ORDER ENTRY';
+  end if;
+ 
+  l_count_sc := 0;
+ EXCEPTION
+  WHEN OTHERS THEN
+   oe_debug_pub.add('No Sales Credits to delete!');
+   l_count_sc := 0;
+ END;
+ 
+ -- Invoice the Line
+ Oe_debug_pub.ADD('Invoicing the Line...');
+ 
+  Oe_invoice_pub.Interface_Line(x.line_id
+                                     ,'OEOL'
+                                     ,l_result
+                                     ,l_return_status_inv);
+ 
+ 
+ /* SECTION 2 - Closing the Line if interface was successful*/
+ 
+ IF l_return_status_inv = 'S' THEN
+  Oe_debug_pub.ADD('Complete.');
+ 
+ 
+  -- Showing Lines to be closed
+ 
+ Oe_debug_pub.ADD('Setting Line status to closed...');
+ 
+ UPDATE oe_order_lines_all
+ SET flow_status_code = 'CLOSED' ,
+      open_flag = 'N' ,
+      LAST_UPDATE_DATE = SYSDATE
+ WHERE line_id= x.line_id ;
+ 
+  IF SQL%ROWCOUNT >1 THEN
+     Oe_debug_pub.ADD('Error occurred More than one rows 2nd update ');
+     RAISE WRONG_ROWS_UPDATED;
+  END IF ;
+ 
+ 
+ ELSE
+  Dbms_Output.put_line('Error occurred:Invoice ');
+  Oe_debug_pub.ADD('Invoicing failed.');
+  ROLLBACK;
+  Exit ;
+ END IF;
+ 
+ /* END OF PROCESSING */
+ 
+ l_count := l_count+1;
+ 
+  END LOOP;
+ 
+  IF l_count = 0 THEN
+        Oe_debug_pub.ADD('No line to fix.');
+        Dbms_Output.put_line('No line to fix.');
+  ELSE
+        Oe_debug_pub.ADD(l_count || ' lines updated.');
+        Dbms_Output.put_line(l_count || ' lines updated.');
+  END IF;
+ 
+  Oe_debug_pub.debug_OFF;
+ 
+EXCEPTION
+ WHEN OTHERS THEN
+       Dbms_Output.put_line('Error occurred: ' || SQLERRM);
+       Oe_debug_pub.ADD('Error occurred: ' || SQLERRM);
+       ROLLBACK;
+END;
+/
+Prompt
+Prompt ===========================================================
+Prompt You must enter COMMIT to Save changes or ROLLBACK to Revert
+Prompt ===========================================================
+ 
+spool off
+
+--end here
