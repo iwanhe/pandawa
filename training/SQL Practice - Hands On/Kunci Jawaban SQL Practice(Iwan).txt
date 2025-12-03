@@ -1,0 +1,351 @@
+select emp.employee_id,emp.first_name,emp.last_name,emp.hire_date 
+from employees emp, jobs job
+where emp.job_id=job.job_id and
+         emp.job_id='ST_CLERK' and
+         emp.hire_date > '31-DEC-1997'
+
+
+1.
+
+select *
+from employees emp
+where emp.job_id='ST_CLERK' and
+         emp.hire_date > '31-DEC-1997';
+
+2.
+select last_name,salary,commision_pct
+from employees
+where commision_pct is not null
+order by salary desc
+
+3.
+select emp.employee_id,emp.first_name,emp.last_name,
+          emp.salary,emp.commision_pct,
+          round (emp.salary * 0.1)+emp.salary  "RAISE_SAL"
+from employees emp
+where commision_pct is null
+order by salary desc
+
+4.
+select emp.last_name,floor((sysdate-emp.hire_date)/365) "YEARS",
+          floor(mod(floor(sysdate-emp.hire_date),365)/30) "MONTHS"
+from employees emp;
+
+
+5.
+select *
+from employees
+where substr(first_name,1,1) IN ( 'J','K','L', 'M');
+
+6.
+select employee_id,first_name,last_name,email,phone_number,
+         job_id,hire_date,salary,
+         decode(commision_pct, null,'NO','YES') COMMISION,
+         manager_id,department_id
+from employees;
+
+7.
+select dep.department_name,dep.location_id,emp.first_name,job.job_title,
+          emp.salary
+from employees emp, departments dep,jobs job
+where emp.department_id=dep.department_id and
+          emp.job_id=job.job_id and
+         dep.location_id='1800';
+
+
+8.
+select count(*)
+from employees
+where upper(last_name) like '%N';
+
+atau
+
+select count(*)
+from employees
+where substr(last_name,length(last_name)) ='n'
+
+9.
+select dep.department_name,
+         loc.street_address || ' ' || loc.city || ' ' || loc.state_province || ' ' || 
+         loc.country_id || ' ' || loc.postal_code "LOCATION",
+         count(emp.first_name)
+from departments dep, locations loc,employees emp
+where dep.location_id=loc.location_id(+) and
+         emp.department_id(+) = dep.department_id
+group by dep.department_name,
+         loc.street_address || ' ' || loc.city || ' ' || loc.state_province || ' ' || 
+         loc.country_id || ' ' || loc.postal_code 
+
+10.
+select distinct job.job_title 
+from jobs job,departments dep, employees emp
+where dep.department_id = emp.department_id and
+         emp.job_id=job.job_id and
+         dep.department_id in ('10','20');
+
+11.
+select   distinct dep.department_name,job.job_title,
+           count(emp.first_name) "Jumlah Karyawan"
+from jobs job,departments dep, employees emp
+where dep.department_id = emp.department_id and
+         emp.job_id=job.job_id and
+         dep.department_id in ('10','90')
+group by dep.department_name,job.job_title
+order by 3 desc;
+
+12.
+select * 
+from employees
+where to_char(hire_date,'DD') < 16;
+
+13.
+select first_name || ' ' || last_name NAME, salary,
+         salary/1000  "EARN" 
+from employees
+
+14.
+select emp1.first_name || ' ' || emp1.last_name "EMPLOYEE_NAME",
+          emp2.first_name || ' ' || emp2.last_name "MANAGER_NAME",
+          emp2.salary
+from employee emp1, employee emp2
+where emp1.manager_id =  emp2.employee_id and
+          emp2.salary > 15000
+
+
+15.
+select emp1.first_name || ' ' || emp1.last_name NAMA,
+          emp1.salary,emp1.job_id,
+          NOMOR_DEPARTMENT,NAMA_DEPARTMENT,
+          JUMLAH_PEGAWAI, "RATA-RATA GAJI"
+from  employees emp1,
+        (     
+         select dep.department_id NOMOR_DEPARTMENT,
+                   dep.department_name NAMA_DEPARTMENT, 
+                   count(emp.first_name) "JUMLAH_PEGAWAI",
+                   avg(emp.salary) "RATA-RATA GAJI"
+           from departments dep, employees emp
+           where dep.department_id=emp.department_id(+)
+           group by dep.department_id,dep.department_name
+        )
+where NOMOR_DEPARTMENT=emp1.department_id(+)
+;
+
+16.
+select  dep.department_id name,
+            avg(emp.salary) average1, min(emp.salary) min 
+                  from employees emp, departments dep
+                  where emp.department_id(+) = dep.department_id
+                  group by dep.department_id
+             having avg(emp.salary)=
+    (              
+     select max (average)
+     from (select  dep.department_id name,
+             avg(emp.salary) average, min(emp.salary) min 
+                  from employees emp, departments dep
+                  where emp.department_id(+) = dep.department_id
+                  group by dep.department_id)
+    )
+
+17.
+select  distinct dep.department_id,dep.department_name,dep.location_id
+from departments dep, employees emp
+where dep.department_id not in 
+                                            (
+                                               select department_id from employees
+                                              where job_id ='SA_REP'
+                                            );
+                  
+
+
+
+18
+a.
+select dep.department_id, dep.department_name,
+         count(emp.first_name)
+from departments dep,employees emp
+where emp.department_id(+) = dep.department_id
+group by dep.department_id, dep.department_name
+having count (emp.first_name) < 3
+
+b.
+       select dep.department_id, dep.department_name,
+                  count(emp.first_name)      
+       from departments dep,employees emp
+        where emp.department_id(+) = dep.department_id
+        group by dep.department_id, dep.department_name
+     having count(emp.first_name) =
+(
+select max(Jumlah)
+from(
+        select dep.department_id, dep.department_name,
+                  count(emp.first_name) Jumlah
+        from departments dep,employees emp
+        where emp.department_id(+) = dep.department_id
+        group by dep.department_id, dep.department_name
+      )
+)
+
+c.
+       select dep.department_id, dep.department_name,
+                  count(emp.first_name)      
+       from departments dep,employees emp
+        where emp.department_id(+) = dep.department_id
+        group by dep.department_id, dep.department_name
+     having count(emp.first_name) =
+(
+select min(Jumlah)
+from(
+        select dep.department_id, dep.department_name,
+                  count(emp.first_name) Jumlah
+        from departments dep,employees emp
+        where emp.department_id(+) = dep.department_id
+        group by dep.department_id, dep.department_name
+      )
+)
+
+19.
+select emp1.employee_id,emp1.last_name,emp1.salary,
+         dep2.department_id,
+         avg(emp2.salary)  as AVG_SALARY
+from employees emp1, employees emp2,departments dep2
+where emp2.department_id = dep2.department_id and
+         emp2.department_id = emp1.department_id
+group by emp1.employee_id,emp1.last_name,emp1.salary,
+         dep2.department_id;
+
+
+20
+select first_name
+ from employees,
+   (
+     select to_char(hire_date,'DAY','nls_date_language=Indonesian') Day,
+               count(to_char(hire_date,'DAY')) Hitung_Hari
+     from employees
+     group by to_char(hire_date,'DAY','nls_date_language=Indonesian') 
+     Having  count(to_char(hire_date,'DAY'))  =
+      (
+            select max(MAX_DAY)
+            from
+            (
+              select 
+              to_char(hire_date,'DAY','nls_date_language=Indonesian') Hari,
+              count(to_char(hire_date,'DAY')) MAX_DAY
+              from employees
+              group by 
+                to_char(hire_date,'DAY','nls_date_language=Indonesian') 
+            )
+    )
+ )    
+where     to_char(hire_date,'DAY','nls_date_language=Indonesian')= Day  ;
+
+21.
+select floor((sysdate-hire_date)/365) Anniversary
+from employees
+order by 1 asc
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============================================
+select to_char(sysdate,'DD-MONTH-RRRR','nls_date_language=Indonesian') from dual
+
+
+select emp.first_name
+from employees emp, 
+       (
+            select Hari,max(MAX_DAY)
+            from
+            (
+              select 
+              to_char(hire_date,'DAY','nls_date_language=Indonesian') Hari,
+              count(to_char(hire_date,'DAY')) MAX_DAY
+              from employees
+              group by 
+                to_char(hire_date,'DAY','nls_date_language=Indonesian') 
+                   )
+                   group by Hari
+       )
+where to_char(emp.hire_date,'DAY','nls_date_language=Indonesian')=Hari;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+SQL Practice
+Step 1 :Create and Insert Data to Table
+Countries Table
+Countries
+Country Data
+DEPARTMENTS TABLE
+DEPARTMENTS
+Department Data
+Employees Table
+Employees
+Employee Data
+
+Employee Data ( 2 )
+
+Employee_Data ( 3 )
+
+Employee Data ( 4 )
+
+Employee_Data ( 5 )
+
+Employee_Data ( 6 )
+
+Jobs Table
+Jobs
+Jobs Data
+Job Data
+JOB_GRADES Table
+JOB_GRADES
+Job_Grades Data	
+JOB_History Table
+JOB_History
+JOB_History Data
+JOB_HISTORY Data
+Locations Table
+Locations
+LOCATION DATA
+Regions Table
+Regions
+Regions Data

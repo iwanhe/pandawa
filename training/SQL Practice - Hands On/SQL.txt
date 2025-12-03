@@ -1,0 +1,69 @@
+-- REGIONS
+CREATE TABLE regions (
+    region_id NUMBER NOT NULL,
+    region_name VARCHAR2(25)
+);
+
+-- COUNTRIES
+CREATE TABLE countries (
+    country_id CHAR(2) NOT NULL,
+    country_name VARCHAR2(240),
+    region_id NUMBER
+);
+
+-- LOCATIONS
+CREATE TABLE locations (
+    location_id NUMBER NOT NULL,
+    street_address VARCHAR2(40),
+    postal_code VARCHAR2(12),
+    city VARCHAR2(30) NOT NULL,
+    state_province VARCHAR2(25),
+    country_id CHAR(2)
+);
+
+-- DEPARTMENTS
+CREATE TABLE departments (
+    department_id NUMBER NOT NULL,
+    department_name VARCHAR2(30) NOT NULL,
+    manager_id NUMBER,
+    location_id NUMBER
+);
+
+-- JOBS
+CREATE TABLE jobs (
+    job_id VARCHAR2(10) NOT NULL,
+    job_title VARCHAR2(35) NOT NULL,
+    min_salary NUMBER,
+    max_salary NUMBER
+);
+
+-- EMPLOYEES
+CREATE TABLE employees (
+    employee_id NUMBER NOT NULL,
+    first_name VARCHAR2(20),
+    last_name VARCHAR2(25) NOT NULL,
+    email VARCHAR2(25) NOT NULL,
+    phone_number VARCHAR2(25),
+    hire_date DATE NOT NULL,
+    job_id VARCHAR2(10) NOT NULL,
+    salary NUMBER,
+    commission_pct NUMBER,
+    manager_id NUMBER,
+    department_id NUMBER
+);
+
+-- JOB_HISTORY
+CREATE TABLE job_history (
+    employee_id NUMBER NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    job_id VARCHAR2(10) NOT NULL,
+    department_id NUMBER
+);
+
+-- JOB_GRADES
+CREATE TABLE job_grades (
+    grade_level VARCHAR2(3) NOT NULL,
+    lowest_salary NUMBER NOT NULL,
+    highest_salary NUMBER
+);
