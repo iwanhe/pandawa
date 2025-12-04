@@ -21,12 +21,48 @@ Prasyarat
 - (Opsional) Docker jika ingin menjalankan Oracle Database dalam container
 - (Opsional) utPLSQL untuk menjalankan unit test PL/SQL
 
-Struktur repositori (contoh)
-- /src         - skrip sumber PL/SQL (package, procedure, function)
-- /migrations  - skrip migrasi/instalasi versi
-- /tests       - skrip test (utPLSQL atau framework test lainnya)
-- /docs        - dokumentasi tambahan
-- /tools       - skrip bantu (deploy, format, dll.)
+## Struktur Direktori dan File
+Di bawah ini adalah struktur direktori dan file lengkap dalam repository ini:
+
+```
+- .gitignore
+- LICENSE
+- README.md
+- ap/
+- apex-sert/
+- apps-implementation-methodology.md
+- dnn/
+- fa/
+- frappe/
+- gl/
+- glt/
+- naming-convention-oracle.md
+- nsti/
+- opm/
+- oracle-dev-standards.md
+- oracons/
+- po/
+- standardization/
+- sysadmin/
+- training/
+```
+
+## Deskripsi File/File Kunci:
+- **.gitignore:** File untuk mengatur file/folder yang akan diabaikan oleh Git.
+- **LICENSE:** Informasi lisensi dari repository ini.
+- **README.md:** Deskripsi proyek ini.
+- **apps-implementation-methodology.md:** Panduan atau metodologi implementasi aplikasi.
+- **naming-convention-oracle.md:** Dokumen penamaan konvensi terkait Oracle.
+- **oracle-dev-standards.md:** Standar pengembangan Oracle.
+
+## Struktur Folder dan Deskripsi Singkat:
+- **ap/**: Direktori yang mungkin digunakan untuk pengembangan aplikasi tertentu.
+- **apex-sert/**: Berisi sertifikasi atau file terkait Oracle Application Express (APEX).
+- **dnn/**: Berpotensi menyimpan file atau berkas terkait DotNetNuke.
+- **fa/**: Folder terkait Fixed Assets (berkaitan dengan modul Oracle EBS).
+- **frappe/**: Berkas atau folder terkait dengan framework Frappe.
+- **gl/**: Berkas atau konfigurasi untuk General Ledger.
+- **nsti/**, **opm/**, **oracons/**, **po/**, dan folder lainnya: Penyimpanan modul-modul atau standar lainnya.
 
 Instalasi / Quickstart
 1. Clone repositori
@@ -94,12 +130,14 @@ Roadmap (ide)
 - Menyediakan containerized dev environment (Docker)
 - Dokumentasi API PL/SQL yang lebih lengkap (reference per package/function)
 
-License
-Proyek ini dilisensikan di bawah MIT License — lihat file LICENSE untuk detail.
-
 Kontak
 - Pemilik / Maintainer: iwanhe (https://github.com/iwanhe)
 - Untuk pertanyaan atau permintaan fitur, buka issue di repositori.
 
-Catatan akhir
-README ini dibuat sebagai template awal berdasarkan struktur umum proyek PL/SQL. Silakan beri tahu bagian mana yang ingin Anda tambahkan atau sesuaikan (mis. contoh skrip, instruksi deploy, atau policy kontribusi). Saya bisa memperbarui README dan/atau langsung commit ke repositori jika Anda mengizinkan.
+## Kontribusi
+Silakan fork repository ini, buat perubahan yang diperlukan, dan buat Pull Request. Lebih banyak panduan kontribusi akan ditambahkan di masa depan.
+
+## Lisensi
+Repository ini dilisensikan di bawah file [LICENSE](https://github.com/iwanhe/pandawa/blob/main/LICENSE).
+
+**Catatan:** Struktur dan file dalam repository ini dapat berkembang seiring waktu. Deskripsi ini mengikuti apa yang tersedia saat ini.
