@@ -1,0 +1,36 @@
+/* Formatted on 04/01/2025 01:59:34 (QP5 v5.362) */
+DECLARE
+    l_return_status   VARCHAR2 (1000);
+
+    l_msg_data        VARCHAR2 (1000);
+
+    CURSOR c1 IS
+        (SELECT *
+           FROM po_headers_all
+          WHERE     segment1 IN ('25210100005')
+                AND type_lookup_code = 'STANDARD'
+                AND (   authorization_status != 'APPROVED'
+                     OR authorization_status IS NULL));
+BEGIN
+    mo_global.init ('PO');
+
+    fnd_global.apps_initialize (1731, 20707, 201);
+
+
+
+    FOR i IN c1
+    LOOP
+        po_document_action_pvt.do_approve (
+            p_document_id        => i.po_header_id,
+            p_document_type      => 'PO',
+            p_document_subtype   => 'STANDARD',
+            p_note               => null,
+            p_approval_path_id   => 64,
+            x_return_status      => l_return_status,
+            x_exception_msg      => l_msg_data);
+
+        DBMS_OUTPUT.put_line (l_return_status);
+
+        COMMIT;
+    END LOOP;
+END;
