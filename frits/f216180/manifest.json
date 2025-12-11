@@ -1,0 +1,15 @@
+{
+    "customApps": [
+        {
+            "internalName": "FRITS",
+            "name": "FRITS Application",
+            "description": "APEX Application from Pandawa Repository - f216180. Please update this description with the actual application details.",
+            "author": "Iwan Herdian",
+            "version": "1.0.0",
+            "icon": "",
+            "url": "https://github.com/iwanhe/pandawa/tree/main/frits/f216180",
+            "source": "https://raw.githubusercontent.com/iwanhe/pandawa/main/frits/f216180/install.sql",
+            "zip": "https://raw.githubusercontent.com/iwanhe/pandawa/main/frits/f216180/f216180.zip"
+        }
+    ]
+}
