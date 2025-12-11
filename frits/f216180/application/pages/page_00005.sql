@@ -1,0 +1,682 @@
+prompt --application/pages/page_00005
+begin
+--   Manifest
+--     PAGE: 00005
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>30014105435788499543
+,p_default_application_id=>216180
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_NTIAPPS'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>5
+,p_name=>'Review Update Page'
+,p_alias=>'REVIEW-UPDATE'
+,p_step_title=>'Review Update Page'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_page_component_map=>'02'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(61724748905365541339)
+,p_plug_name=>'Form Permintaan IT - Update'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_imp.id(30016878494109567695)
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'NTI_FORM_REQUEST_IT_TBL'
+,p_include_rowid_column=>false
+,p_is_editable=>true
+,p_edit_operations=>'i:u:d'
+,p_lost_update_check_type=>'VALUES'
+,p_plug_source_type=>'NATIVE_FORM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(31187097158598007068)
+,p_button_sequence=>30
+,p_button_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_button_name=>'SAVE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(30016952085195567733)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Update Informasi'
+,p_button_position=>'CHANGE'
+,p_confirm_message=>'Anda yakin melakukan update ?'
+,p_button_condition=>'P5_ID_1'
+,p_button_condition_type=>'ITEM_IS_NOT_NULL'
+,p_database_action=>'UPDATE'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(31187096304550007067)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_button_name=>'CANCEL'
+,p_button_action=>'REDIRECT_PAGE'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(30016952085195567733)
+,p_button_image_alt=>'Cancel'
+,p_button_position=>'CLOSE'
+,p_button_redirect_url=>'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(31187097595115007068)
+,p_button_sequence=>40
+,p_button_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_button_name=>'CREATE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(30016952085195567733)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Create'
+,p_button_position=>'CREATE'
+,p_confirm_message=>'Anda Yakin ?'
+,p_button_condition=>'P5_ID_1'
+,p_button_condition_type=>'ITEM_IS_NULL'
+,p_database_action=>'INSERT'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(31187096741052007068)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_button_name=>'DELETE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(30016952085195567733)
+,p_button_image_alt=>'Delete'
+,p_button_position=>'DELETE'
+,p_button_execute_validations=>'N'
+,p_confirm_message=>'&APP_TEXT$DELETE_MSG!RAW.'
+,p_confirm_style=>'danger'
+,p_button_condition=>'P5_ID_1'
+,p_button_condition_type=>'ITEM_IS_NOT_NULL'
+,p_database_action=>'DELETE'
+);
+wwv_flow_imp_page.create_page_branch(
+ p_id=>wwv_flow_imp.id(31187115996157007089)
+,p_branch_name=>'Go To Page 4'
+,p_branch_action=>'f?p=&APP_ID.:4:&SESSION.::&DEBUG.:::&success_msg=#SUCCESS_MSG#'
+,p_branch_point=>'AFTER_PROCESSING'
+,p_branch_type=>'REDIRECT_URL'
+,p_branch_sequence=>1
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724751368702541345)
+,p_name=>'P5_ID_1'
+,p_source_data_type=>'NUMBER'
+,p_is_primary_key=>true
+,p_is_query_only=>true
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Id 1'
+,p_source=>'ID_1'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_label_alignment=>'RIGHT'
+,p_field_template=>wwv_flow_imp.id(30016949596162567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_protection_level=>'S'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724751732216541346)
+,p_name=>'P5_ID'
+,p_source_data_type=>'NUMBER'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_source=>'ID'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724752121752541346)
+,p_name=>'P5_TICKET_NUM'
+,p_source_data_type=>'NUMBER'
+,p_item_sequence=>30
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Ticket Number'
+,p_source=>'TICKET_NUM'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_NUMBER_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>255
+,p_field_template=>wwv_flow_imp.id(30016949413018567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_inline_help_text=>'Isi dengan nomor Ticket (jika ada)'
+,p_attribute_03=>'left'
+,p_attribute_04=>'numeric'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724752582436541347)
+,p_name=>'P5_NO_URUT_FORM'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>40
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'No Urut Form'
+,p_source=>'NO_URUT_FORM'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>30
+,p_field_template=>wwv_flow_imp.id(30016949413018567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'BOTH'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724752999389541347)
+,p_name=>'P5_TGL_PERMINTAAN'
+,p_source_data_type=>'DATE'
+,p_item_sequence=>50
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_default=>'select sysdate from dual'
+,p_item_default_type=>'SQL_QUERY'
+,p_prompt=>'Tanggal Permintaan'
+,p_source=>'TGL_PERMINTAAN'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_imp.id(30016949413018567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+,p_attribute_02=>'VALUE'
+,p_attribute_04=>'Y'
+,p_attribute_05=>'PLAIN'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724753400730541347)
+,p_name=>'P5_PEMINTA'
+,p_source_data_type=>'VARCHAR2'
+,p_is_required=>true
+,p_item_sequence=>60
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Peminta'
+,p_source=>'PEMINTA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_POPUP_LOV'
+,p_lov=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select employee_name',
+'from nti_employee_tbl',
+'order by 1 asc'))
+,p_lov_display_null=>'YES'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'POPUP'
+,p_attribute_02=>'FIRST_ROWSET'
+,p_attribute_04=>'Y'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'0'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724753753026541348)
+,p_name=>'P5_NIK_PEMINTA'
+,p_source_data_type=>'VARCHAR2'
+,p_is_required=>true
+,p_item_sequence=>70
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'NIK Peminta'
+,p_source=>'NIK_PEMINTA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_POPUP_LOV'
+,p_lov=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select employee_id',
+'from nti_employee_tbl',
+'where employee_name =:P5_PEMINTA'))
+,p_lov_display_null=>'YES'
+,p_cSize=>30
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'POPUP'
+,p_attribute_02=>'FIRST_ROWSET'
+,p_attribute_04=>'Y'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'0'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724754196829541348)
+,p_name=>'P5_JABATAN_PEMINTA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>80
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Jabatan Peminta'
+,p_source=>'JABATAN_PEMINTA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>255
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724754597357541348)
+,p_name=>'P5_LOKASI_PEMINTA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>90
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Lokasi Peminta'
+,p_source=>'LOKASI_PEMINTA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_RADIOGROUP'
+,p_lov=>'STATIC:Kudus;Kudus,Jakarta;Jakarta'
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'1'
+,p_attribute_02=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724754978792541348)
+,p_name=>'P5_PENGGUNA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>100
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Pengguna'
+,p_source=>'PENGGUNA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_POPUP_LOV'
+,p_lov=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select employee_name',
+'from nti_employee_tbl',
+'order by 1'))
+,p_lov_display_null=>'YES'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'POPUP'
+,p_attribute_02=>'FIRST_ROWSET'
+,p_attribute_04=>'Y'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'0'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724755370329541349)
+,p_name=>'P5_NIK_PENGGUNA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>110
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'NIK Pengguna'
+,p_source=>'NIK_PENGGUNA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_POPUP_LOV'
+,p_lov=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select employee_id',
+'from nti_employee_tbl',
+'where employee_name = :P5_PENGGUNA'))
+,p_lov_display_null=>'YES'
+,p_cSize=>30
+,p_cMaxlength=>4000
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'POPUP'
+,p_attribute_02=>'FIRST_ROWSET'
+,p_attribute_04=>'Y'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'0'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724755750698541349)
+,p_name=>'P5_JABATAN_PENGGUNA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>120
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Jabatan Pengguna'
+,p_source=>'JABATAN_PENGGUNA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724756190870541349)
+,p_name=>'P5_LOKASI_PENGGUNA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>130
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Lokasi Pengguna'
+,p_source=>'LOKASI_PENGGUNA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_RADIOGROUP'
+,p_lov=>'STATIC:Jakarta;Jakarta,Kudus;Kudus'
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'1'
+,p_attribute_02=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724756557219541349)
+,p_name=>'P5_MANDATORY_HD_SOFT'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>140
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Mandatory Harddisk Software'
+,p_source=>'MANDATORY_HD_SOFT'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_CHECKBOX'
+,p_lov=>'STATIC:Notebook;Notebook,Mouse;Mouse,Mouse Pad;Mouse Pad,PC;PC,CPU;CPU,HRIS / HCM;HRIS / HCM,Email;Email'
+,p_field_template=>wwv_flow_imp.id(30016949413018567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'3'
+,p_multi_value_type=>'SEPARATED'
+,p_multi_value_separator=>':'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724756989218541350)
+,p_name=>'P5_OPSIONAL_HD'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>150
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Opsional Harddisk'
+,p_source=>'OPSIONAL_HD'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_CHECKBOX'
+,p_lov=>'STATIC:Memory;Memory,Harddisk;Harddisk,Monitor;Monitor,Keyboard;Keyboard,Printer;Printer,Flashdisk;Flashdisk,Processor;Processor,Motherboard;Motherboard,Casing;Casing'
+,p_field_template=>wwv_flow_imp.id(30016949596162567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'4'
+,p_multi_value_type=>'SEPARATED'
+,p_multi_value_separator=>':'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724757331031541350)
+,p_name=>'P5_OPSIONAL_SOFT'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>160
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Opsional Software'
+,p_source=>'OPSIONAL_SOFT'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_CHECKBOX'
+,p_lov=>'STATIC:Autocad;Autocad,Adobe Photoshop;Adobe Photoshop,Adobe Illustrator;Adobe Illustrator,Adobe Creative Cloud;Adobe Creative Cloud,Corel Draw;Corel Draw,Zoom;Zoom,Backup File;Backup File'
+,p_field_template=>wwv_flow_imp.id(30016949413018567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'4'
+,p_multi_value_type=>'SEPARATED'
+,p_multi_value_separator=>':'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724757760867541350)
+,p_name=>'P5_HAK_AKSES'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>170
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Hak Akses'
+,p_source=>'HAK_AKSES'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_CHECKBOX'
+,p_lov=>'STATIC:Oracle EBS;Oracle EBS,Tableau;Tableau,VPN;VPN,NextCloud;NextCloud'
+,p_field_template=>wwv_flow_imp.id(30016949596162567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'3'
+,p_multi_value_type=>'SEPARATED'
+,p_multi_value_separator=>':'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724758171528541350)
+,p_name=>'P5_KETERANGAN'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>180
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Keterangan'
+,p_source=>'KETERANGAN'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016949413018567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_inline_help_text=>'Diisi dengan keterangan tambahan sesuai dengan pilihan diatas ataupun jika belum ada pilihan'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724758550043541351)
+,p_name=>'P5_APPROVER1'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>190
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Approver Manager'
+,p_source=>'APPROVER1'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724758969215541351)
+,p_name=>'P5_EMAIL_APPROVER1'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>200
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Email Manager'
+,p_source=>'EMAIL_APPROVER1'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'EMAIL'
+,p_attribute_05=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724759361240541351)
+,p_name=>'P5_APPROVER2'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>210
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Approver IT'
+,p_source=>'APPROVER2'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724759738305541352)
+,p_name=>'P5_EMAIL_APPROVER2'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>220
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Email Approver IT'
+,p_source=>'EMAIL_APPROVER2'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>50
+,p_field_template=>wwv_flow_imp.id(30016950363870567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'EMAIL'
+,p_attribute_05=>'NONE'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724760109154541352)
+,p_name=>'P5_CREATED_BY'
+,p_source_data_type=>'NUMBER'
+,p_item_sequence=>230
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_source=>'CREATED_BY'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724760544856541352)
+,p_name=>'P5_CREATION_DATE'
+,p_source_data_type=>'DATE'
+,p_item_sequence=>240
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_default=>'select sysdate from dual'
+,p_item_default_type=>'SQL_QUERY'
+,p_source=>'CREATION_DATE'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724760918584541352)
+,p_name=>'P5_UPDATED_BY'
+,p_source_data_type=>'NUMBER'
+,p_item_sequence=>250
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_source=>'UPDATED_BY'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724761388931541353)
+,p_name=>'P5_UPDATED_DATE'
+,p_source_data_type=>'DATE'
+,p_item_sequence=>260
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_source=>'UPDATED_DATE'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(61724761733805541353)
+,p_name=>'P5_STATUS'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>270
+,p_item_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_item_source_plug_id=>wwv_flow_imp.id(61724748905365541339)
+,p_prompt=>'Status'
+,p_source=>'STATUS'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_SELECT_LIST'
+,p_lov=>'STATIC:PENDING;PENDING,PARTIALLY APPROVED;PARTIALLY APPROVED,APPROVED;APPROVED,REJECTED;REJECTED'
+,p_lov_display_null=>'YES'
+,p_cHeight=>1
+,p_field_template=>wwv_flow_imp.id(30016949413018567731)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'NONE'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(31187114621929007085)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_region_id=>wwv_flow_imp.id(61724748905365541339)
+,p_process_type=>'NATIVE_FORM_DML'
+,p_process_name=>'Process form Form Permintaan IT'
+,p_attribute_01=>'REGION_SOURCE'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'Y'
+,p_attribute_08=>'Y'
+,p_process_error_message=>'Update gagal dilakukan, silakan cek kembali data Anda'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_success_message=>'Update sudah berhasil dilakukan'
+,p_internal_uid=>31187114621929007085
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(31187114253557007085)
+,p_process_sequence=>10
+,p_process_point=>'BEFORE_HEADER'
+,p_region_id=>wwv_flow_imp.id(61724748905365541339)
+,p_process_type=>'NATIVE_FORM_INIT'
+,p_process_name=>'Initialize form Form Permintaan IT'
+,p_internal_uid=>31187114253557007085
+);
+wwv_flow_imp.component_end;
+end;
+/

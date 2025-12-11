@@ -1,0 +1,277 @@
+prompt --application/pages/page_00017
+begin
+--   Manifest
+--     PAGE: 00017
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>30014105435788499543
+,p_default_application_id=>216180
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_NTIAPPS'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>17
+,p_name=>'User Review Form IT Request Admin'
+,p_alias=>'USER-REVIEW-FORM-IT-REQUEST-ADMIN'
+,p_step_title=>'User Review Form IT Request Admin'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_page_component_map=>'18'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(55166892636438779763)
+,p_plug_name=>'User Review Form IT Request Admin'
+,p_region_name=>'urf_it_admin'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(30016868628684567691)
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'FORM_REQUEST_IT_TRX'
+,p_include_rowid_column=>false
+,p_plug_source_type=>'NATIVE_IR'
+,p_prn_page_header=>'User Review Form IT Request Admin'
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(55166892740914779763)
+,p_name=>'User Review Form IT Request Admin'
+,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
+,p_no_data_found_message=>'No data found.'
+,p_pagination_type=>'ROWS_X_TO_Y'
+,p_pagination_display_pos=>'BOTTOM_RIGHT'
+,p_report_list_mode=>'TABS'
+,p_lazy_loading=>false
+,p_show_notify=>'Y'
+,p_download_formats=>'CSV:HTML:XLSX:PDF'
+,p_enable_mail_download=>'Y'
+,p_csv_output_separator=>','
+,p_csv_output_enclosed_by=>'"'
+,p_detail_link_text=>'<img src="#APEX_FILES#app_ui/img/icons/apex-edit-pencil.png" class="apex-edit-pencil" alt="">'
+,p_allow_exclude_null_values=>'N'
+,p_allow_hide_extra_columns=>'N'
+,p_owner=>'IWAN.HERDIAN.ERP@GMAIL.COM'
+,p_internal_uid=>55166892740914779763
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166893628335779842)
+,p_db_column_name=>'REQ_ID'
+,p_display_order=>0
+,p_is_primary_key=>'Y'
+,p_column_identifier=>'A'
+,p_column_label=>'Req ID'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166900068330779847)
+,p_db_column_name=>'NO_FORM'
+,p_display_order=>10
+,p_column_identifier=>'Q'
+,p_column_label=>'No Form'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166899643534779847)
+,p_db_column_name=>'STATUS'
+,p_display_order=>20
+,p_column_identifier=>'P'
+,p_column_label=>'Status'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166894056097779843)
+,p_db_column_name=>'EMP_NO'
+,p_display_order=>30
+,p_column_identifier=>'B'
+,p_column_label=>'Emp No'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166894401738779843)
+,p_db_column_name=>'PEMINTA'
+,p_display_order=>40
+,p_column_identifier=>'C'
+,p_column_label=>'Peminta'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166894802888779843)
+,p_db_column_name=>'JABATAN_PEMINTA'
+,p_display_order=>50
+,p_column_identifier=>'D'
+,p_column_label=>'Jabatan Peminta'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166895236390779844)
+,p_db_column_name=>'LOKASI_PEMINTA'
+,p_display_order=>70
+,p_column_identifier=>'E'
+,p_column_label=>'Lokasi Peminta'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166898406592779846)
+,p_db_column_name=>'APPROVER_MGR'
+,p_display_order=>80
+,p_column_identifier=>'M'
+,p_column_label=>'Approver'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166895616374779844)
+,p_db_column_name=>'PENGGUNA'
+,p_display_order=>90
+,p_column_identifier=>'F'
+,p_column_label=>'Pengguna'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166896087319779844)
+,p_db_column_name=>'JABATAN_PENGGUNA'
+,p_display_order=>100
+,p_column_identifier=>'G'
+,p_column_label=>'Jabatan Pengguna'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166896485544779845)
+,p_db_column_name=>'LOKASI_PENGGUNA'
+,p_display_order=>110
+,p_column_identifier=>'H'
+,p_column_label=>'Lokasi Pengguna'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166896842416779845)
+,p_db_column_name=>'MANDATORY_HD_SOFT'
+,p_display_order=>120
+,p_column_identifier=>'I'
+,p_column_label=>'Mandatory Hd Soft'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166897202284779845)
+,p_db_column_name=>'OPTIONAL_SOFT'
+,p_display_order=>130
+,p_column_identifier=>'J'
+,p_column_label=>'Optional Soft'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166897665440779846)
+,p_db_column_name=>'OPTIONAL_HD'
+,p_display_order=>140
+,p_column_identifier=>'K'
+,p_column_label=>'Optional Hd'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166898057554779846)
+,p_db_column_name=>'KETERANGAN'
+,p_display_order=>150
+,p_column_identifier=>'L'
+,p_column_label=>'Keterangan'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166898835616779846)
+,p_db_column_name=>'APPROVER_IT'
+,p_display_order=>160
+,p_column_identifier=>'N'
+,p_column_label=>'Type Request'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(55166899280348779847)
+,p_db_column_name=>'UPDATED_BY'
+,p_display_order=>170
+,p_column_identifier=>'O'
+,p_column_label=>'Updated By'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(55169718290819789641)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'551697183'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'REQ_ID:NO_FORM:STATUS:EMP_NO:PEMINTA:JABATAN_PEMINTA:LOKASI_PEMINTA:APPROVER_MGR:PENGGUNA:JABATAN_PENGGUNA:LOKASI_PENGGUNA:MANDATORY_HD_SOFT:OPTIONAL_SOFT:OPTIONAL_HD:KETERANGAN:APPROVER_IT:UPDATED_BY'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(46470523680743849907)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(55166892636438779763)
+,p_button_name=>'PRINT'
+,p_button_action=>'DEFINED_BY_DA'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(30016952085195567733)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Print'
+,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
+,p_warn_on_unsaved_changes=>null
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(46470523770638849908)
+,p_name=>'Print Interactive Report'
+,p_event_sequence=>10
+,p_triggering_element_type=>'BUTTON'
+,p_triggering_button_id=>wwv_flow_imp.id(46470523680743849907)
+,p_bind_type=>'bind'
+,p_execution_type=>'IMMEDIATE'
+,p_bind_event_type=>'click'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(46470523885374849909)
+,p_event_id=>wwv_flow_imp.id(46470523770638849908)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'PLUGIN_BE.APEXRND.AOP_DA'
+,p_attribute_04=>'pdf'
+,p_attribute_05=>'IR'
+,p_attribute_06=>'APEX'
+,p_attribute_07=>'FRITS_UserReviewFormITRequestRep.docx'
+,p_attribute_13=>'urf_it_admin'
+,p_wait_for_result=>'Y'
+);
+wwv_flow_imp.component_end;
+end;
+/

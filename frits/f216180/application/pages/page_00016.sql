@@ -1,0 +1,337 @@
+prompt --application/pages/page_00016
+begin
+--   Manifest
+--     PAGE: 00016
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>30014105435788499543
+,p_default_application_id=>216180
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_NTIAPPS'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>16
+,p_name=>'User Review Form IT Request'
+,p_alias=>'USER-REVIEW-FORM-IT-REQUEST'
+,p_step_title=>'User Review Form IT Request'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_deep_linking=>'Y'
+,p_page_component_map=>'18'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(43058253093931718075)
+,p_plug_name=>'User Review Form IT Request'
+,p_region_name=>'user_review_form_it_req_p16'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(30016868628684567691)
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'FORM_REQUEST_IT_TRX'
+,p_query_where=>'PEMINTA in (select emp_name from emp_1 where emp_name=:APP_USER)'
+,p_include_rowid_column=>false
+,p_plug_source_type=>'NATIVE_IR'
+,p_plug_required_role=>wwv_flow_imp.id(30017067008153567829)
+,p_prn_content_disposition=>'ATTACHMENT'
+,p_prn_units=>'MILLIMETERS'
+,p_prn_paper_size=>'A4'
+,p_prn_width=>297
+,p_prn_height=>210
+,p_prn_orientation=>'HORIZONTAL'
+,p_prn_page_header=>'User Review Form IT Request'
+,p_prn_page_header_font_color=>'#000000'
+,p_prn_page_header_font_family=>'Helvetica'
+,p_prn_page_header_font_weight=>'normal'
+,p_prn_page_header_font_size=>'12'
+,p_prn_page_footer_font_color=>'#000000'
+,p_prn_page_footer_font_family=>'Helvetica'
+,p_prn_page_footer_font_weight=>'normal'
+,p_prn_page_footer_font_size=>'12'
+,p_prn_header_bg_color=>'#EEEEEE'
+,p_prn_header_font_color=>'#000000'
+,p_prn_header_font_family=>'Helvetica'
+,p_prn_header_font_weight=>'bold'
+,p_prn_header_font_size=>'10'
+,p_prn_body_bg_color=>'#FFFFFF'
+,p_prn_body_font_color=>'#000000'
+,p_prn_body_font_family=>'Helvetica'
+,p_prn_body_font_weight=>'normal'
+,p_prn_body_font_size=>'10'
+,p_prn_border_width=>.5
+,p_prn_page_header_alignment=>'CENTER'
+,p_prn_page_footer_alignment=>'CENTER'
+,p_prn_border_color=>'#666666'
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(43058253176854718075)
+,p_name=>'User Review Form IT Request'
+,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
+,p_no_data_found_message=>'No data found.'
+,p_pagination_type=>'ROWS_X_TO_Y'
+,p_pagination_display_pos=>'BOTTOM_RIGHT'
+,p_report_list_mode=>'TABS'
+,p_lazy_loading=>false
+,p_show_notify=>'Y'
+,p_download_auth_scheme=>wwv_flow_imp.id(30017067008153567829)
+,p_download_formats=>'CSV:HTML:XLSX:PDF'
+,p_download_filename=>'Form IT Request'
+,p_enable_mail_download=>'Y'
+,p_email_from=>'support@nti-support.freshdesk.com'
+,p_detail_link_text=>'<img src="#APEX_FILES#app_ui/img/icons/apex-edit-pencil.png" class="apex-edit-pencil" alt="">'
+,p_detail_link_auth_scheme=>wwv_flow_imp.id(30017067008153567829)
+,p_allow_exclude_null_values=>'N'
+,p_allow_hide_extra_columns=>'N'
+,p_owner=>'IWAN.HERDIAN.ERP@GMAIL.COM'
+,p_internal_uid=>43058253176854718075
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058256191670718126)
+,p_db_column_name=>'REQ_ID'
+,p_display_order=>0
+,p_is_primary_key=>'Y'
+,p_column_identifier=>'A'
+,p_column_label=>'Request ID'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(46470523164074849902)
+,p_db_column_name=>'NO_FORM'
+,p_display_order=>1
+,p_column_identifier=>'Q'
+,p_column_label=>'No Form'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058256529772718126)
+,p_db_column_name=>'EMP_NO'
+,p_display_order=>2
+,p_column_identifier=>'B'
+,p_column_label=>'Emp No'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058256999868718127)
+,p_db_column_name=>'PEMINTA'
+,p_display_order=>3
+,p_column_identifier=>'C'
+,p_column_label=>'Peminta'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058257318685718127)
+,p_db_column_name=>'JABATAN_PEMINTA'
+,p_display_order=>4
+,p_column_identifier=>'D'
+,p_column_label=>'Jabatan Peminta'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058257750407718127)
+,p_db_column_name=>'LOKASI_PEMINTA'
+,p_display_order=>5
+,p_column_identifier=>'E'
+,p_column_label=>'Lokasi Peminta'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058258112755718128)
+,p_db_column_name=>'PENGGUNA'
+,p_display_order=>6
+,p_column_identifier=>'F'
+,p_column_label=>'Pengguna'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058258520719718128)
+,p_db_column_name=>'JABATAN_PENGGUNA'
+,p_display_order=>7
+,p_column_identifier=>'G'
+,p_column_label=>'Jabatan Pengguna'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058258909197718128)
+,p_db_column_name=>'LOKASI_PENGGUNA'
+,p_display_order=>8
+,p_column_identifier=>'H'
+,p_column_label=>'Lokasi Pengguna'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058259327311718129)
+,p_db_column_name=>'MANDATORY_HD_SOFT'
+,p_display_order=>9
+,p_column_identifier=>'I'
+,p_column_label=>'Mandatory Hardware Software'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058259770537718129)
+,p_db_column_name=>'OPTIONAL_SOFT'
+,p_display_order=>10
+,p_column_identifier=>'J'
+,p_column_label=>'Optional Hardware Software'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058260132109718129)
+,p_db_column_name=>'OPTIONAL_HD'
+,p_display_order=>11
+,p_column_identifier=>'K'
+,p_column_label=>'Hak Akses'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058260539312718130)
+,p_db_column_name=>'KETERANGAN'
+,p_display_order=>12
+,p_column_identifier=>'L'
+,p_column_label=>'Keterangan'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058260992720718130)
+,p_db_column_name=>'APPROVER_MGR'
+,p_display_order=>13
+,p_column_identifier=>'M'
+,p_column_label=>'Approver'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058261335755718130)
+,p_db_column_name=>'APPROVER_IT'
+,p_display_order=>14
+,p_column_identifier=>'N'
+,p_column_label=>'Type Request'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058261784925718130)
+,p_db_column_name=>'UPDATED_BY'
+,p_display_order=>15
+,p_column_identifier=>'O'
+,p_column_label=>'Updated By'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(43058262150474718131)
+,p_db_column_name=>'STATUS'
+,p_display_order=>16
+,p_column_identifier=>'P'
+,p_column_label=>'Status'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(43058276328595720754)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'430582764'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'REQ_ID:EMP_NO:PEMINTA:JABATAN_PEMINTA:LOKASI_PEMINTA:PENGGUNA:JABATAN_PENGGUNA:LOKASI_PENGGUNA:MANDATORY_HD_SOFT:OPTIONAL_SOFT:OPTIONAL_HD:KETERANGAN:APPROVER_MGR:APPROVER_IT:UPDATED_BY:STATUS'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(35350710558323511743)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(43058253093931718075)
+,p_button_name=>'PRINT'
+,p_button_action=>'DEFINED_BY_DA'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(30016952085195567733)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Print'
+,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
+,p_warn_on_unsaved_changes=>null
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(35350710382470511741)
+,p_name=>'Edit Report - Dialog Closed'
+,p_event_sequence=>10
+,p_triggering_element_type=>'REGION'
+,p_triggering_region_id=>wwv_flow_imp.id(43058253093931718075)
+,p_bind_type=>'bind'
+,p_execution_type=>'IMMEDIATE'
+,p_bind_event_type=>'apexafterclosedialog'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(35350710437937511742)
+,p_event_id=>wwv_flow_imp.id(35350710382470511741)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_REFRESH'
+,p_affected_elements_type=>'REGION'
+,p_affected_region_id=>wwv_flow_imp.id(43058253093931718075)
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(35350710607577511744)
+,p_name=>'Print Interactive Report'
+,p_event_sequence=>20
+,p_triggering_element_type=>'BUTTON'
+,p_triggering_button_id=>wwv_flow_imp.id(35350710558323511743)
+,p_bind_type=>'bind'
+,p_execution_type=>'IMMEDIATE'
+,p_bind_event_type=>'click'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(35350710720341511745)
+,p_event_id=>wwv_flow_imp.id(35350710607577511744)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'PLUGIN_BE.APEXRND.AOP_DA'
+,p_attribute_04=>'pdf'
+,p_attribute_05=>'IR'
+,p_attribute_06=>'APEX'
+,p_attribute_07=>'FRITS_UserReviewFormITRequestRep.docx'
+,p_attribute_13=>'user_review_form_it_req_p16'
+,p_wait_for_result=>'Y'
+);
+wwv_flow_imp.component_end;
+end;
+/
