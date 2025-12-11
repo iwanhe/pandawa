@@ -11,12 +11,13 @@ By: PANDAWA team (Professional ApplicatioN Development team for Advancing Web Ap
 3. [Business Requirement](#business-requirement)
 4. [Team Training & Solution Design](#team-training--solution-design)
 5. [Solution Development](#solution-development)
-6. [Data Conversion](#data-conversion)
-7. [Solution Deployment](#solution-deployment)
-8. [Go-Live Preparation and Execution](#go-live-preparation-and-execution)
-9. [Technical Support & Infrastructure](#technical-support--infrastructure)
-10. [Project Team Structure](#project-team-structure)
-11. [Project Control](#project-control)
+6. [Security Vulnerability Assessment](#security-vulnerability-assessment)
+7. [Data Conversion](#data-conversion)
+8. [Solution Deployment](#solution-deployment)
+9. [Go-Live Preparation and Execution](#go-live-preparation-and-execution)
+10. [Technical Support & Infrastructure](#technical-support--infrastructure)
+11. [Project Team Structure](#project-team-structure)
+12. [Project Control](#project-control)
 
 ---
 
@@ -46,12 +47,17 @@ The application development methodology consists of the following main phases:
    - Prototyping
    - Prototyping Confirmation and Sign Off
 
-5. **Solution Deployment**
+5. **Security Vulnerability Assessment** ⭐ **NEW**
+   - Security Scanning dengan APEX-specific Tools
+   - Vulnerability Remediation
+   - Security Gate Decision
+
+6. **Solution Deployment**
    - Production System Configuration
    - Conduct System Test
    - User Procedure Document
 
-6. **Go-Live Preparation & Execution**
+7. **Go-Live Preparation & Execution**
    - End-User Training
    - User Acceptance Test
    - Go-Live and Support
@@ -63,6 +69,7 @@ Throughout the project:
 - **Change Management**
 - **Technical Support & Infrastructure**
 - **Project Management Officer**
+- **Security Monitoring** ⭐ **NEW**
 
 ---
 
@@ -202,6 +209,214 @@ Tim development/analis dan key user akan melakukan test terhadap sistem prototyp
 
 ---
 
+## Security Vulnerability Assessment
+
+**MANDATORY CHECKPOINT** - Tahap security scanning ini dilakukan setelah Solution Development selesai dan sebelum deployment ke Production. Tujuannya untuk memastikan aplikasi bebas dari vulnerability yang dapat membahayakan sistem dan data.
+
+### 1. Security Scanning Tools
+
+Untuk Oracle APEX dan Oracle EBS, gunakan tools khusus berikut:
+
+#### **APEX Sert (APEX Security Evaluation & Recommendation Tool)**
+- Tool utama untuk comprehensive security assessment
+- Melakukan automated scanning terhadap APEX applications
+- Mengidentifikasi common vulnerabilities dan security issues
+- Memberikan rekomendasi remediasi yang actionable
+
+**Key Checks:**
+- Session state protection
+- Authorization schemes
+- Authentication mechanisms
+- Page/item/process security
+- SQL injection vulnerabilities
+- XSS protection
+
+#### **APEX Visualizer**
+- Visual analysis untuk architecture dan security flow
+- Identifikasi unprotected pages/items
+- Mapping authorization scheme coverage
+- Deteksi security gaps dalam application structure
+
+**Use Cases:**
+- Visualisasi authorization coverage
+- Identifikasi pages tanpa proper authorization
+- Analisis authentication flows
+- Deteksi orphaned components
+
+#### **APEX Advisor**
+- Best practices validation
+- Security rules compliance checking
+- Static code analysis untuk PL/SQL
+- Configuration security assessment
+
+**Security Rules:**
+- Password items session state
+- Hidden items protection
+- Dynamic SQL validation
+- Authorization completeness
+- Debug mode configuration
+
+### 2. Security Scanning Workflow
+
+```
+┌─────────────────────────────────────────────────────┐
+│ SECURITY CHECKPOINT WORKFLOW                        │
+└─────────────────────────────────────────────────────┘
+
+STEP 1: Preparation (Development Environment)
+├─ Install/configure security tools
+├─ Define security baseline policies
+└─ Train security officer on tools
+
+STEP 2: Automated Scanning
+├─ Run APEX Sert → Comprehensive security scan
+├─ Run APEX Advisor → Best practices check
+└─ Generate consolidated report
+
+STEP 3: Manual Review
+├─ Use APEX Visualizer → Architecture analysis
+├─ Review findings dengan development team
+└─ Prioritize issues (Critical → High → Medium)
+
+STEP 4: Remediation
+├─ Fix Critical & High issues (MANDATORY)
+├─ Document Medium issues dengan mitigation plan
+└─ Update code & re-scan untuk verification
+
+STEP 5: Security Gate Decision
+├─ Review semua findings
+├─ Check against security criteria
+├─ IF PASS → Approve untuk Deployment
+└─ IF FAIL → Return to Development
+```
+
+### 3. Security Gate Criteria
+
+**PASS Criteria (Boleh lanjut ke Deployment):**
+- ✅ **ZERO Critical vulnerabilities**
+- ✅ **ZERO High vulnerabilities**
+- ✅ Medium vulnerabilities ≤ 5 (dengan mitigation plan)
+- ✅ Security checklist signed off
+- ✅ Security scan report approved
+
+**FAIL Criteria (Kembali ke Development):**
+- ❌ Ada Critical vulnerability
+- ❌ Ada High vulnerability
+- ❌ Medium vulnerabilities > 5
+- ❌ Security best practices tidak diikuti
+
+### 4. Vulnerability Severity Classification
+
+| Severity | SLA Fix | Contoh |
+|----------|---------|--------|
+| **CRITICAL** | 24 jam | Page tanpa authorization, SQL injection |
+| **HIGH** | 3 hari | Weak session management, unprotected processes |
+| **MEDIUM** | 7 hari | Items tanpa session state protection |
+| **LOW** | 14 hari | Missing labels, unused items |
+
+### 5. Security Deliverables
+
+**Document Code: SV010 - Security Vulnerability Assessment Report**
+
+Struktur report:
+```
+1. Executive Summary
+   - Overall Security Score: __/100
+   - Critical: __ | High: __ | Medium: __ | Low: __
+
+2. APEX Sert Findings
+   - Session Security
+   - Authorization Coverage
+   - Input Validation
+   
+3. APEX Advisor Results
+   - Best Practice Compliance: ___%
+   - Security Rule Violations: __
+
+4. APEX Visualizer Analysis
+   - Authorization Coverage: ___%
+   - Unprotected Pages: __
+   - Architecture Diagram
+
+5. Remediation Plan
+   [Table: Priority | Issue | Owner | Deadline | Status]
+
+6. Security Gate Decision
+   [ ] APPROVED - Proceed to Deployment
+   [ ] REJECTED - Return to Development
+
+Signatures:
+- Security Officer: __________ Date: ______
+- Project Manager: __________ Date: ______
+- Development Lead: _________ Date: ______
+```
+
+### 6. Security Checklist
+
+**Pre-Deployment Security Checklist (Doc SC020)**
+
+**A. Application Security**
+- [ ] No SQL injection vulnerabilities
+- [ ] All pages have authorization schemes
+- [ ] Session state protection enabled
+- [ ] CSRF protection active
+- [ ] Input validation implemented
+- [ ] Error handling tidak expose sensitive info
+
+**B. Authentication & Authorization**
+- [ ] Strong authentication mechanism
+- [ ] Proper role-based access control
+- [ ] Session timeout configured
+- [ ] Failed login attempts logged
+
+**C. Data Security**
+- [ ] Sensitive data encrypted
+- [ ] No passwords in session state
+- [ ] Audit trail enabled
+- [ ] Database privileges minimized
+
+**D. Configuration**
+- [ ] Debug mode disabled
+- [ ] Production-ready settings
+- [ ] Secure connection (HTTPS)
+- [ ] Proper error pages
+
+### 7. Continuous Security Monitoring
+
+**Post-Production Security Activities:**
+
+**Monthly:**
+- APEX Sert security scan
+- APEX Advisor compliance check
+- Review audit logs
+
+**Quarterly:**
+- Full security assessment
+- Architecture review dengan APEX Visualizer
+- Update security policies
+
+**Annually:**
+- External security audit
+- Penetration testing
+- Security training refresh
+
+### 8. Roles & Responsibilities
+
+| Role | Responsibility |
+|------|----------------|
+| **Security Officer** | - Conduct security scans<br>- Review reports<br>- Approve/reject security gate<br>- Monitor post-production |
+| **Development Team** | - Fix vulnerabilities<br>- Implement secure coding<br>- Provide remediation evidence<br>- Resubmit for rescan |
+| **Project Manager** | - Ensure security gate in timeline<br>- Track remediation progress<br>- Escalate critical issues<br>- Report to Steering Committee |
+
+### 9. Security Training Requirements
+
+**Mandatory Training:**
+- **Developers**: APEX security best practices, OWASP Top 10
+- **Security Officer**: Security tools usage, vulnerability assessment
+- **Key Users**: Security awareness, data protection
+
+---
+
 ## Data Conversion
 
 Konversi seluruh master data dari sistem yang lama harus sudah direncanakan dan dilakukan sejak awal.
@@ -222,11 +437,11 @@ Konversi seluruh master data dari sistem yang lama harus sudah direncanakan dan 
 
 ## Solution Deployment
 
-Pada dasarnya tahap ini mengerjakan implementasi sistem baru ke server Production. Setelah sistem prototype selesai test dan mendapat konfirmasi dari tim proyek, semua hasil konfigurasi dan kustomisasi akan di-copy dari server Development ke server Production.
+Pada dasarnya tahap ini mengerjakan implementasi sistem baru ke server Production. Setelah sistem prototype selesai test, **PASSED security gate**, dan mendapat konfirmasi dari tim proyek, semua hasil konfigurasi dan kustomisasi akan di-copy dari server Development ke server Production.
 
 ### 1. Production System Configuration
 
-Team Development akan memindahkan sistem Prototype ke server Development dengan cara cloning server Development ataupun dengan cara reconfigure. Setelah itu, master data yang telah diselesai dikonversikan akan di-upload ke sistem ini. Tim Development akan melakukan backup sebelum sistem ini ditest.
+Team Development akan memindahkan sistem Prototype ke server Production dengan cara cloning server Development ataupun dengan cara reconfigure. Setelah itu, master data yang telah diselesai dikonversikan akan di-upload ke sistem ini. Tim Development akan melakukan backup sebelum sistem ini ditest.
 
 ### 2. Conduct System Test
 
@@ -262,6 +477,7 @@ Setelah sistem berjalan, adalah penting untuk menjaga kelancaran operasional. Pa
 - Memonitor jalannya sistem
 - Melatih tim support internal / MIS dalam memberikan support atau troubleshoot
 - Transisi dukungan dari Team Development kepada tim support MIS
+- **Continuous security monitoring** (lihat section Security Vulnerability Assessment)
 
 ---
 
@@ -273,6 +489,8 @@ Bagian ini adalah kegiatan yang berlangsung terus menerus sepanjang proyek berla
 - Set-up routine daily back-up
 - Set-up sistem untuk training, system test and Live
 - Membantu penyelesaian kendala teknis yang dihadapi (jaringan, workstation, server, dll)
+- **Install dan maintain security scanning tools**
+- **Setup security monitoring infrastructure**
 
 ---
 
@@ -289,6 +507,7 @@ Mereka akan memastikan proyek berjalan sesuai rencana, dalam batasan yang sudah 
 #### Tanggung jawab:
 - Memecahkan masalah yang timbul selama proyek
 - Memberikan laporan perkembangan proyek kepada Steering Committee
+- **Ensure security gate compliance**
 
 ### 3. Application Development Upstream Team (PANDAWA)
 
@@ -298,6 +517,8 @@ Merupakan tim kunci yang akan bekerja dengan key user untuk menentukan prioritas
 - Membantu key user menyiapkan business process yang baru
 - Memberikan training kepada key user
 - Melakukan konfigurasi dan test terhadap sistem
+- **Implement secure coding practices**
+- **Fix security vulnerabilities**
 
 ### 4. BPO / Key Users / End Users
 
@@ -318,9 +539,33 @@ Untuk menjadi BPO / key users seseorang harus memiliki pemahaman mendalam tentan
 
 Akan bertanggung-jawab melakukan instalasi OS, mendukung anggota tim development dalam kaitannya dengan kebutuhan hardware & infrastruktur serta jaringan/network.
 
+#### Tanggung jawab:
+- Install dan maintain hardware
+- Setup network infrastructure
+- **Install dan maintain security tools**
+- **Configure security monitoring**
+
 ### 6. Support Team
 
 Merupakan team support yang nantinya akan membantu setelah system yang dibangun sudah berjalan di level production/operasional.
+
+#### Tanggung jawab:
+- User support dan troubleshooting
+- **Monitor security alerts**
+- **Report security incidents**
+
+### 7. Security Officer ⭐ **NEW ROLE**
+
+Bertanggung jawab atas seluruh aspek security dalam project lifecycle.
+
+#### Tanggung jawab:
+- Conduct security scans (APEX Sert, APEX Advisor, APEX Visualizer)
+- Review security vulnerability reports
+- Approve/reject security gate
+- Define dan enforce security policies
+- Train team on security best practices
+- Monitor production security
+- Manage security incidents
 
 ---
 
@@ -330,29 +575,85 @@ Merupakan team support yang nantinya akan membantu setelah system yang dibangun 
 - **Progress Meeting**: Weekly / Bi-Weekly
 - **Quality Assurance Meeting**: Every Month
 - **Steering Committee Meeting**: Every Month
+- **Security Review Meeting**: Before each Deployment ⭐ **NEW**
 - **Ad-Hoc Meeting**: Case by Case Basis
 
 ### Communication & Documentation:
 - Centralized Project Documentations Pool
 - Email
+- **Security Reports Repository** ⭐ **NEW**
 
 ---
 
 ## Document Reference Codes
 
+### Business & Requirements
 - **BP070**: Business Requirements Analysis / Business Blueprint Document
 - **BP080**: Proposed Solution Development
 - **BR010**: Business Requirements
+
+### Development
 - **MD050**: Customization Technical Specification
 - **MD060**: Customization Development
 - **MD070**: Customization Development
+
+### Testing & Deployment
 - **TE040**: Test Scenario Document
 - **DO070**: User Procedure Documentation
 - **DO080**: User Procedure Documentation
+
+### Go-Live
 - **PM010**: Go-Live Transition Strategy Template
 - **PM040**: Go-Live Checklist Template
+
+### Security ⭐ **NEW**
+- **SV010**: Security Vulnerability Assessment Report
+- **SC020**: Security Checklist
+- **SR030**: Security Remediation Plan
+- **SP040**: Security Policy Document
+- **SA050**: Security Audit Log
+
+---
+
+## Updated Project Flow with Security Gate
+
+```
+┌──────────────────────────────────────────────────────┐
+│ PROJECT METHODOLOGY WITH SECURITY GATE               │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│ 1. Project Initiation                                │
+│ 2. Business Requirement                              │
+│ 3. Team Training & Solution Design                   │
+│ 4. Solution Development                              │
+│    ↓                                                 │
+│    ┌──────────────────────────────────────┐         │
+│    │ 🔒 SECURITY GATE CHECKPOINT          │         │
+│    ├──────────────────────────────────────┤         │
+│    │ • APEX Sert Scan                     │         │
+│    │ • APEX Advisor Check                 │         │
+│    │ • APEX Visualizer Review             │         │
+│    │ • Vulnerability Remediation          │         │
+│    │ • Security Approval                  │         │
+│    └──────────────────┬───────────────────┘         │
+│                       │                              │
+│           ┌───────────┴───────────┐                 │
+│           │                       │                 │
+│        PASS ✅                  FAIL ❌             │
+│           │                       │                 │
+│           ↓                       ↓                 │
+│ 5. Solution Deployment    Return to Development    │
+│ 6. User Acceptance Test                             │
+│ 7. Go-Live & Support                                │
+│    └─> Continuous Security Monitoring               │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+```
 
 ---
 
 **Document prepared by PANDAWA Team**  
 *Professional ApplicatioN Development team for Advancing Web Applications*
+
+**Last Updated**: December 2025  
+**Version**: 2.0 (Added Security Vulnerability Assessment)
