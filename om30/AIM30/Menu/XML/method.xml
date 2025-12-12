@@ -1,0 +1,205 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE method SYSTEM "method.dtd">
+<method name="AIM"
+	description="Application Implementation Method"
+	version="3.0"
+	updateServer=""
+	updatePort="80"
+	updateSiteName="www.oracle.com"
+	updateURL="http://www.oracle.com/methods/aim/3.0/updates/aimupdates.html">
+	<addin
+	       base_addin="AIM Foundation"
+	       required_addin = ""
+	       name="AIM30fnd" 
+	       description="AIM Foundation" 
+	       type="BASE" 
+	       version="3.0" 
+	       apps_release="11.0" 
+	       language="English" 
+	       geography="US" 
+	       ffw_type="N/A" 
+	       industry_seg="" 
+	       industry_prod="" 
+	       industry_prod_rel="" 
+	       publisher="Applications Global Service Line" 
+	       base_path="aim30fnd"
+	       omxfile="">
+	        <link icon="menu/images/books.gif" 
+		      name="AIM Method Handbook" 
+		      url="document/afn3mh.pdf#Overview" 
+		      text="Method Guidelines"/>
+		<link icon="menu/images/reference.gif" 
+		      name="Web References and links" 
+		      url="http://www.oracle.com/methods/aim/3.0/main.htm" 
+		      text="References and Links"/>
+	</addin>
+	<addin
+	       base_addin="Project Management Method"
+	       required_addin = ""
+	       name="PJM261" 
+	       description="Project Management Method" 
+	       type="BASE" 
+	       version="2.6.1" 
+	       apps_release="" 
+	       language="English" 
+	       geography="US" 
+	       ffw_type="" 
+	       industry_seg="" 
+	       industry_prod="" 
+	       industry_prod_rel="" 
+	       publisher="Global Program Management Service Line" 
+	       base_path="../pjm261"
+	       omxfile="">
+	</addin>
+	<method_processes>
+		<process name="PJM" description="Project Management">
+		</process>
+		<process name="BP" description="Business Process Architecture">
+		</process>
+		<process name="RD" description="Business Requirements Definition">
+		</process>
+		<process name="BR" description="Business Requirements Mapping">
+		</process>
+		<process name="TA" description="Application and Technical Architecture">
+		</process>
+		<process name="MD" description="Module Design and Build">
+		</process>
+		<process name="CV" description="Data Conversion">
+		</process>
+		<process name="DO" description="Documentation">
+		</process>
+		<process name="TE" description="Business System Testing">
+		</process>
+		<process name="PT" description="Performance Testing">
+		</process>
+		<process name="AP" description="Adoption and Learning">
+		</process>
+		<process name="PM" description="Production Migration">
+		</process>
+	</method_processes>
+	<method_phases>
+		<phase name="PJMA" description="Project Planning"/>
+		<phase name="PJMB" description="Phase Planning"/>
+		<phase name="PJMC" description="Phase Control"/>
+		<phase name="PJMD" description="Phase Completion"/>
+		<phase name="PJME" description="Project Completion"/>
+		<phase name="PJMM" description="PJM Miscellaneous"/>
+		<phase name="A" description="Definition"/>
+		<phase name="B" description="Operations Analysis"/>
+		<phase name="C" description="Solution Design"/>
+		<phase name="D" description="Build"/>
+		<phase name="E" description="Transition"/>
+		<phase name="F" description="Production"/>
+	</method_phases>
+	<filter_criteria name="CORE"
+			 description="Core Task"
+			 text="Required for all projects"
+	                 empty_icon ="menu/images/ballcore0.gif"
+	                 full_icon ="menu/images/ballcore1.gif"
+			 act_icon="menu/images/core0.gif"
+			 inact_icon="menu/images/core1.gif"/>
+	<filter_criteria name="PRCC"
+			 description="Process Change"
+			 text="Process Change is an objective"
+			 empty_icon = "menu/images/ballprcc0.gif"
+	                 full_icon = "menu/images/ballprcc1.gif"
+			 act_icon="menu/images/prcc0.gif"
+			 inact_icon="menu/images/prcc1.gif"/>
+	<filter_criteria name="ORGC"
+			 description="Organization Change Management Focus"
+			 text="Organizational Change Management Focus"
+	                 empty_icon = "menu/images/ballorgc0.gif"
+	                 full_icon = "menu/images/ballorgc1.gif"
+			 act_icon="menu/images/orgc0.gif"
+			 inact_icon="menu/images/orgc1.gif"/>
+	<filter_criteria name="CSTM"
+			 description="Customization"
+			 text="Designing and building custom extensions"
+	                 empty_icon = "menu/images/ballcstm0.gif"
+	                 full_icon = "menu/images/ballcstm1.gif"
+			 act_icon="menu/images/cstm0.gif"
+			 inact_icon="menu/images/cstm1.gif"/>
+	<filter_criteria name="INTF"
+			 description="Interfaces"
+			 text="Interfaces to third-party or legacy systems"
+	                 empty_icon = "menu/images/ballintf0.gif"
+	                 full_icon = "menu/images/ballintf1.gif"
+			 act_icon="menu/images/intf0.gif"
+			 inact_icon="menu/images/intf1.gif"/>
+      <filter_criteria name="CPXA"
+			 description="Complex Architecture Changes"
+			 text="Significant changes to technical architecture"
+	                 empty_icon = "menu/images/ballcpxa0.gif"
+	                 full_icon = "menu/images/ballcpxa1.gif"
+			 act_icon="menu/images/cpxa0.gif"
+			 inact_icon="menu/images/cpxa1.gif"/>
+	<filter_criteria name="CPLX"
+			 description="Medium or High Complexity"
+			 text="Medium or high project complexity"
+	                 empty_icon = "menu/images/ballcplx0.gif"
+	                 full_icon = "menu/images/ballcplx1.gif"
+			 act_icon="menu/images/cplx0.gif"
+			 inact_icon="menu/images/cplx1.gif"/>
+	<filter_criteria name="MUSR"
+			 description="Large User Population"
+			 text="Large number of end users"
+	                 empty_icon = "menu/images/ballmusr0.gif"
+	                 full_icon = "menu/images/ballmusr1.gif"
+			 act_icon="menu/images/musr0.gif"
+			 inact_icon="menu/images/musr1.gif"/>
+	<filter_criteria name="PERF"
+			 description="Performance Testing"
+			 text="Performance Testing"
+	                 empty_icon = "menu/images/ballperf0.gif"
+	                 full_icon = "menu/images/ballperf1.gif"
+			 act_icon="menu/images/perf0.gif"
+			 inact_icon="menu/images/perf1.gif"/>
+	<filter_criteria name="PDOC"
+			 description="Project-Specific Documentation"
+			 text="Publishing project-specific documentation"
+	                 empty_icon = "menu/images/ballpdoc0.gif"
+	                 full_icon = "menu/images/ballpdoc1.gif"
+			 act_icon="menu/images/pdoc0.gif"
+			 inact_icon="menu/images/pdoc1.gif"/>
+	<filter_criteria name="CRPT"
+			 description="Complex Reporting"
+			 text="Complex Reporting, such as data warehouse"
+	                 empty_icon = "menu/images/ballcrpt0.gif"
+	                 full_icon = "menu/images/ballcrpt1.gif"
+			 act_icon="menu/images/crpt0.gif"
+			 inact_icon="menu/images/crpt1.gif"/>
+
+	<filter_criteria name="PCON"
+			 description="Programmatic Data Conversion"
+			 text="Automated conversion of legacy data"
+	                 empty_icon = "menu/images/ballpcon0.gif"
+	                 full_icon = "menu/images/ballpcon1.gif"
+			 act_icon="menu/images/pcon0.gif"
+			 inact_icon="menu/images/pcon1.gif"/>
+
+	<filter_criteria name="MCON"
+			 description="Manual Data Conversion"
+			 text="Manual conversion of legacy data"
+	                 empty_icon="menu/images/ballmcon0.gif"
+	                 full_icon="menu/images/ballmcon1.gif"
+			 act_icon="menu/images/mcon0.gif"
+			 inact_icon="menu/images/mcon1.gif"/>
+
+	<filter_criteria name="OTHR"
+			 description="Other Optionality Criteria"
+			 text="See AIM Method Handbook"
+	                 empty_icon="menu/images/ballothr0.gif"
+	                 full_icon="menu/images/ballothr1.gif"
+			 act_icon="menu/images/othr0.gif"
+			 inact_icon="menu/images/othr1.gif"/>
+
+	<addin_type	 name="Standard"
+			 icon="menu/images/addin.gif"
+			 description="Add-in Content"/>
+        <addin_type	 name="Fast Forward"
+			 icon="menu/images/ffwd.gif"
+			 description="Fast Forward Content"/>
+        <addin_type	 name="Sample"
+			 icon="menu/images/sample_deliverable.gif"
+			 description="Sample Deliverables"/>
+</method>

@@ -1,0 +1,38 @@
+<!ELEMENT template (#PCDATA)>
+<!ATTLIST template file CDATA #REQUIRED>
+<!ATTLIST template description CDATA #IMPLIED>
+<!ATTLIST template name CDATA #IMPLIED>
+<!ATTLIST template state CDATA #REQUIRED>
+<!ATTLIST template note CDATA #REQUIRED>
+<!ATTLIST template tpid CDATA #REQUIRED>
+<!ATTLIST template type CDATA #REQUIRED>
+<!ELEMENT filter (#PCDATA)>
+<!ATTLIST filter name CDATA #REQUIRED>
+
+<!ELEMENT task (filter*,template*,link*)>
+<!ATTLIST task 
+          taskid CDATA #REQUIRED
+          name CDATA #REQUIRED
+          phase CDATA #REQUIRED
+          process CDATA #REQUIRED
+	  deliverable CDATA #REQUIRED
+          description CDATA #REQUIRED>
+<!ELEMENT addin (task*, method_processes*, method_phases*) >
+<!ATTLIST addin 
+          name CDATA #REQUIRED
+          description CDATA #REQUIRED>
+<!ATTLIST link 
+          icon CDATA #IMPLIED
+          name CDATA #IMPLIED
+          url CDATA #IMPLIED
+	  text CDATA #IMPLIED>
+<!ELEMENT method_phases (phase+)>
+<!ELEMENT phase (link*)>
+<!ATTLIST phase
+          name CDATA #REQUIRED
+	  description CDATA #IMPLIED>
+<!ELEMENT method_processes (process+)>
+<!ELEMENT process (link*)>
+<!ATTLIST process
+	  name CDATA #IMPLIED
+	  description CDATA #IMPLIED>

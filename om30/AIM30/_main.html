@@ -1,0 +1,46 @@
+<HTML>
+<!--
+
+ Copyright (c) 1999, Oracle Corporation. All Rights Reserved
+
+-->
+
+<HEAD>
+<title>Application Implementation Method 3.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META NAME="copyright" CONTENT="Copyright (c) 1999, Oracle Corporation.  All rights reserved.">
+<LINK REL="STYLESHEET" TITLE="default" MEDIA="screen" HREF="menu/style/general.css" TYPE="text/css">
+<SCRIPT LANGUAGE="javascript1.2" SRC="menu/js/globals.js"></script>
+<SCRIPT LANGUAGE="javascript1.2" SRC="menu/js/waitscreen.js"></script>
+<SCRIPT LANGUAGE="javascript1.2" SRC="menu/js/menupage.js"></script>
+<SCRIPT LANGUAGE="javascript1.2" SRC="menu/js/processpage.js"></script>
+<SCRIPT LANGUAGE="javascript1.2" SRC="menu/js/templatepage.js"></script>
+<SCRIPT LANGUAGE="javascript1.2" SRC="menu/js/standardfooter.js"></script>
+<SCRIPT LANGUAGE="javascript1.2" SRC="menu/js/addinpage.js"></script>
+<SCRIPT LANGUAGE="javascript1.2">
+	var blankPage = '<HTML><BODY bgcolor="#FFFFFF"></BODY></HTML>';
+
+	// Check for compatible browser versions
+	if (navigator.appName == "Netscape") {
+		if (parseInt(navigator.appVersion) < 4) {
+			alert("AIM 3.0 is designed to work with Nescape Navigator version 4.0 and later.  You are running Netscape version " + navigator.appVersion + ".  If you experience problems, upgrade to the latest version of Netscape.");
+		}
+	}
+	else if (navigator.appName.indexOf("Internet Explorer") >= 0) {
+		if (parseInt(navigator.appVersion) < 4) {
+			alert("AIM 3.0 is designed to work with Internet Explorer version 4.0 and later.  You are running Internet Explorer version " + navigator.appVersion + ".  If you experience problems, upgrade to the latest version of Internet Explorer.");
+		}
+	}
+	else {		// unrecognized browser
+		alert("AIM 3.0 has been tested with Netscape Navigator version 4 and Internet Explorer versions 4 and 5.  You are running " + navigator.appName + " version " + navigator.appVersion + ", which has not been tested.  If you experience problems, you should install one of the supported browsers.");
+	}
+
+</SCRIPT>
+</HEAD>
+<FRAMESET BORDER=0 ROWS="100,*,90,0" FRAMEBORDER=0 onLoad="top.menuPage()">
+	<FRAME NAME="header"       SRC="header.html" SCROLLING="no">
+	<FRAME NAME="middle-frame" SRC="menu/middle-frame.html">
+	<FRAME NAME="footer"       SRC="javascript:parent.blankPage" SCROLLING="no">
+	<FRAME NAME="hidden"       SRC="../aim30parser.html" SCROLLING="no">
+</FRAMESET>
+</HTML>

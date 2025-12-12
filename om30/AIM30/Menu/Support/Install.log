@@ -1,0 +1,445 @@
+***  Installation Started 09/27/23 21:42  ***
+Title: Method Installation
+Source: D:\Software\Installer\Oracle AIM 3.0\265498.EXE
+File Copy: D:\Method\OM30\AIM30\Menu\Support\Uninstal.exe
+File Copy: D:\Method\OM30\AIM30\Menu\Support\UNWISE.EXE
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\AIM 3.0
+RegDB Val: AIM 3.0
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\AIM 3.0
+RegDB Val: D:\Method\OM30\AIM30\Menu\Support\UNWISE.EXE D:\Method\OM30\AIM30\Menu\Support\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+INI New: Created INI
+INI File: C:\Windows\OMSVCPAK.INI
+INI Sect: SERVICE PACKS
+INI Item: Products
+INI Val: AIM30,
+File Copy: D:\Method\OM30\aim30parser.html
+File Copy: D:\Method\OM30\AIM30\omstart.html
+File Copy: D:\Method\OM30\AIM30\_main.html
+File Copy: D:\Method\OM30\AIM30\header.html
+Made Dir: D:\Method\OM30\AIM30\Menu\Support\Icon
+File Copy: D:\Method\OM30\AIM30\Menu\Support\Icon\Omethod.ico
+File Copy: D:\Method\OM30\AIM30\Menu\Support\Icon\undo.ico
+Made Dir: D:\Method\OM30\AIM30\AIM30FND
+Made Dir: D:\Method\OM30\AIM30\AIM30FND\Document
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Document\afn3mh.pdf
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Document\afn3ptv1.pdf
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Document\afn3ptv2.pdf
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Document\afn3ptv3.pdf
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Document\aimgloss.pdf
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Document\idtug.pdf
+Made Dir: D:\Method\OM30\AIM30\AIM30FND\Spdsheet
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Spdsheet\AP110_Appendix_A_Location_Information_Spreadsheet.xls
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Spdsheet\BR110_Security_Profiles.xls
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Spdsheet\RD020_Process_Questionnaire.xls
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Spdsheet\RD080_Master_Report_Tracking_List.xls
+Made Dir: D:\Method\OM30\AIM30\AIM30FND\Workplan
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Workplan\WM020_Project_Workplan_mp.MPP
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Workplan\WM020_Project_Workplan_pw.NOA
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Workplan\WM020_Project_Workplan_pw.aca
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Workplan\WM020_Project_Workplan_pw.dea
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Workplan\WM020_Project_Workplan_pw.lda
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Workplan\WM020_Project_Workplan_pw.sta
+Made Dir: D:\Method\OM30\AIM30\AIM30FND\Wordlib
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP010_Executive_Project_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP010_Invitation_Memorandum.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP010_Session_Planning_Checklist.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP020_Application_Overview_Customization.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP020_Invitation_Memorandum.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP020_Project_Team_Orientation_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP020_Session_Planning_Checklist.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP030_Project_Team_Learning_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP040_Project_Team_Learning_Environment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP050_Project_Team_Learning_Events_Administration.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP060_Business_Unit_Managers_Readiness_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP060_High_Level_Systems_Overview_Customization.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP060_Invitation_Memorandum.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP060_Session_Planning_Checklist.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP070_Invitation_Memorandum.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP070_Project_Readiness_Roadmap.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP070_Session_Planning_Checklist.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP080_Communication_Campaign.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP090_Application_to_Process_Overview_Customization.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP090_Invitation_Memorandum.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP090_Managers_Readiness_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP090_Session_Planning_Checklist.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP100_Business_Process_Organizational_Impact.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP110_Human_Performance_Support_Systems.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP120_Information_Technology_Groups_Alignment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP130_User_Learning_Needs_Analysis.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP140_Learning_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP150_User_Learningware.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP160_User_Learning_Environment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP170_User_Learning_Events_Administration.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP180_Effectiveness_Assessment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP180_Invitation_Memorandum.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\AP180_Session_Planning_Checklist.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP010_Business_and_Process_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP020_Change_Catalog.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP030_Data_Gathering_Requirements.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP040_Current_Process_Model.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP050_Leading_Practice_Review.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP060_High_Level_Process_Vision.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP070_High_Level_Process_Designs.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP080_Future_Process_Model.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BP090_Business_Procedure_Documentation.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR010_High_Level_Gap_Analysis.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR020_Configured_Mapping_Environment_Architecture_and_Configuration.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR030_Business_Requirements_Mapping_Form.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR050_Integration_Fit_Analysis.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR060_Information_Model.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR080_Business_Mapping_Test_Results.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aap_Accounts_Payable_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aar_Accounts_Receivable_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aas_Sales_and_Marketing_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Abom_Bill_Of_Materials_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aca_Common_Applications_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Acas_Common_Applications_System_Admin_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Ace_Cash_Management_Applications_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Acf_Common_Financials_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Acm_Common_Manufacturing_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Acn_Sales_Compensation_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Acrp_Capacity_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Acs_Service_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Acst_Cost_Management_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aeng_Engineering_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Afa_Fixed_Assets_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Afi_OPM_Financials_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Agl_General_Ledger_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Ahr_Human_Resources_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aic_OPM_Inventory_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Ainv_Inventory_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Alo_OPM_Logistics_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Amrp_Master_Scheduling_MRP_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aoe_Order_Entry_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Apa_Project_Accounting_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Apd_OPM_Product_Development_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Apo_Purchasing_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100App_OPM_Process_Planning_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Aqa_Quality_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Ascp_Supply_Chain_Planning_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Ass_Supplier_Scheduling_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Asy_OPM_Systems_Application_Setup.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\BR100Awip_Work_in_Process_Application_Setup_Document.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CR010_Project_Management_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV010_Data_Conversion_Requirements_and_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV020_Conversion_Standards.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV030_Conversion_Environment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV040_Conversion_Data_Mapping.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV050_Manual_Conversion_Procedures.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV060_Conversion_Program_Designs.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV070_Conversion_Test_Plans.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV120_Installed_Conversion_Programs.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\CV130_Converted_and_Verified_Data.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO010_Documentation_Requirements_and_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO020_Documentation_Standards_and_Procedures.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO030_Glossary.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO040_Document_Environment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO060_User_Reference_Manual.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO070_User_Guide.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO080_Technical_Reference_Manual.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\DO090_System_Management_Guide.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD010_Application_Extension_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD020_Application_Extension_Definition_And_Estimates.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD030_Design_Standards.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD040_Build_Standards.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD050_Application_Extensions_Functional_Design.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD060_Database_Extensions_Design.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD070_Application_Extensions_Technical_Design.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD090_Development_Environment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\MD120_Installation_Instructions.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\OMGuide.dot
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PM010_Transition_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PM020_Production_Support_Infrastructure_Design.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PM030_Transition_and_Contingency_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PM040_Installation_QA_Checklist.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PM090_System_Performance_Assessment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PM130_Business_Direction_Recommendations.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PM140_Technical_Direction_Recommendations.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT010_Performance_Testing_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT020_Performance_Test_Scenarios.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT030_Performance_Test_Transaction_Models.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT040_Performance_Test_Scripts.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT050_Performance_Test_Transaction_Program_Designs.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT060_Performance_Test_Data_Design.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT070_Performance_Test_Database_Load_Program_Designs.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT110_Performance_Test_Environment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT120_Performance_Test_Results.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\PT130_Performance_Test_Report.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RD010_Current_Financial_and_Operating_Structure.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RD020_Current_Business_Baseline.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RD030_Process_and_Mapping_Summary.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RD040_Business_Volumes_and_Metrics.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RD050_Business_Requirements_Scenarios.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RD060_Audit_and_Control_Requirements.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RD070_Business_Availability_Requirements.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\RM025_Project_Orientation_Guide.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA010_Architecture_Requirements_and_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA020_Current_Technical_Architecture_Baseline.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA030_Preliminary_Conceptual_Architecture.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA040_Application_Architecture.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA050_System_Availability_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA060_Reporting_and_Information_Access.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA080_Application_Security_Architecture.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA090_Application_and_Database_Server_Architecture.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA100_Architecture_Subsystems_Proposal.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA110_System_Capacity_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA120_Platform_and_Network_Architecture.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA130_Application_Deployment_Plan.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA140_Performance_Risk_Assessment.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TA150_System_Management_Procedures.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE010_Testing_Requirements_and_Strategy.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE020_Unit_Test_Script.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE030_Link_Test_Script.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE040_System_Test_Script.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE050_Systems_Integration_Test_Script.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE060_Testing_Environment_Setup_Log.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE110_Test_Report_for_System_Test.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE120_Test_Report_for_Systems_Integration_Test.doc
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Wordlib\TE130_Test_Report_for_Acceptance_Test.doc
+Made Dir: D:\Method\OM30\AIM30\AIM30FND\Menu
+Made Dir: D:\Method\OM30\AIM30\AIM30FND\Menu\Xml
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Menu\Xml\aim30fnd.xml
+File Copy: D:\Method\OM30\AIM30\AIM30FND\Menu\Xml\addin.dtd
+Made Dir: D:\Method\OM30\AIM30\AIM30FND\Menu\Ome
+Made Dir: D:\Method\OM30\AIM30\Menu\JS
+File Copy: D:\Method\OM30\AIM30\Menu\JS\addinpage.js
+File Copy: D:\Method\OM30\AIM30\Menu\JS\globals.js
+File Copy: D:\Method\OM30\AIM30\Menu\JS\menupage.js
+File Copy: D:\Method\OM30\AIM30\Menu\JS\omparser.js
+File Copy: D:\Method\OM30\AIM30\Menu\JS\processpage.js
+File Copy: D:\Method\OM30\AIM30\Menu\JS\standardfooter.js
+File Copy: D:\Method\OM30\AIM30\Menu\JS\templatepage.js
+File Copy: D:\Method\OM30\AIM30\Menu\JS\waitscreen.js
+Made Dir: D:\Method\OM30\AIM30\Menu\Java
+File Copy: D:\Method\OM30\AIM30\Menu\Java\omparser.jar
+Made Dir: D:\Method\OM30\AIM30\Menu\Images
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Addin.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Audio.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCORE0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCORE1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCPLX0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCPLX1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCPXA0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCPXA1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCRPT0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCRPT1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCSTM0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLCSTM1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLINTF0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLINTF1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLMCON0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLMCON1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLMUSR0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLMUSR1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLORGC0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLORGC1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLOTHR0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLOTHR1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPCON0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPCON1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPDOC0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPDOC1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPERF0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPERF1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPRCC0.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\BALLPRCC1.GIF
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Core0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Core1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Cplx0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Cplx1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Cpxa0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Cpxa1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Crpt1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\IT.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Intf0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\Intf1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\MI.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\MIIT.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\SI.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\aca.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\aimfo30a.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\aimlogo.jpg
+File Copy: D:\Method\OM30\AIM30\Menu\Images\blank.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\blueline.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\book.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\books.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\crpt0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\cstm0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\cstm1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\doc.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\eight.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\ffwd.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\five.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\four.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\gray0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\gray1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\itmi.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\itsi.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\mcon0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\mcon1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\mo.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\mpp.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\multi.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\musr0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\musr1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\nine.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\note.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\notemp.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\nothing.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\o.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\one.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\orgc0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\orgc1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\othr0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\othr1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\pcon0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\pcon1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\pdoc0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\pdoc1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\perf0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\perf1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\ppt.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\prcc0.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\prcc1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\priority.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\reference.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\sample_deliverable.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\seven.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\siit.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\six.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\three.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\train.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\two.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\video.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\vst.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\wait1.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\xls.gif
+File Copy: D:\Method\OM30\AIM30\Menu\Images\zero.gif
+Made Dir: D:\Method\OM30\AIM30\Menu\Style
+File Copy: D:\Method\OM30\AIM30\Menu\Style\general.css
+File Copy: D:\Method\OM30\AIM30\Menu\books.html
+File Copy: D:\Method\OM30\AIM30\Menu\middle-frame.html
+File Copy: D:\Method\OM30\AIM30\Menu\help.html
+File Copy: D:\Method\OM30\AIM30\Menu\about.html
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Custom.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Document\pjmmh.pdf
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Document\pjmptr.pdf
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CM010_Configuration_Management_Procedures.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CM020_Document_Index.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CM020_Document_Update_Notice.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CM030_Configuration_Item_Index.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CM030_Configuration_Item_Status_Record.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CM040_Release_Note.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR010_Project_Management_Plan.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR010_Project_Start_Up_Checklist.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\OMGuide.dot
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR020_Control_and_Reporting_Procedures.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR040_Risk_and_Issue_Form.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR040_Risk_and_Issue_Log.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR050_Problem_Report_Form.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR050_Problem_Report_Log.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR060_Change_Request_Form.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR060_Change_Request_Log.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR070_Meeting_Minutes.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR070_Project_Progress_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR080_Acceptance_Certificate.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR080_Client_Satisfaction_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\CR080_End_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM01_Engagement_Summary.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM02_Project_Memo.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM03_Meeting_Agenda.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM04_Rejection_Note.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM05_Supplier_Assessment_Record.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM06_Project_Document_Generic.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM07_Phase_End_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM08_Site_Visit_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM09_Project_Management_Checklist.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\PJM10_Quality_Management_Checklist.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM010_Quality_Management_Procedures.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM020_Review_Comments_List.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM020_Review_Leader_Form.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM030_Audit_Action_Form.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM030_Audit_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM040_Metrics_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM045_Project_Healthcheck_Checklist.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\QM050_Quality_Report.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM010_Resource_Management_Procedures.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM020_Assignment_Request.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM020_Staffing_and_Organization_Plan.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM025_Project_Orientation_Guide.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM030_Staff_Training_Plan.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM040_Physical_Resource_Plan.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM040_Service_Level_Agreement.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM050_Incoming_Item_Record.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM050_Installation_Plan_and_Record.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM060_Assignment_Terms_of_Reference.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\RM070_Equipment_Fault_Record.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Wordlib\WM010_Work_Management_Procedures.doc
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Menu\xml\addin.dtd
+Date/Time: Following file not copied.
+ File Copy: D:\Method\OM30\PJM261\Menu\xml\pjm261.XML
+File Copy: D:\Method\OM30\AIM30\custom.doc
+Made Dir: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle Method AIM 3.0
+Shell Link: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle Method AIM 3.0\ Software Tools and Documentation.lnk
+Shell Link: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle Method AIM 3.0\ Uninstall AIM 3.0.lnk
+Shell Link: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle Method AIM 3.0
+User Rights: Admin

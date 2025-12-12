@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<!--
+
+ Copyright (c) 1999, Oracle Corporation. All Rights Reserved
+
+-->
+<HEAD>
+<TITLE>Oracle Method Startup</TITLE>
+<META NAME="copyright" CONTENT="Copyright (c) 1999, Oracle Corporation.  All rights reserved.">
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+function newRaisedWindow() {
+	var width;
+	var height;
+	var screenX;
+	var screenY;
+
+	//--- Set size and centering based on screen size
+
+	if (screen.availWidth < 900) {
+		width = screen.availWidth-10;
+		height = screen.availHeight-70;
+		screenX = 0;
+		screenY = 0;
+	}
+	else {
+		width = 900;
+		height = 650;
+		screenX = Math.round((screen.availWidth-width)/2);
+		screenY = Math.max(0, Math.round((screen.availHeight-height-70)/2));
+	}
+
+	//--- Open new window centered on screen
+
+    var newWindow = window.open('_main.html','','resizable,status,menubar,scrollbars,left='+screenX+',top='+screenY+',height='+height+',width='+width);
+
+	//--- close this window if no history, otherwise go back one history level
+
+	if (self.history.length > 1) {
+		self.history.back(1);
+	}
+	else {
+		if (document.layers) {		// Netscape
+			self.close();			// close window
+		}
+		else {
+			document.write("Please close this window<br>");
+		}
+	}
+
+    newWindow.focus();
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY onload="newRaisedWindow()">
+<NOSCRIPT>
+This application requires that you enable javascript in your browser.  Consult your browser documentation or online help for information on enabling javascript.
+</NOSCRIPT>
+</BODY>
+</HTML>

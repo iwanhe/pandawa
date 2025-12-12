@@ -1,0 +1,4286 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE addin SYSTEM "addin.dtd">
+<addin name="AIM30FND"
+	description="Application Implementation Method - Version 3.0">
+
+	<task taskid       = "CR.010"
+	      name         = "Establish Scope, Objectives, and Approach"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Scoping Project Management Plan"
+	      description  = "In this task you define and agree on the project scope, objectives, and approach. This task confirms that both consulting and the client have a clear understanding of the scope, objectives, and risks of the work to be undertaken before beginning.">
+		<filter name = "CORE"/>
+		<template 
+			file ="CR010_Project_Management_Plan.ome" 
+			description="Project Management Plan"
+			name = " "
+			type = "DOC"
+			state= "Initial"
+			note= "PJM template with AIM Specific content"
+			tpid = "IT">
+	      </template>
+	</task>
+
+	<task taskid       = "RM.025"
+	      name         = "Create Project Orientation Guide"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Project Orientation Guide"
+	      description  = "In this task you  collect and compile all of the information including standards, policies, and procedures for project team members.">
+		<filter name = "CORE"/>
+		<template 
+			file ="RM025_Project_Orientation_Guide.ome" 
+			description="Project Orientation Guide"
+			name = " "
+			type = "DOC"
+			state= "Initial"
+			note= "PJM template with AIM Specific content"
+			tpid = "IT">
+	      </template>
+	</task>
+
+	<task taskid       = "WM.020"
+	      name         = "Establish Workplan"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Workplan"
+	      description  = "In this task you determine, organize, estimate, link, and schedule all of the tasks representing the work to be performed on the project.  This task can be performed with varying degrees of scope, rigor, and detail, depending on the circumstances.">
+		<filter name = "CORE"/>
+		<template 
+			file ="WM020_Project_Workplan_MP.ome" 
+			description="Project Workplan MP"
+			name = " "
+			type = "MPP"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>		<template 
+			file ="WM020_Project_Workplan_PW.ome" 
+			description="Project Workplan PW"
+			name = " "
+			type = "ACA"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+	</task>
+
+	<task taskid       = "BP.010"
+	      name         = "Define Business and Process Strategy"
+	      phase        = "A"
+	      process      = "BP"
+	      deliverable  = "Business and Process Strategy"
+	      description  = "In this task, you work closely with executive management on a strategy for improving the business and refining its business processes.">
+		<filter name = "PRCC"/>
+		<template 
+			file ="BP010_Business_and_Process_Strategy.ome" 
+			description="Business and Process Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.020"
+	      name         = "Catalog and Analyze Potential Changes"
+	      phase        = "A"
+	      process      = "BP"
+	      deliverable  = "Change Catalog"
+	      description  = "In this task, you compare the costs and benefits involved in making changes to the business processes and roles of the organization, as well as to the application.">
+		<filter name = "PRCC"/>
+		<template 
+			file ="BP020_Change_Catalog.ome" 
+			description="Change Catalog"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.030"
+	      name         = "Determine Data Gathering Requirements"
+	      phase        = "A"
+	      process      = "BP"
+	      deliverable  = "Data Gathering Requirements"
+	      description  = "In this task, you determine the data that needs to be collected during Business Process Architecture.">
+		<filter name = "PRCC"/>
+		<template 
+			file ="BP030_Data_Gathering_Requirements.ome" 
+			description="Data Gathering Requirements"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.040"
+	      name         = "Develop Current Process Model"
+	      phase        = "A"
+	      process      = "BP"
+	      deliverable  = "Current Process Model"
+	      description  = "In this task, you examine the current business processes and practices to identify how the existing business system meets current business requirements.">
+		<filter name = "OTHR"/>
+		<template 
+			file ="BP040_Current_Process_Model.ome" 
+			description="Current Process Model"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.050"
+	      name         = "Review Leading Practices"
+	      phase        = "A"
+	      process      = "BP"
+	      deliverable  = "Leading Practices Review"
+	      description  = "In this task, you review which leading practices are relevant and appropriate for the organization.">
+		<filter name = "PRCC"/>
+		<template 
+			file ="BP050_Leading_Practice_Review.ome" 
+			description="Leading Practice Review"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.060"
+	      name         = "Develop High-Level Process Vision"
+	      phase        = "A"
+	      process      = "BP"
+	      deliverable  = "High-Level Process Vision"
+	      description  = "In this task, you provide a general, high-level statement for each business process describing how the new process will operate.  The statement determines any relevant principles that will regulate the operation of the new processes.">
+		<filter name = "PRCC"/>
+		<template 
+			file ="BP060_High_Level_Process_Vision.ome" 
+			description="High Level Process Vision"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.070"
+	      name         = "Develop High-Level Process Designs"
+	      phase        = "A"
+	      process      = "BP"
+	      deliverable  = "High-Level Process Designs"
+	      description  = "In this task, you produce high-level designs documenting how the new organization will operate after the applications are implemented.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BP070_High_Level_Process_Designs.ome" 
+			description="High Level Process Designs"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.080"
+	      name         = "Develop Future Process Model"
+	      phase        = "B"
+	      process      = "BP"
+	      deliverable  = "Future Process Model"
+	      description  = "In this task, you define the future business model in the form of integrated process flows built on the business processes supported by the new applications.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BP080_Future_Process_Model.ome" 
+			description="Future Process Model"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BP.090"
+	      name         = "Document Business Procedures"
+	      phase        = "C"
+	      process      = "BP"
+	      deliverable  = "Business Procedure Documentation"
+	      description  = "In this task, you document the procedures supporting the business processes enabled by the implementation of new applications.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BP090_Business_Procedure_Documentation.ome" 
+			description="Business Procedure Documentation"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BP.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BP.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.010"
+	      name         = "Identify Current Financial and Operating Structure"
+	      phase        = "A"
+	      process      = "RD"
+	      deliverable  = "Current Financial and Operating Structure"
+	      description  = "In this task, the project team develops a complete picture of the organizations current financial and operating structure.">
+		<filter name = "CORE"/>
+		<template 
+			file ="RD010_Current_Financial_and_Operating_Structure.ome" 
+			description="Current Financial and Operating Structure"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.020"
+	      name         = "Conduct Current Business Baseline"
+	      phase        = "A"
+	      process      = "RD"
+	      deliverable  = "Current Business Baseline"
+	      description  = "In this task, the project team examines current processes and practices to  understand and document the main activities that keep the organization operating today.">
+		<filter name = "CORE"/>
+		<template 
+			file ="RD020_Current_Business_Baseline.ome" 
+			description="Current Business Baseline"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="RD020_Process_Questionnaire.ome" 
+			description="Process Questionnaire"
+			name = " "
+			type = "XLS"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.030"
+	      name         = "Establish Process and Mapping Summary"
+	      phase        = "B"
+	      process      = "RD"
+	      deliverable  = "Process and Mapping Sum"
+	      description  = "In this task, you create the repository for key project findings and decisions that occur during the process and functional requirements gathering activities.">
+		<filter name = "CPLX"/>
+		<filter name = "MUSR"/>
+		<template 
+			file ="RD030_Process_and_Mapping_Summary.ome" 
+			description="Process and Mapping Summary"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.040"
+	      name         = "Gather Business Volumes and Metrics"
+	      phase        = "B"
+	      process      = "RD"
+	      deliverable  = "Business Volumes and Metrics"
+	      description  = "In this task, you research the current business volumes and estimate the future projected operational processing volumes, transaction patterns, and data storage volume requirements.">
+		<filter name = "CORE"/>
+		<template 
+			file ="RD040_Business_Volumes_and_Metrics.ome" 
+			description="Business Volumes and Metrics"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.050"
+	      name         = "Gather Business Requirements"
+	      phase        = "B"
+	      process      = "RD"
+	      deliverable  = "Business Requirements Scenarios"
+	      description  = "In this task, you define detailed business requirements and perform an initial assessment of application fit to these requirements.">
+		<filter name = "CORE"/>
+		<template 
+			file ="RD050_Business_Requirements_Scenarios.ome" 
+			description="Business Requirements Scenarios"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.060"
+	      name         = "Determine Audit and Control Requirements"
+	      phase        = "B"
+	      process      = "RD"
+	      deliverable  = "Audit and Control Requirements"
+	      description  = "In this task, you identify the high level requirements and policies that affect business and system security, control, and procedures.">
+		<filter name = "CORE"/>
+		<template 
+			file ="RD060_Audit_and_Control_Requirements.ome" 
+			description="Audit and Control Requirements"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.070"
+	      name         = "Identify Business Availability Requirements"
+	      phase        = "B"
+	      process      = "RD"
+	      deliverable  = "Business Availability Requirements"
+	      description  = "In this task, you identify the business operating requirements that the operating functions and information systems functions agree are necessary to support the business processes.">
+		<filter name = "CORE"/>
+		<template 
+			file ="RD070_Business_Availability_Requirements.ome" 
+			description="Business Availability Requirements"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RD.080"
+	      name         = "Identify Reporting and Information Access Requirements"
+	      phase        = "B"
+	      process      = "RD"
+	      deliverable  = "Master Report Tracking List"
+	      description  = "In this task, you identify the organizations future reporting requirements">
+		<filter name = "CORE"/>
+		<template 
+			file ="RD080_Master_Report_Tracking_List.ome" 
+			description="Master Report Tracking List"
+			name = " "
+			type = "XLS"
+			state= "Initial"
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#RD.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/RD.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.010"
+	      name         = "Analyze High-Level Gaps"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "High-Level Gap Analysis"
+	      description  = "In this task, you will compare the process as envisioned in the Develop High-Level Designs (BP.070) with the processes supported by Oracle Applications.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BR010_High_Level_Gap_Analysis.ome" 
+			description="High Level Gap Analysis"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.020"
+	      name         = "Prepare Mapping Environment"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Configured Mapping Environment"
+	      description  = "In this task, you either install a new application, or prepare an existing application environment for detailed mapping activities.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BR020_Configured_Mapping_Environment_Architecture_and_Configuration.ome" 
+			description="Configured Mapping Environment Architecture and Configuration"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.030"
+	      name         = "Map Business Requirements"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Mapped Business  Requirements"
+	      description  = "In this task, you assess the fit of standard application and system features to detailed business requirements.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BR030_Business_Requirements_Mapping_Form.ome" 
+			description="Business Requirements Mapping Form"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.040"
+	      name         = "Map Business Data"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Mapped Business Data"
+	      description  = "In this task, you map the data elements from the legacy system to the target application modules, business objects, and attributes.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "Initial"
+			note= "Prepare initial CV040_Conversion_Data_Mapping"
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.050"
+	      name         = "Conduct Integration Fit Analysis"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Integration Fit Analysis"
+	      description  = "In this task, you identify the new integration points that you require, based on your conceptual architecture and the mapping of the new applications onto the existing architecture.">
+		<filter name = "INTF"/>
+		<template 
+			file ="BR050_Integration_Fit_Analysis.ome" 
+			description="Integration Fit Analysis"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.060"
+	      name         = "Create Information Model"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Information Model"
+	      description  = "In this task, you create an information view of the future business by specifying the future information usage and flow requirements across business functions, business organizations, applications, and data centers.">
+		<filter name = "PRCC"/>
+		<filter name = "INTF"/>
+		<filter name = "CRPT"/>
+		<template 
+			file ="BR060_Information_Model.ome" 
+			description="Information Model"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.070"
+	      name         = "Conduct Reporting Fit Analysis"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Master Report Tracking List"
+	      description  = "In this task, you will be required to analyze and map every reporting requirement to both a future business process and standard application report.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "Final"
+			note= "Update RD080_Master_Report_Tracking_List"
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.080"
+	      name         = "Test Business Solutions"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Business Mapping Test Results"
+	      description  = "In this task, you perform an extended test of the business alternatives and validate integrated business processes based on the mapping decisions.">
+		<filter name = "PRCC"/>
+		<filter name = "CPLX"/>
+		<template 
+			file ="BR080_Business_Mapping_Test_Results.ome" 
+			description="Business Mapping Test Results"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.090"
+	      name         = "Confirm Integrated Business Solutions"
+	      phase        = "B"
+	      process      = "BR"
+	      deliverable  = "Confirmed Business Solutions"
+	      description  = "In this task, you secure approval for proposed business alternatives.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.100"
+	      name         = "Define Application Setups"
+	      phase        = "C"
+	      process      = "BR"
+	      deliverable  = "Application Setup Documents"
+	      description  = "In this task, you capture the setup decisions and implement them in the appropriate environment.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BR100Aap_Accounts_Payable_Application_Setup.ome" 
+			description="Accounts Payable Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Aar_Accounts_Receivable_Application_Setup.ome" 
+			description="Accounts Receivable Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Aas_Sales_and_Marketing_Application_Setup.ome" 
+			description="Sales and Marketing Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Abom_Bill_Of_Materials_Application_Setup.ome" 
+			description="Bill Of Materials Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Aca_Common_Applications_Application_Setup.ome" 
+			description="Common Applications Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Acas_Common_Applications_System_Admin_Application_Setup.ome" 
+			description="Common Applications System Admin Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Ace_Cash_Management_Applications_Setup.ome" 
+			description="Cash Management Applications Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Acf_Common_Financials_Application_Setup.ome" 
+			description="Common Financials Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Acm_Common_Manufacturing_Application_Setup.ome" 
+			description="Common Manufacturing Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Acn_Sales_Compensation_Application_Setup.ome" 
+			description="Sales Compensation Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Acrp_Capacity_Application_Setup.ome" 
+			description="Capacity Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Acs_Service_Application_Setup.ome" 
+			description="Service Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Acst_Cost_Management_Application_Setup.ome" 
+			description="Cost Management Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Aeng_Engineering_Application_Setup.ome" 
+			description="Engineering Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Afa_Fixed_Assets_Application_Setup.ome" 
+			description="Fixed Assets Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Afi_OPM_Financials_Application_Setup.ome" 
+			description="OPM Financials Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Agl_General_Ledger_Application_Setup.ome" 
+			description="General Ledger Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Ahr_Human_Resources_Application_Setup.ome" 
+			description="Human Resources Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Aic_OPM_Inventory_Application_Setup.ome" 
+			description="OPM Inventory Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Ainv_Inventory_Application_Setup.ome" 
+			description="Inventory Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Alo_OPM_Logistics_Application_Setup.ome" 
+			description="OPM Logistics Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Amrp_Master_Scheduling_MRP_Application_Setup.ome" 
+			description="Master Scheduling MRP Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Aoe_Order_Entry_Application_Setup.ome" 
+			description="Order Entry Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Apa_Project_Accounting_Application_Setup.ome" 
+			description="Project Accounting Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Apd_OPM_Product_Development_Application_Setup.ome" 
+			description="OPM Product Development Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Apo_Purchasing_Application_Setup.ome" 
+			description="Purchasing Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100App_OPM_Process_Planning_Application_Setup.ome" 
+			description="OPM Process Planning Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Aqa_Quality_Application_Setup.ome" 
+			description="Quality Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Ascp_Supply_Chain_Planning_Application_Setup.ome" 
+			description="Supply Chain Planning Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Ass_Supplier_Scheduling_Application_Setup.ome" 
+			description="Supplier Scheduling Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Asy_OPM_Systems_Application_Setup.ome" 
+			description="OPM Systems Application Setup"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="BR100Awip_Work_in_Process_Application_Setup_Document.ome" 
+			description="Work in Process Application Setup Document"
+			name = " "
+			type = "DOC"
+			state= "Updated"
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "BR.110"
+	      name         = "Design Security Profiles"
+	      phase        = "C"
+	      process      = "BR"
+	      deliverable  = "Security Profiles"
+	      description  = "In this task, you gather role and function information and relate them to application security and responsibilities.  As business requirements are established and mapped to application features, you also begin to define the user security.">
+		<filter name = "CORE"/>
+		<template 
+			file ="BR110_Security_Profiles.ome" 
+			description="Security Profiles"
+			name = " "
+			type = "XLS"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#BR.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/BR.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.010"
+	      name         = "Define Architecture Requirements and Strategy"
+	      phase        = "A"
+	      process      = "TA"
+	      deliverable  = "Architecture Requirements and Strategy"
+	      description  = "In this task, you identify the application and technical architecture requirements and strategy you will use for the design and development of the system you are implementing.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TA010_Architecture_Requirements_and_Strategy.ome" 
+			description="Architecture Requirements and Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.020"
+	      name         = "Identify Current Technical Architecture"
+	      phase        = "A"
+	      process      = "TA"
+	      deliverable  = "Current Technical Architecture Baseline"
+	      description  = "In this task, you identify the current application and technical architecture for the existing systems.  This includes identifying existing applications, interfaces, databases, networks, and hardware platforms.">
+		<filter name = "CPXA"/>
+		<filter name = "CPLX"/>
+		<template 
+			file ="TA020_Current_Technical_Architecture_Baseline.ome" 
+			description="Current Technical Architecture Baseline"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.030"
+	      name         = "Develop Preliminary Conceptual Architecture"
+	      phase        = "A"
+	      process      = "TA"
+	      deliverable  = "Preliminary Conceptual Architecture"
+	      description  = "In this task, you identify possible candidate conceptual architectures for the new information systems you are implementing, and select the preferred architecture that best fits the overall needs of the business subject to the project constraints.">
+		<filter name = "CPXA"/>
+		<filter name = "CPLX"/>
+		<template 
+			file ="TA030_Preliminary_Conceptual_Architecture.ome" 
+			description="Preliminary Conceptual Architecture"
+			name = " "
+			type = "DOC"
+			state= "Initial"
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.040"
+	      name         = "Define Application Architecture"
+	      phase        = "B"
+	      process      = "TA"
+	      deliverable  = "Application Architecture"
+	      description  = "In this task, you design the functional architecture for the applications.  This involves identifying those key setup parameters in the applications that are relevant to your particular implementation and establishing the values for those parameters.">
+		<filter name = "CPLX"/>
+		<template 
+			file ="TA040_Application_Architecture.ome" 
+			description="Application Architecture"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.050"
+	      name         = "Define System Availability Strategy"
+	      phase        = "B"
+	      process      = "TA"
+	      deliverable  = "System Availability Strategy"
+	      description  = "In this task, you develop a strategy to provide the minimum level of systems availability that the business demands.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TA050_System_Availability_Strategy.ome" 
+			description="System Availability Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.060"
+	      name         = "Define Reporting and Information Access Strategy"
+	      phase        = "B"
+	      process      = "TA"
+	      deliverable  = "Reporting and Information Access Strategy"
+	      description  = "In this task, you analyze the reporting and information access requirements for the new business and specify at a high level how you will meet these in the new architecture.  This is a systems view of  the reporting and information access requirements.">
+		<filter name = "CRPT"/>
+		<template 
+			file ="TA060_Reporting_and_Information_Access.ome" 
+			description="Reporting and Information Access"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.070"
+	      name         = "Revise Conceptual Architecture"
+	      phase        = "B"
+	      process      = "TA"
+	      deliverable  = "Conceptual Architecture"
+	      description  = "In this task, you review information that you have gathered and analyzed since you created the initial draft of the Conceptual Architecture deliverable and incorporate any relevant new findings and decisions into the deliverable.">
+		<filter name = "CPXA"/>
+		<filter name = "CPLX"/>
+		<filter name = "OTHR"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= "Final"
+			note= "Update TA030_Preliminary_Conceptual_Architecture document created in TA.030"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.080"
+	      name         = "Define Application Security Architecture"
+	      phase        = "C"
+	      process      = "TA"
+	      deliverable  = "Application  Security Architecture"
+	      description  = "In this task, you design the application and database security architecture, incorporating the requirements generated by the business mapping process and the security requirements identified during the design of the conceptual architecture.">
+		<filter name = "CPLX"/>
+		<template 
+			file ="TA080_Application_Security_Architecture.ome" 
+			description="Application Security Architecture"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.090"
+	      name         = "Define Application and Database Server Architecture"
+	      phase        = "D"
+	      process      = "TA"
+	      deliverable  = "Application and Database Server Architecture"
+	      description  = "In this task, you design the new logical and physical architectures for the database tier and the application server tier.  This task also defines the configuration for both the database and application tiers of the architecture.">
+		<filter name = "CPLX"/>
+		<template 
+			file ="TA090_Application_and_Database_Server_Architecture.ome" 
+			description="Application and Database Server Architecture"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.100"
+	      name         = "Define and Propose Architecture Subsystems"
+	      phase        = "D"
+	      process      = "TA"
+	      deliverable  = "Architecture Subsystems Proposal"
+	      description  = "In this task, you identify requirements for components or systems to support the architecture that were initially not identified within the project scope.">
+		<filter name = "CPXA"/>
+		<filter name = "CPLX"/>
+		<filter name = "OTHR"/>
+		<template 
+			file ="TA100_Architecture_Subsystems_Proposal.ome" 
+			description="Architecture Subsystems Proposal"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.110"
+	      name         = "Define System Capacity Plan"
+	      phase        = "D"
+	      process      = "TA"
+	      deliverable  = "System Capacity Plan"
+	      description  = "In this task, you plan the capacity for the new information systems at production cutover and for some prescribed period of future operations, allowing for business growth and any other known factors that could affect the system capacity requirements.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TA110_System_Capacity_Plan.ome" 
+			description="System Capacity Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.120"
+	      name         = "Define Platform and Network Architecture"
+	      phase        = "D"
+	      process      = "TA"
+	      deliverable  = "Platform and Network Architecture"
+	      description  = "In this task, you define the physical platform and network configuration to support your final platform and network architecture.  You map the physical application and database server architecture onto specific computing platforms.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TA120_Platform_and_Network_Architecture.ome" 
+			description="Platform and Network Architecture"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.120"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.120.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.130"
+	      name         = "Define Application Deployment Plan"
+	      phase        = "D"
+	      process      = "TA"
+	      deliverable  = "Application Deployment Plan"
+	      description  = "In this task, you determine the details of the deployment of applications across data centers within the scope of the new architecture.">
+		<filter name = "CPLX"/>
+		<template 
+			file ="TA130_Application_Deployment_Plan.ome" 
+			description="Application Deployment Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.130"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.130.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.140"
+	      name         = "Assess Performance Risks"
+	      phase        = "D"
+	      process      = "TA"
+	      deliverable  = "Performance Risk Assessment"
+	      description  = "In this task, you identify any performance risks that are apparent based on the proposed architecture and suggest techniques to mitigate the risks.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TA140_Performance_Risk_Assessment.ome" 
+			description="Performance Risk Assessment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.140"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.140.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TA.150"
+	      name         = "Define System Management Procedures"
+	      phase        = "D"
+	      process      = "TA"
+	      deliverable  = "System Management Procedures"
+	      description  = "In this task, you design the procedures and specify the tools that the client staff will need to manage the new system.  After you design the procedures in this task, you need to test and refine them later in the project.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TA150_System_Management_Procedures.ome" 
+			description="System Management Procedures"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv1.pdf#TA.150"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TA.150.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.010"
+	      name         = "Define Application Extension Strategy"
+	      phase        = "A"
+	      process      = "MD"
+	      deliverable  = "Application Extension Strategy"
+	      description  = "In this task, you prepare a strategy document that describes how your project responds to customization requests">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD010_Application_Extension_Strategy.ome" 
+			description="Application Extension Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.020"
+	      name         = "Define and Estimate Application Extensions"
+	      phase        = "B"
+	      process      = "MD"
+	      deliverable  = "Application Extension Definition and Estimates"
+	      description  = "In this task, when the approach to addressing a business issue determined during Map Business Requirements (BR.030) requires custom modules, you must estimate the effort required to complete them.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD020_Application_Extension_Definition_And_Estimates.ome" 
+			description="Application Extension Definition And Estimates"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.030"
+	      name         = "Define Design Standards"
+	      phase        = "C"
+	      process      = "MD"
+	      deliverable  = "Design Standards"
+	      description  = "In this task, you define the standards that designers will follow when designing customizations.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD030_Design_Standards.ome" 
+			description="Design Standards"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate"
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.040"
+	      name         = "Define Build Standards"
+	      phase        = "C"
+	      process      = "MD"
+	      deliverable  = "Build Standards"
+	      description  = "In this task, you define the standards that developers follow to build customizations to the applications.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD040_Build_Standards.ome" 
+			description="Build Standards"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.050"
+	      name         = "Create Application Extensions Functional Design"
+	      phase        = "C"
+	      process      = "MD"
+	      deliverable  = "Application Extensions Functional Design"
+	      description  = "In this task, you document the functional features, use, and behavior of required customizations. The Application Extensions Functional Design confirms that you understand user requirements, and allows users to evaluate and approve the resulting features.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD050_Application_Extensions_Functional_Design.ome" 
+			description="Application Extensions Functional Design"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.060"
+	      name         = "Design Database Extensions"
+	      phase        = "C"
+	      process      = "MD"
+	      deliverable  = "Database Extensions Design"
+	      description  = "In this task you design the new database objects, such as tables, indexes, views and sequences required by the application extensions, and illustrate how the customizations integrate with the existing applications database schema.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD060_Database_Extensions_Design.ome" 
+			description="Database Extensions Design"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.070"
+	      name         = "Create Application Extensions Technical Design"
+	      phase        = "C"
+	      process      = "MD"
+	      deliverable  = "Application Extensions Technical Design"
+	      description  = "In this task, you document the technical specifications for modifications, extensions, and configurable extensions.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD070_Application_Extensions_Technical_Design.ome" 
+			description="Application Extensions Technical Design"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.080"
+	      name         = "Review Functional and Technical Designs"
+	      phase        = "C"
+	      process      = "MD"
+	      deliverable  = "Approved Designs"
+	      description  = "In this task, you set up a design review meeting between business analysts, key users, technical analysts, and developers.  The goal is to secure final acceptance of the complete designs.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.QM020_Review_Comments_List"
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.090"
+	      name         = "Prepare Development Environment"
+	      phase        = "D"
+	      process      = "MD"
+	      deliverable  = "Development Environment"
+	      description  = "In this task, you establish a platform and software environment that supports custom development.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<filter name = "PERF"/>
+		<template 
+			file ="MD090_Development_Environment.ome" 
+			description="Development Environment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.100"
+	      name         = "Create Database Extensions"
+	      phase        = "D"
+	      process      = "MD"
+	      deliverable  = "Custom Database Objects"
+	      description  = "In this task, you create new tables, indexes, views, grants, and synonyms to support custom module development.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.110"
+	      name         = "Create Application Extension Modules"
+	      phase        = "D"
+	      process      = "MD"
+	      deliverable  = "Module Source Code"
+	      description  = "In this task, you produce the modules to support customizations to the Applications.  You also perform the first round of testing as part of this task.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "MD.120"
+	      name         = "Create Installation Routines"
+	      phase        = "D"
+	      process      = "MD"
+	      deliverable  = "Installation Routines"
+	      description  = "In this task, you develop automated functions and detailed instructions to install customizations in the testing and production environments.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="MD120_Installation_Instructions.ome" 
+			description="Installation Instructions"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#MD.120"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/MD.120.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.010"
+	      name         = "Define Data Conversion Requirements and Strategy"
+	      phase        = "A"
+	      process      = "CV"
+	      deliverable  = "Data Conversion Requirements and Strategy"
+	      description  = "In this task, you define the scope of the conversion project, conversion objectives and approach, and prepare a strategy for converting information from the legacy systems to the new application environment.">
+		<filter name = "MCON"/>
+		<filter name = "PCON"/>
+		<template 
+			file ="CV010_Data_Conversion_Requirements_and_Strategy.ome" 
+			description="Data Conversion Requirements and Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate"
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.020"
+	      name         = "Define Conversion Standards"
+	      phase        = "C"
+	      process      = "CV"
+	      deliverable  = "Conversion Standards"
+	      description  = "In this task, you create the Conversion Standards that the conversion team will follow when performing conversion tasks.">
+		<filter name = "PCON"/>
+		<template 
+			file ="CV020_Conversion_Standards.ome" 
+			description="Conversion Standards"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.030"
+	      name         = "Prepare Conversion Environment"
+	      phase        = "C"
+	      process      = "CV"
+	      deliverable  = "Conversion Environment"
+	      description  = "In this task, you create the Conversion Environment, including the hardware platforms, servers and other software required to support the design and build activities of conversion.">
+		<filter name = "PCON"/>
+		<template 
+			file ="CV030_Conversion_Environment.ome" 
+			description="Conversion Environment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.040"
+	      name         = "Perform Conversion Data Mapping"
+	      phase        = "C"
+	      process      = "CV"
+	      deliverable  = "Conversion Data Mapping"
+	      description  = "In this task, you map the data elements from the legacy systems to the target Oracle Applications.">
+		<filter name = "PCON"/>
+		<template 
+			file ="CV040_Conversion_Data_Mapping.ome" 
+			description="Conversion Data Mapping"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.050"
+	      name         = "Define Manual Conversion Procedures"
+	      phase        = "C"
+	      process      = "CV"
+	      deliverable  = "Manual Conversion Procedures"
+	      description  = "In this task, you define the plan to convert the business objects that require manual conversion.">
+		<filter name = "MCON"/>
+		<template 
+			file ="CV050_Manual_Conversion_Procedures.ome" 
+			description="Manual Conversion Procedures"
+			name = " "
+			type = "DOC"
+			state= "Final"
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.060"
+	      name         = "Design Conversion Programs"
+	      phase        = "C"
+	      process      = "CV"
+	      deliverable  = "Conversion Program Design"
+	      description  = "In this task, you design and document the conversion programs.">
+		<filter name = "PCON"/>
+		<template 
+			file ="CV060_Conversion_Program_Designs.ome" 
+			description="Conversion Program Designs"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.070"
+	      name         = "Prepare Conversion Test Plans"
+	      phase        = "C"
+	      process      = "CV"
+	      deliverable  = "Conversion Test Plans"
+	      description  = "In this task, you outline the testing plans for the unit, business object, and validation testing for conversion.">
+		<filter name = "PCON"/>
+		<template 
+			file ="CV070_Conversion_Test_Plans.ome" 
+			description="Conversion Test Plans"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate to generate Century Date Acceptance Certificate (see task description for additional information)"
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.080"
+	      name         = "Develop Conversion Programs"
+	      phase        = "D"
+	      process      = "CV"
+	      deliverable  = "Conversion Programs"
+	      description  = "In this task, you create the conversion programs that perform all of the functions required to convert legacy business objects to the target Oracle Applications.">
+		<filter name = "PCON"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.090"
+	      name         = "Perform Conversion Unit Tests"
+	      phase        = "D"
+	      process      = "CV"
+	      deliverable  = "Unit-Tested Conversion Programs"
+	      description  = "In this task, you test the conversion programs to verify that all programs work without errors and according to the conversion testing specifications pre-defined in the conversion unit testing components of the Conversion Test Plans (CV.070).">
+		<filter name = "PCON"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.100"
+	      name         = "Perform Conversion Business Object Tests"
+	      phase        = "D"
+	      process      = "CV"
+	      deliverable  = "Business Object-Tested Conversion Programs"
+	      description  = "In this task, you test the complete conversion of each business object by executing all conversion modules for the business object in the appropriate sequence and verify that the resulting data is correct.">
+		<filter name = "PCON"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.110"
+	      name         = "Perform Conversion Validation Tests"
+	      phase        = "D"
+	      process      = "CV"
+	      deliverable  = "Validation-Tested Conversion Programs"
+	      description  = "In this task, you validate that the target applications function correctly with the converted business objects.">
+		<filter name = "PCON"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.120"
+	      name         = "Install Conversion Programs"
+	      phase        = "E"
+	      process      = "CV"
+	      deliverable  = "Installed Conversion Programs"
+	      description  = "In this task, you perform and document the installation of the conversion programs in the production environment.">
+		<filter name = "PCON"/>
+		<template 
+			file ="CV120_Installed_Conversion_Programs.ome" 
+			description="Installed Conversion Programs"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.120"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.120.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CV.130"
+	      name         = "Convert and Verify Data"
+	      phase        = "E"
+	      process      = "CV"
+	      deliverable  = "Converted and Verified Data"
+	      description  = "In this task, you convert and migrate the production data from the old system to the new Oracle production environment.">
+		<filter name = "MCON"/>
+		<filter name = "PCON"/>
+		<template 
+			file ="CV130_Converted_and_Verified_Data.ome" 
+			description="Converted and Verified Data"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#CV.130"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/CV.130.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.010"
+	      name         = "Define Documentation Requirements and Strategy"
+	      phase        = "A"
+	      process      = "DO"
+	      deliverable  = "Documentation Requirements and Strategy"
+	      description  = "In this task, you outline the overall requirements for creating documentation and specify the deliverables to be produced.  You also identify the strategy you will use in publishing project-specific documentation.">
+		<filter name = "CORE"/>
+		<template 
+			file ="DO010_Documentation_Requirements_and_Strategy.ome" 
+			description="Documentation Requirements and Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.020"
+	      name         = "Define Documentation Standards and Procedures"
+	      phase        = "A"
+	      process      = "DO"
+	      deliverable  = "Documentation Standards and Procedures"
+	      description  = "In this task, you specify the standards for all documentation deliverables and determine the look and feel of the project documentation.  In addition, you also specify the procedures that the team uses to develop documentation.">
+		<filter name = "PDOC"/>
+		<template 
+			file ="DO020_Documentation_Standards_and_Procedures.ome" 
+			description="Documentation Standards and Procedures"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.030"
+	      name         = "Prepare Glossary"
+	      phase        = "A"
+	      process      = "DO"
+	      deliverable  = "Glossary"
+	      description  = "In this task, you document the definition of the terms that may be unfamiliar or confusing to project members.">
+		<filter name = "CORE"/>
+		<template 
+			file ="DO030_Glossary.ome" 
+			description="Glossary"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.040"
+	      name         = "Prepare Documentation Environment"
+	      phase        = "B"
+	      process      = "DO"
+	      deliverable  = ""
+	      description  = "In this task, you prepare a hardware and software environment that supports documentation development.  You must procure, install, and test the environment.  At the end of this task, you are ready to begin developing documentation.">
+		<filter name = "PDOC"/>
+		<template 
+			file ="DO040_Document_Environment.ome" 
+			description="Document Environment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.050"
+	      name         = "Produce Documentation Prototypes and Templates"
+	      phase        = "B"
+	      process      = "DO"
+	      deliverable  = "Documentation Prototypes and Templates"
+	      description  = "In this task, you build and review a single prototype for each type of documentation deliverable.  The result should be agreement on the look and feel of each documentation deliverable.">
+		<filter name = "PDOC"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.060"
+	      name         = "Publish User Reference Manual"
+	      phase        = "D"
+	      process      = "DO"
+	      deliverable  = "User Reference Manual"
+	      description  = "In this task, you gather material for the User Reference Manual and publish the final version.  The User Reference Manual supplements the Oracle Applications user reference material.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="DO060_User_Reference_Manual.ome" 
+			description="User Reference Manual"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.070"
+	      name         = "Publish User Guide"
+	      phase        = "D"
+	      process      = "DO"
+	      deliverable  = "User Guide"
+	      description  = "In this task, you will publish a User Guide that defines a set of detailed procedures for using the applications.">
+		<filter name = "PDOC"/>
+		<template 
+			file ="DO070_User_Guide.ome" 
+			description="User Guide"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.080"
+	      name         = "Publish Technical Reference Manual"
+	      phase        = "D"
+	      process      = "DO"
+	      deliverable  = "Technical Reference Manual"
+	      description  = "In this task, you assemble the content of the Technical Reference Manual.  The size of this task depends on the extent of the technical changes that were made to support the new applications.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="DO080_Technical_Reference_Manual.ome" 
+			description="Technical Reference Manual"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "DO.090"
+	      name         = "Publish System Management Guide"
+	      phase        = "D"
+	      process      = "DO"
+	      deliverable  = "System Management Guide"
+	      description  = "In this task, you gather material for the System Management Guide and publish the final version.  Perform this task in parallel with the execution of the business system test.">
+		<filter name = "CPLX"/>
+		<template 
+			file ="DO090_System_Management_Guide.ome" 
+			description="System Management Guide"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#DO.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/DO.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.010"
+	      name         = "Define Testing Requirements and Strategy"
+	      phase        = "A"
+	      process      = "TE"
+	      deliverable  = "Testing Requirements and Strategy"
+	      description  = "In this task, you identify the business system testing requirements and strategy you will use for the testing of the system you are implementing.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TE010_Testing_Requirements_and_Strategy.ome" 
+			description="Testing Requirements and Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.020"
+	      name         = "Develop Unit Test Script"
+	      phase        = "C"
+	      process      = "TE"
+	      deliverable  = "Unit Test Script"
+	      description  = "In this task, you develop the script to test individual application extension components.  The tests validate that the application extension inputs, outputs, and processing logic function as designed.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="TE020_Unit_Test_Script.ome" 
+			description="Unit Test Script"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.030"
+	      name         = "Develop Link Test Script"
+	      phase        = "C"
+	      process      = "TE"
+	      deliverable  = "Link Test Script"
+	      description  = "In this task, you develop scripts to test modifications to standard Oracle Applications as well as new application extensions as part of a business flow.  This will uncover any integration problems with other application extension components.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="TE030_Link_Test_Script.ome" 
+			description="Link Test Script"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.040"
+	      name         = "Develop System Test Script"
+	      phase        = "C"
+	      process      = "TE"
+	      deliverable  = "System Test  Script"
+	      description  = "In this task, you develop the script to test the integration of application extensions with Oracle Applications modules. A system test script contains detailed steps which testers follow to verify the system setup and the integrity of custom application.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TE040_System_Test_Script.ome" 
+			description="System Test Script"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.050"
+	      name         = "Develop Systems Integration Test Script"
+	      phase        = "C"
+	      process      = "TE"
+	      deliverable  = "Systems Integration Test Script"
+	      description  = "In this task, you develop the test script that validates the integration between your new application system and other third-party and legacy systems.">
+		<filter name = "INTF"/>
+		<template 
+			file ="TE050_Systems_Integration_Test_Script.ome" 
+			description="Systems Integration Test Script"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.060"
+	      name         = "Prepare Testing Environments"
+	      phase        = "D"
+	      process      = "TE"
+	      deliverable  = "Testing Environments"
+	      description  = "In this task, you install and configure one or more testing environments to support all testing activities.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TE060_Testing_Environment_Setup_Log.ome" 
+			description="Testing Environment Setup Log"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.070"
+	      name         = "Perform Unit Test"
+	      phase        = "D"
+	      process      = "TE"
+	      deliverable  = "Unit-Tested Modules"
+	      description  = "In this task, you test application extension components on an individual basis to verify that the inputs, outputs, and processing logic of each application extension component functions without errors.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.080"
+	      name         = "Perform Link Test"
+	      phase        = "D"
+	      process      = "TE"
+	      deliverable  = "Link-Tested Modules"
+	      description  = "In this task, you test several application extension components together as part of a business flow to uncover any integration problems with other application extension components that provide or use the data manipulated by the target component.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.090"
+	      name         = "Perform Installation Test"
+	      phase        = "D"
+	      process      = "TE"
+	      deliverable  = "Tested Install Routines"
+	      description  = "In this task, you install application extensions in the system test environment to test the installation routines and refine them for the eventual production environment.">
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.100"
+	      name         = "Prepare Key Users for Testing"
+	      phase        = "D"
+	      process      = "TE"
+	      deliverable  = "Prepared Key Users"
+	      description  = "In this task, you provide basic training to key users participating in Business System Testing.  A test environment is used to prepare key users for testing.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.110"
+	      name         = "Perform System Test"
+	      phase        = "D"
+	      process      = "TE"
+	      deliverable  = "System-Tested Applications"
+	      description  = "In this task, you test the integration of all business system flows within the target application system, including all standard and custom processes and reports.  This task is equivalent to a full conference room pilot (CRP).">
+		<filter name = "CORE"/>
+		<template 
+			file ="TE110_Test_Report_for_System_Test.ome" 
+			description="Test Report for System Test"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.120"
+	      name         = "Perform Systems Integration Test"
+	      phase        = "D"
+	      process      = "TE"
+	      deliverable  = "Integration-Tested System"
+	      description  = "In this task, you test the system integration with other application systems in a production-like environment. The systems integration test is performed in a test environment.">
+		<filter name = "INTF"/>
+		<template 
+			file ="TE120_Test_Report_for_Systems_Integration_Test.ome" 
+			description="Test Report for Systems Integration Test"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.120"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.120.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "TE.130"
+	      name         = "Perform Acceptance Test"
+	      phase        = "E"
+	      process      = "TE"
+	      deliverable  = "Acceptance Test Results"
+	      description  = "In this task, you support users in performing their acceptance test of the new production system.  The acceptance test is performed in a production environment.">
+		<filter name = "CORE"/>
+		<template 
+			file ="TE130_Test_Report_for_Acceptance_Test.ome" 
+			description="Test Report for Acceptance Test"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv2.pdf#TE.130"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/TE.130.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.010"
+	      name         = "Define Performance Testing Strategy"
+	      phase        = "A"
+	      process      = "PT"
+	      deliverable  = "Performance Testing Strategy"
+	      description  = "In this task, you define the scope and objectives of performance testing in your project and outline the strategy that you will use to conduct the performance test.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT010_Performance_Testing_Strategy.ome" 
+			description="Performance Testing Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.020"
+	      name         = "Identify Performance Test Scenarios"
+	      phase        = "B"
+	      process      = "PT"
+	      deliverable  = "Performance Test Scenarios"
+	      description  = "In this task, you define the performance test scenarios that you wish to include in performance testing.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT020_Performance_Test_Scenarios.ome" 
+			description="Performance Test Scenarios"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.030"
+	      name         = "Identify Performance Test Transaction Models"
+	      phase        = "B"
+	      process      = "PT"
+	      deliverable  = "Performance Test Transaction Models"
+	      description  = "In this task, you define in more detail the sets of transactions that will execute during the performance test and the detailed transaction rate metrics for each transaction.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT030_Performance_Test_Transaction_Models.ome" 
+			description="Performance Test Transaction Models"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.040"
+	      name         = "Create Performance Test Scripts"
+	      phase        = "C"
+	      process      = "PT"
+	      deliverable  = "Performance Test Scripts"
+	      description  = "In this task, you define the detailed Performance Test Scripts for entering the data to perform online and batch transactions, inquiries, and reports that will model the processing occurring during a test scenario.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT040_Performance_Test_Scripts.ome" 
+			description="Performance Test Scripts"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.050"
+	      name         = "Design Performance Test Transaction Programs"
+	      phase        = "C"
+	      process      = "PT"
+	      deliverable  = "Performance Test Transaction Program Designs"
+	      description  = "In this task, you design the performance test transaction programs that will execute the transactions, reports, and inquiries against the performance test environment.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT050_Performance_Test_Transaction_Program_Designs.ome" 
+			description="Performance Test Transaction Program Designs"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.060"
+	      name         = "Design Performance Test Data"
+	      phase        = "C"
+	      process      = "PT"
+	      deliverable  = "Performance Test Data Design"
+	      description  = "In this task, you perform the detailed data design work for performance testing on the target environment.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT060_Performance_Test_Data_Design.ome" 
+			description="Performance Test Data Design"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.070"
+	      name         = "Design Test Database Load Programs"
+	      phase        = "C"
+	      process      = "PT"
+	      deliverable  = "Performance Test Database Load Program Designs"
+	      description  = "In this task, you design the programs that will load test data into the performance test database.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT070_Performance_Test_Database_Load_Program_Designs.ome" 
+			description="Performance Test Database Load Program Designs"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.080"
+	      name         = "Create Performance Test Transaction Programs"
+	      phase        = "D"
+	      process      = "PT"
+	      deliverable  = "Performance Test Transaction Programs"
+	      description  = "In this task, you create the special Performance Test Transaction Programs that will execute the transactions, reports, and inquiries against the performance test database.">
+		<filter name = "PERF"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.090"
+	      name         = "Create Test Database Load Programs"
+	      phase        = "D"
+	      process      = "PT"
+	      deliverable  = "Performance Test Database Load Programs"
+	      description  = "In this task, you develop and test the programs that you will use to populate the performance test database with data.">
+		<filter name = "PERF"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.100"
+	      name         = "Construct Performance Test Database"
+	      phase        = "D"
+	      process      = "PT"
+	      deliverable  = "Performance Test Database"
+	      description  = "In this task, you populate the Performance Test Database up to the full desired volume in preparation for subsequent migration of the database to the testing environment.">
+		<filter name = "PERF"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.110"
+	      name         = "Prepare Performance Test Environment"
+	      phase        = "D"
+	      process      = "PT"
+	      deliverable  = "Performance Test Environment"
+	      description  = "In this task, you prepare and document the separate environment where performance testing will take place.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT110_Performance_Test_Environment.ome" 
+			description="Performance Test Environment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.120"
+	      name         = "Execute Performance Test"
+	      phase        = "D"
+	      process      = "PT"
+	      deliverable  = "Performance Test Results"
+	      description  = "In this task, you execute the performance test transaction programs  against the test database and measure various performance metrics for individual transactions and system components.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT120_Performance_Test_Results.ome" 
+			description="Performance Test Results"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.120"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.120.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PT.130"
+	      name         = "Create Performance Test Report"
+	      phase        = "D"
+	      process      = "PT"
+	      deliverable  = "Performance Test Report"
+	      description  = "In this task, you document the results and the description of performance testing in a format suitable for presentation to project managers, executive sponsors, and the project team.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PT130_Performance_Test_Report.ome" 
+			description="Performance Test Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PT.130"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PT.130.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.010"
+	      name         = "Define Executive Project Strategy"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Executive Project Strategy"
+	      description  = "In this task, you develop the organizational strategy for the project.">
+		<filter name = "MUSR"/>
+		<filter name = "ORGC"/>
+		<template 
+			file ="AP010_Executive_Project_Strategy.ome" 
+			description="Executive Project Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP010_Invitation_Memorandum.ome" 
+			description="Invitation Memorandum"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP010_Session_Planning_Checklist.ome" 
+			description="Session Planning Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Use PJM.CR080_Acceptance_Certificate"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.020"
+	      name         = "Conduct Initial Project Team Orientation"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Oriented Project Team"
+	      description  = "In this task, you orient the current project team members by communicating the project vision and charter, the rationale for key decisions, and presenting a high-level application overview.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP020_Application_Overview_Customization.ome" 
+			description="Application Overview Customization"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP020_Invitation_Memorandum.ome" 
+			description="Invitation Memorandum"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP020_Project_Team_Orientation_Plan.ome" 
+			description="Project Team Orientation Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP020_Session_Planning_Checklist.ome" 
+			description="Session Planning Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.030"
+	      name         = "Develop Project Team Learning Plan"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Project Team Learning Plan"
+	      description  = "In this task, you assess the learning requirements for the entire project team based on the project vision, charter, and scope in order to develop the learning paths aligned to project roles.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP030_Project_Team_Learning_Plan.ome" 
+			description="Project Team Learning Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.040"
+	      name         = "Prepare Project Team Learning Environment"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Project Team Learning Environment"
+	      description  = "In this task, you establish the technical and physical infrastructure required for the actual project team learning, including either installing a new application environment or preparing an existing application environment.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP040_Project_Team_Learning_Environment.ome" 
+			description="Project Team Learning Environment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.050"
+	      name         = "Conduct Project Team Learning Events"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Skilled Project Team"
+	      description  = "In this task, you facilitate the learning events for the project team.  These learning events cover tools, applications, and all knowledge and skills areas deemed necessary for the effective functioning of the team.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP050_Project_Team_Learning_Events_Administration.ome" 
+			description="Project Team Learning Events Administration"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.060"
+	      name         = "Develop Business Unit Managers' Readiness Plan"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Business Unit Managers' Readiness Plan"
+	      description  = "In this task, you conduct work sessions to assist business unit managers in understanding their roles towards making the project successful.">
+		<filter name = "MUSR"/>
+		<filter name = "ORGC"/>
+		<template 
+			file ="AP060_Business_Unit_Managers_Readiness_Plan.ome" 
+			description="Business Unit Managers Readiness Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP060_High_Level_Systems_Overview_Customization.ome" 
+			description="High Level Systems Overview Customization"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP060_Invitation_Memorandum.ome" 
+			description="Invitation Memorandum"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP060_Session_Planning_Checklist.ome" 
+			description="Session Planning Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.070"
+	      name         = "Develop Project Readiness Roadmap"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Project Readiness Roadmap"
+	      description  = "In this task, you generate key findings and recommendations toward the development of strategies that will help the organization become ready to use and accept the new technology and work expectations at production cutover.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP070_Invitation_Memorandum.ome" 
+			description="Invitation Memorandum"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP070_Project_Readiness_Roadmap.ome" 
+			description="Project Readiness Roadmap"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP070_Session_Planning_Checklist.ome" 
+			description="Session Planning Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.080"
+	      name         = "Develop and Execute Communication Campaign"
+	      phase        = "A"
+	      process      = "AP"
+	      deliverable  = "Communication Campaign"
+	      description  = "In this task, you reach the stakeholder audiences with tailored messages at the optimal times and through the optimal media throughout the life of the project.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP080_Communication_Campaign.ome" 
+			description="Communication Campaign"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.090"
+	      name         = "Develop Manager's Readiness Plan"
+	      phase        = "B"
+	      process      = "AP"
+	      deliverable  = "Manager's Readiness Plan"
+	      description  = "In this task, you conduct work sessions for middle and first-line managers, who are not on the project team, to assume their role in a successful people, process, and technology implementation.">
+		<filter name = "MUSR"/>
+		<filter name = "ORGC"/>
+		<template 
+			file ="AP090_Application_to_Process_Overview_Customization.ome" 
+			description="Application to Process Overview Customization"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP090_Invitation_Memorandum.ome" 
+			description="Invitation Memorandum"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP090_Managers_Readiness_Plan.ome" 
+			description="Managers Readiness Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP090_Session_Planning_Checklist.ome" 
+			description="Session Planning Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.100"
+	      name         = "Identify Business Process Impact on Organization"
+	      phase        = "C"
+	      process      = "AP"
+	      deliverable  = "Business Process Organizational Impact"
+	      description  = "In this task, you document the extent and the ramifications of the organizational change brought about by the new or improved business processes.">
+		<filter name = "PRCC"/>
+		<template 
+			file ="AP100_Business_Process_Organizational_Impact.ome" 
+			description="Business Process Organizational Impact"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.110"
+	      name         = "Align Human Performance Support Systems"
+	      phase        = "C"
+	      process      = "AP"
+	      deliverable  = "Human Performance Support Systems"
+	      description  = "In this task, you define the human performance support systems requirements and execute the approach to meet the requirements to support the performance of users in their new roles.">
+		<filter name = "PRCC"/>
+		<filter name = "ORGC"/>
+		<template 
+			file ="AP110_Appendix_A_Location_Information_Spreadsheet.ome" 
+			description="Appendix A Location Information Spreadsheet"
+			name = " "
+			type = "XLS"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>		<template 
+			file ="AP110_Human_Performance_Support_Systems.ome" 
+			description="Human Performance Support Systems"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.120"
+	      name         = "Align Information Technology Groups"
+	      phase        = "C"
+	      process      = "AP"
+	      deliverable  = "Aligned Information Technology Groups"
+	      description  = "In this task, you help transition the information technology groups to their new/updated mandate and roles, given the implementation of the new systems.">
+		<filter name = "MUSR"/>
+		<filter name = "ORGC"/>
+		<template 
+			file ="AP120_Information_Technology_Groups_Alignment.ome" 
+			description="Information Technology Groups Alignment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.120"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.120.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.130"
+	      name         = "Conduct User Learning Needs Analysis"
+	      phase        = "C"
+	      process      = "AP"
+	      deliverable  = "User Learning Needs Analysis"
+	      description  = "In this task, you gather insights on the learning needs of all audiences of users.">
+		<filter name = "MUSR"/>
+		<filter name = "ORGC"/>
+		<template 
+			file ="AP130_User_Learning_Needs_Analysis.ome" 
+			description="User Learning Needs Analysis"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.130"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.130.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.140"
+	      name         = "Develop User Learning Plan"
+	      phase        = "C"
+	      process      = "AP"
+	      deliverable  = "User Learning Plan"
+	      description  = "In this task, you create learning path approaches that allow users to become skilled in the new technologies, apply new/updated procedures, and fulfill their new roles.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP140_Learning_Plan.ome" 
+			description="Learning Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.140"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.140.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.150"
+	      name         = "Develop User Learningware"
+	      phase        = "D"
+	      process      = "AP"
+	      deliverable  = "User Learningware"
+	      description  = "In this task, you develop the learningware defined in the User Learning Plan (AP.140) to support the reskilling of employees.">
+		<filter name = "PRCC"/>
+		<filter name = "INTF"/>
+		<filter name = "CSTM"/>
+		<filter name = "ORGC"/>
+		<template 
+			file ="AP150_User_Learningware.ome" 
+			description="User Learningware"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.150"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.150.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.160"
+	      name         = "Prepare User Learning Environment"
+	      phase        = "D"
+	      process      = "AP"
+	      deliverable  = "User Learning Environment"
+	      description  = "In this task, you establish the technical and physical infrastructure required for the actual user learning, including preparing an environment that reflects the production applications environment.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP160_User_Learning_Environment.ome" 
+			description="User Learning Environment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.160"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.160.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.170"
+	      name         = "Conduct User Learning Events"
+	      phase        = "E"
+	      process      = "AP"
+	      deliverable  = "Skilled Users"
+	      description  = "In this task, you conduct the skills-change events developed in the User Learning Plan (AP.140), as well as track and document their progress.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP170_User_Learning_Events_Administration.ome" 
+			description="User Learning Events Administration"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MIIT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.170"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.170.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "AP.180"
+	      name         = "Conduct Effectiveness Assessment"
+	      phase        = "F"
+	      process      = "AP"
+	      deliverable  = "Effectiveness Assessment"
+	      description  = "In this task, you determine how well the production system, business and organizational performance meet the business objectives set at the beginning of the project.">
+		<filter name = "CORE"/>
+		<template 
+			file ="AP180_Effectiveness_Assessment.ome" 
+			description="Effectiveness Assessment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP180_Invitation_Memorandum.ome" 
+			description="Invitation Memorandum"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="AP180_Session_Planning_Checklist.ome" 
+			description="Session Planning Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#AP.180"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/AP.180.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.010"
+	      name         = "Define Transition Strategy"
+	      phase        = "B"
+	      process      = "PM"
+	      deliverable  = "Transition Strategy"
+	      description  = "In this task, you outline the business transition approach for migrating the system, organization, and people to production status.">
+		<filter name = "CORE"/>
+		<template 
+			file ="PM010_Transition_Strategy.ome" 
+			description="Transition Strategy"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.020"
+	      name         = "Design Production Support Infrastructure"
+	      phase        = "D"
+	      process      = "PM"
+	      deliverable  = "Production Support Infrastructure Design"
+	      description  = "In this task, you identify the operational infrastructure for managing and maintaining the application environment, servers, and network infrastructure in production.">
+		<filter name = "CORE"/>
+		<template 
+			file ="PM020_Production_Support_Infrastructure_Design.ome" 
+			description="Production Support Infrastructure Design"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.030"
+	      name         = "Develop Transition and Contingency Plan"
+	      phase        = "D"
+	      process      = "PM"
+	      deliverable  = "Transition and Contingency Plan"
+	      description  = "In this task, you develop the detailed transition plan for moving onto the production system, as well as an implementation contingency plan.">
+		<filter name = "CORE"/>
+		<template 
+			file ="PM030_Transition_and_Contingency_Plan.ome" 
+			description="Transition and Contingency Plan"
+			name = " "
+			type = "DOC"
+			state= "Initial"
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.040"
+	      name         = "Prepare Production Environment"
+	      phase        = "E"
+	      process      = "PM"
+	      deliverable  = "Production Environment"
+	      description  = "In this task, you set up, configure, and install the database and application software for the production environment.">
+		<filter name = "CORE"/>
+		<template 
+			file ="PM040_Installation_QA_Checklist.ome" 
+			description="Installation QA Checklist"
+			name = " "
+			type = "DOC"
+			state= "Initial"
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.050"
+	      name         = "Set Up Applications"
+	      phase        = "E"
+	      process      = "PM"
+	      deliverable  = "Configured Applications"
+	      description  = "In this task, you implement the required setups in all of the applications as part of your configuration.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= "Final"
+			note= "Complete Deliverable components from BR100 Application Setup"
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.060"
+	      name         = "Implement Production Support Infrastructure"
+	      phase        = "E"
+	      process      = "PM"
+	      deliverable  = "Production Support Infrastructure"
+	      description  = "In this task, you activate the support personnel and procedures for the new business system and review requirements for support-related services from software suppliers, contractors, help desks, and other support services.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.070"
+	      name         = "Verify Production Readiness"
+	      phase        = "E"
+	      process      = "PM"
+	      deliverable  = "Production-Ready System"
+	      description  = "In this task, you formally verify that the organization’s systems, host facilities, local area networks (LANs), wide area networks (WANS), and people are prepared for production.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= "Final"
+			note= "Complete Deliverable Components of PM030_Transition_and_Contingency_Plan"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.080"
+	      name         = "Begin Production"
+	      phase        = "E"
+	      process      = "PM"
+	      deliverable  = "Production System"
+	      description  = "In this task, you confirm that organization-wide use of all aspects of the production system is in place.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Complete PJM.CR.050_Problem_Report_Log"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.090"
+	      name         = "Measure System Performance"
+	      phase        = "F"
+	      process      = "PM"
+	      deliverable  = "System Performance Assessment"
+	      description  = "In this task, you measure the performance of the system in the production environment.">
+		<filter name = "PERF"/>
+		<template 
+			file ="PM090_System_Performance_Assessment.ome" 
+			description="System Performance Assessment"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.100"
+	      name         = "Maintain System"
+	      phase        = "F"
+	      process      = "PM"
+	      deliverable  = "Maintained Production Environment"
+	      description  = "In this task, you execute the system management procedures.  This task is performed in perpetuity.">
+		<filter name = "CORE"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = "DOC"
+			state= "Final"
+			note= "Complete Deliverable Components from PM040_Installation_QA_Checklist"
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.100"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.100.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.110"
+	      name         = "Refine Production System"
+	      phase        = "F"
+	      process      = "PM"
+	      deliverable  = "Refined Production Environment"
+	      description  = "In this task, you solicit user feedback and act upon any requests relative to the implementation, production system, or support.">
+		<filter name = "OTHR"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.110"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.110.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.120"
+	      name         = "Decommission Former Systems"
+	      phase        = "F"
+	      process      = "PM"
+	      deliverable  = "Decommissioned Systems"
+	      description  = "In this task, you involve the full analysis and execution of decommissioning former business systems.">
+		<filter name = "OTHR"/>
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.120"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.120.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.130"
+	      name         = "Propose Future Business Direction"
+	      phase        = "F"
+	      process      = "PM"
+	      deliverable  = "Business Direction Recommendations"
+	      description  = "In this task, you identify opportunities and challenges for the organization and propose a future business direction for the new implementation.">
+		<filter name = "OTHR"/>
+		<template 
+			file ="PM130_Business_Direction_Recommendations.ome" 
+			description="Business Direction Recommendations"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.130"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.130.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PM.140"
+	      name         = "Propose Future Technical Direction"
+	      phase        = "F"
+	      process      = "PM"
+	      deliverable  = "Technical Direction Recommendations"
+	      description  = "In this task, you identify innovations and advancements in software and technology that can enhance the efficiency, functionality, distributed nature, performance, and cost of maintaining the new production environment.">
+		<filter name = "OTHR"/>
+		<template 
+			file ="PM140_Technical_Direction_Recommendations.ome" 
+			description="Technical Direction Recommendations"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/afn3ptv3.pdf#PM.140"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/aim/3.0/PM.140.htm"
+			text="References and Links"/>
+	</task>
+	<method_processes>
+                <process name="BP" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv1.pdf#BP" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/bp.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="RD" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv1.pdf#RD" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/rd.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="BR" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv1.pdf#BR" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/br.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="TA" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv1.pdf#TA" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/ta.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="MD" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv2.pdf#MD" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/md.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="CV" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv2.pdf#CV" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/cv.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="DO" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv2.pdf#DO" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/do.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="TE" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv2.pdf#TE" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/te.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="PT" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv3.pdf#PT" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/pt.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="AP" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv3.pdf#AP" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/ap.htm" 
+                              text="References and Links"/>
+                </process>
+                <process name="PM" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Process and Task Reference" 
+                              url="document/afn3ptv3.pdf#PM" 
+                              text="Process Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/pm.htm" 
+                              text="References and Links"/>
+                </process>
+        </method_processes>
+        <method_phases>
+                <phase name="A"
+                       description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Definition chapter" 
+                              url="document/afn3mh.pdf#A" 
+                              text="Phase Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/a.htm" 
+                              text="References and Links"/>
+                </phase>
+                <phase name="B"
+                       description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Operations Analysis chapter" 
+                              url="document/afn3mh.pdf#B" 
+                              text="Phase Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/b.htm" 
+                              text="References and Links"/>
+                </phase>
+                <phase name="C"
+                       description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Solution Design chapter" 
+                              url="document/afn3mh.pdf#C" 
+                              text="Phase Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/c.htm" 
+                              text="References and Links"/>
+                </phase>
+                <phase name="D"
+                       description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Build chapter" 
+                              url="document/afn3mh.pdf#D" 
+                              text="Phase Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/d.htm" 
+                              text="References and Links"/>
+                </phase>
+                <phase name="E"
+                       description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Transition chapter" 
+                              url="document/afn3mh.pdf#E" 
+                              text="Phase Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/e.htm" 
+                              text="References and Links"/>
+                </phase>
+                <phase name="F"
+                       description="">
+                        <link icon="menu/images/books.gif" 
+                              name="AIM Production chapter" 
+                              url="document/afn3mh.pdf#F" 
+                              text="Phase Guidelines"/>
+                        <link icon="menu/images/reference.gif" 
+                              name="Web References and links" 
+                              url="http://www.oracle.com/methods/aim/3.0/f.htm" 
+                              text="References and Links"/>
+                </phase>
+        </method_phases>
+</addin>

@@ -1,0 +1,62 @@
+<!ELEMENT filter_criteria EMPTY>
+<!ATTLIST filter_criteria
+	  name CDATA #REQUIRED
+	  description CDATA #REQUIRED
+	  text CDATA #REQUIRED
+	  empty_icon CDATA #REQUIRED
+	  full_icon CDATA #REQUIRED
+	  act_icon CDATA #REQUIRED
+	  inact_icon CDATA #REQUIRED>
+<!ELEMENT addin_type EMPTY>
+<!ATTLIST addin_type
+	  name CDATA #REQUIRED
+	  description CDATA #REQUIRED
+	  icon CDATA #REQUIRED>
+<!ELEMENT method (link*, addin+, method_processes+, method_phases+, filter_criteria+, addin_type+)>
+<!ATTLIST method 
+	  name CDATA #REQUIRED
+	  description CDATA #REQUIRED
+	  version CDATA #REQUIRED
+	  updateServer CDATA #REQUIRED
+	  updatePort   CDATA #REQUIRED
+	  updateSiteName CDATA #REQUIRED
+	  updateURL CDATA #REQUIRED>
+<!ELEMENT method_processes (process+)>
+<!ELEMENT process (link*)>
+<!ATTLIST process
+	  name CDATA #IMPLIED
+	  description CDATA #IMPLIED>
+<!ELEMENT method_phases (phase+)>
+<!ELEMENT phase (link*)>
+<!ATTLIST phase
+          name CDATA #REQUIRED
+	  description CDATA #IMPLIED>
+<!ELEMENT addin (addin_filter*,link*)>
+<!ATTLIST addin
+	  base_addin CDATA #REQUIRED
+	  required_addin CDATA #REQUIRED
+          name CDATA #REQUIRED
+          description CDATA #IMPLIED
+	  type CDATA #IMPLIED
+          version CDATA #IMPLIED
+          apps_release CDATA #IMPLIED
+          language CDATA #IMPLIED
+          geography CDATA #IMPLIED
+          ffw_type CDATA #IMPLIED
+          industry_seg CDATA #IMPLIED
+          industry_prod CDATA #IMPLIED
+          industry_prod_rel CDATA #IMPLIED
+          publisher CDATA #IMPLIED
+          base_path CDATA #IMPLIED
+	  omxfile CDATA #IMPLIED>
+<!ELEMENT addin_filter EMPTY>
+<!ATTLIST addin_filter 
+          name (CORE|PI|INTF|CSTM|TA|PT|CV|FFWD) #IMPLIED
+          description CDATA #IMPLIED>
+<!ELEMENT link EMPTY>
+<!ATTLIST link 
+          icon CDATA #IMPLIED
+          name CDATA #IMPLIED
+          url CDATA #IMPLIED
+	  text CDATA #IMPLIED>
+

@@ -1,0 +1,155 @@
+BODY {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: rgb(0,0,0); 
+  background-color: white; 
+  margin-left: 2.0%; 
+}
+ADDRESS {
+  float: left;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.center {
+  text-align: center; 
+  margin: 5%;
+}
+.t1 { 
+  color: silver;
+  text-align: center;
+  /* font: bold 10em Times, serif; */
+  font: bold 120px/120px Times, serif;
+  text-shadow: 0.2em 0.2em;
+  margin-top: 10px;
+}
+
+.t2 { 
+  color: rgb(0, 90, 156);
+  text-align: center;
+  margin-top: -90px;
+  /* font: italic 6em Times, serif; */
+  font: italic 72px/72px Times, serif;
+  text-shadow: 0.2em 0.2em;
+  margin-bottom: 10px;
+}
+
+.t3 { 
+  /* color: rgb(0, 90, 156); */
+  color: red;
+  text-align: center;
+  margin-top: -90px;
+  /* font: italic 6em Times, serif; */
+  font: italic 72px/72px Times, serif;
+  text-shadow: 0.2em 0.2em;
+  margin-bottom: 10px;
+}
+.t4 {
+  color: red;
+  /*text-align: center; */
+  /* font: bold 10em Times, serif; */
+  font: 12px/12px conga, serif;
+  text-shadow: 0.2em 0.2em;
+  /*margin-top: 10px;*/
+}
+.taskHeader {  
+   font-family: "Book Antiqua"; 
+   font-size: 20pt; 
+   font-style: italic; 
+   line-height: normal; 
+   font-weight: bold; 
+   color: #3399CC
+}
+.deliverableName {  
+   font-family: "Book Antiqua", Times, serif; 
+   font-size: 14pt; 
+   font-weight: bold
+}
+.addin {  
+   font-family: "Book Antiqua", Times, serif; 
+   font-size: 10pt; 
+   font-weight: bold
+}
+.taskDescription {  
+   font-family: "Book Antiqua", Times, serif; 
+   font-size: 14pt; 
+}
+.descr {
+  font: 12px/12px Conga, serif;
+  color: rgb(0,0,102);
+}
+.navigation {
+  font-family: verdana, arial, helvetica, sans-serif; 
+  font-size: 11pt;
+  color: rgb(0,0,0); 
+  background-color: white; 
+  margin-left: 1.0%; 
+}
+.navigation_blue {
+  font-family: verdana, arial, helvetica, sans-serif; 
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgb(0,0,0); 
+  background-color: blue; 
+  margin-left: 1.0%; 
+}
+.addinsList {
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 8pt;
+  text-align: left;
+}
+.iconText {
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 8pt;
+  text-align: center;
+}  
+.copyright { 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 8pt;
+  text-align: left;
+}
+.waitMessage {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+PRE SPAN.doc-string {
+  color: blue;
+}
+
+PRE SPAN.reference {
+  background-color: silver;
+  color: red;
+}
+
+PRE SPAN.type {
+  color: red;
+}
+
+PRE SPAN.function-name {
+  color: red;
+}
+
+PRE SPAN.string {
+  color: purple;
+}
+
+PRE SPAN.comment {
+  color: blue;
+}
+
+PRE SPAN.variable-name {
+  color: red;
+}
+
+PRE SPAN.preprocessor {
+  color: red;
+}
+
+PRE SPAN.keyword {
+  color: green;
+}

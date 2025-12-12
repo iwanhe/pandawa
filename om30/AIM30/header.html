@@ -1,0 +1,85 @@
+<html>
+<head>
+        <title>Oracle Method</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta NAME="copyright" CONTENT="Copyright (c) 1999, Oracle Corporation. All rights reserved.">
+        <script language = "JavaScript1.2">
+
+
+        function doButton(page) {
+                parent.main.location.href=page;
+        }
+
+        function doHelp(page) {
+                var helpWin = window.open(page,"help","resizable,menubar,scrollbars,left=10,top=10,height=350,width=500");
+                helpWin.focus();
+        }
+
+        function doHelpSec(list,page) {
+                if (list.options[list.selectedIndex].value != '') {
+                        var helpsecWin = window.open(page+'#'+list.options[list.selectedIndex].value,"help","resizable,menubar,scrollbars,left=10,top=10,height=350,width=500");
+                        helpsecWin.focus();
+                }
+        }
+        
+
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+    <table cellpadding=0 cellspacing=3 border=0>
+      <tr align=LEFT valign=CENTER> 
+        <td rowspan=2><a href="http://www.oracle.com" target="Oracle"><img src="menu/images/aimlogo.jpg" border=0></a></td>
+        <td> <font face="ARIAL, HELVETICA" size=5 color="#000000"><b>AIM Advantage 3.0</b></font> <font face="ARIAL, HELVETICA" size=4 color="#225599"><b> 
+           - Application Implementation Method</b></font> </td>
+      </tr>
+      <tr align=LEFT valign=TOP> 
+        <td>
+          <table border=3 bgcolor="#222222" cellpadding=0 cellspacing=0>
+            <tr align=LEFT valign=TOP> 
+              <td> 
+                <table cellpadding=0 cellspacing=0 border=0>
+                  <tr align=LEFT valign=CENTER> 
+                    <form method="POST" action="main.htm">
+                      <td><font face=ARIAL size=-2>
+                        <input type=BUTTON value="Home" onClick="top.menuPage()" name="BUTTON">
+                        </font></td>
+                    </form>
+                    <form method="POST" action="">
+                      <td><font face=ARIAL size=-2>
+                        <input type=BUTTON value="About" onClick="doHelp('menu/about.html')" name="BUTTON2">
+                        </font></td>
+                    </form>
+                    <form method="POST" action="">
+                      <td><font face=ARIAL size=-2>
+                        <input type=BUTTON value="Handbooks" onClick="doHelp('menu/books.html')" name="BUTTON2">
+                        </font></td>
+                    </form>
+                    <form method="POST" action="">
+                      <td> <font face=ARIAL size=-2> 
+                        <select name="HELPSEC" onChange="doHelpSec(this.form.elements[0],'menu/help.html')">
+                          <option value="">------------ Help Menu ------------ 
+                          <option value="top">Main Menu 
+                          <option value="Topic 1">Getting Started 
+                          <option value="Topic 2">Selecting Core and Optional Criteria
+                          <option value="Topic 3">Working With Add-Ins
+                          <option value="Topic 4">Using Guideline and References Buttons
+                          <option value="Topic 5">Task, Template, and Add-In Icon Legend
+                        </select>
+                                  </font> </td>
+                      <td> <font face=ARIAL size=-2> 
+                        <input type="text" name="whatToFind" size="15">
+                        <input type="button" name="Button" value="Find" onClick="top.findInTaskList()">
+                        </font> </td>
+                    </form>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>

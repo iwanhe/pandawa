@@ -1,0 +1,1791 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE addin SYSTEM "addin.dtd">
+<addin name="PJM261"
+	description="Application Implementation Method - Version 3.0">
+
+	<task taskid       = "CM.010"
+	      name         = "Define Configuration Management Strategies, Standards, and Procedures"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Configuration Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the Configuration Management process will support and implement the project’s scope, objectives, and approach.">
+		<template 
+			file ="CM010_Configuration_Management_Procedures.ome" 
+			description="Configuration Management Procedures"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.010"
+	      name         = "Define Configuration Management Strategies, Standards, and Procedures"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Configuration Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the Configuration Management process will support and implement the project’s scope, objectives, and approach.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.020"
+	      name         = "Document Control"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Controlled Documents, Document Updates, Uncontrolled Documents"
+	      description  = "In this ongoing task you create and maintain documents for use within the project and for delivery to the client.">
+		<template 
+			file ="CM020_Document_Index.ome" 
+			description="Document Index"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>		<template 
+			file ="CM020_Document_Update_Notice.ome" 
+			description="Document Update Notice"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.030"
+	      name         = "Configuration Control"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Configuration Items, Versions, Configurations, Promotions, Baselines, Configuration Changes"
+	      description  = "In this ongoing task you manage the dynamic aspects of configurations.">
+		<template 
+			file ="CM030_Configuration_Item_Index.ome" 
+			description="Configuration Item Index"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>		<template 
+			file ="CM030_Configuration_Item_Status_Record.ome" 
+			description="Configuration Item Status Record"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.035"
+	      name         = "Knowledge Management"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Intellectual Capital Releases, Reuse Assets"
+	      description  = "In this ongoing task you manage project deliverables for reuse within the consulting organization and the project.  This task facilitates the sharing of intellectual capital through the capture of project knowledge.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Refer to CM.040 template and guidelines."
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.035"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.035.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.040"
+	      name         = "Release Management"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Releases, Release Notes"
+	      description  = "In this ongoing task you construct releases, and deliver them to designated project locations or to the client, in an arranged format or medium.">
+		<template 
+			file ="CM040_Release_Note.ome" 
+			description="Release Note"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.050"
+	      name         = "Configuration Status Accounting"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Configuration Management Records, Progress Statements"
+	      description  = "In this ongoing task you monitor and report on the status and history of configuration items and configurations.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.060"
+	      name         = "Audit Key Deliverables"
+	      phase        = "PJMD"
+	      process      = "PJM"
+	      deliverable  = "Audited Baseline"
+	      description  = "In this task you demonstrate to the project manager and to the client that the deliverables produced were those which were intended and that adequate control over development of those deliverables was exercised.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce this deliverable at the end of each phase."
+			tpid = "MO">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.060"
+	      name         = "Audit Key Deliverables"
+	      phase        = "PJME"
+	      process      = "PJM"
+	      deliverable  = "Audited Baseline"
+	      description  = "In this task you demonstrate to the project manager and to the client that the deliverables produced were those which were intended and that adequate control over development of those deliverables was exercised.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CM.070"
+	      name         = "Conclude Configuration Management"
+	      phase        = "PJME"
+	      process      = "PJM"
+	      deliverable  = "Configuration Management Production Readiness"
+	      description  = "In this task you transfer the responsibility for Configuration Management to the client, and archive the project deliverables in accordance with consulting policy.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CM.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CM.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.010"
+	      name         = "Establish Scope, Objectives, and Approach"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Scoping Project Management Plan"
+	      description  = "In this task you define and agree on the project scope, objectives, and approach.  This task confirms that both consulting and the client have a clear understanding of the scope, objectives, and risks of the work to be undertaken before beginning.">
+		<template 
+			file ="CR010_Project_Management_Plan.ome" 
+			description="Project Management Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.010"
+	      name         = "Establish Scope, Objectives, and Approach"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Scoping Project Management Plan"
+	      description  = "In this task you define and agree on the project scope, objectives, and approach.  This task confirms that both consulting and the client have a clear understanding of the scope, objectives, and risks of the work to be undertaken before beginning.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document completed in Project Planning CR.030."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.020"
+	      name         = "Define Control and Reporting Strategies, Standards, and Procedures"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Control and Reporting Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the CR process support and implement the Scope, Objectives, and Approach.  These will include the detail procedures for such things as issue management, change control, and problem management.">
+		<template 
+			file ="CR020_Control_and_Reporting_Procedures.ome" 
+			description="Control and Reporting Procedures"
+			name = " "
+			type = "DOC"
+			state= "intial"
+			note= "Should be updated in Phase Planning CR.020"
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.020"
+	      name         = "Define Control and Reporting Strategies, Standards, and Procedures"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Control and Reporting Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the CR process support and implement the Scope, Objectives, and Approach.  These will include the detail procedures for such things as issue management, change control, and problem management.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.030"
+	      name         = "Establish Management Plans"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Project Management Plan"
+	      description  = "In this task you create or update project management plans and document them in the Project Management Plan.  The plans created consist of the approaches taken by each management process to address the project scope, objectives, and approach.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "CR.010, initial complete"
+			note= "Update document produced in CR.010."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.030"
+	      name         = "Establish Management Plans"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Project Management Plan"
+	      description  = "In this task you create or update project management plans and document them in the Project Management Plan.  The plans created consist of the approaches taken by each management process to address the project scope, objectives, and approach.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "CR.010, revised"
+			note= "Update document revised in Phase Planning CR.010."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.040"
+	      name         = "Issue/Risk Management"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Resolved Issues, Risk Containment Measures, Change Requests"
+	      description  = "In this ongoing task you identify, assess, and take actions to control issues and risks.  Issues often relate to the risks originally identified for the project and require discussion, tracking, and resolution.">
+		<template 
+			file ="CR040_Risk_and_Issue_Form.ome" 
+			description="Risk and Issue Form"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>		<template 
+			file ="CR040_Risk_and_Issue_Log.ome" 
+			description="Risk and Issue Log"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.050"
+	      name         = "Problem Management"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Resolved Problems, Issues/Risks, Change Requests"
+	      description  = "In this ongoing task you identify and manage problems that occur throughout the project.  Manage these problems through to  resolution.">
+		<template 
+			file ="CR050_Problem_Report_Form.ome" 
+			description="Problem Report Form"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>		<template 
+			file ="CR050_Problem_Report_Log.ome" 
+			description="Problem Report Log"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.060"
+	      name         = "Change Control"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Scope Changes, Approved Change Requests"
+	      description  = "In this ongoing task you manage requests to change a project baseline, including changes to project scope.">
+		<template 
+			file ="CR060_Change_Request_Form.ome" 
+			description="Change Request Form"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>		<template 
+			file ="CR060_Change_Request_Log.ome" 
+			description="Change Request Log"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.070"
+	      name         = "Status Monitoring and Reporting"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Client Progress Reports, Consulting Progress Reports, Action Items, Issues/Risks"
+	      description  = "In this ongoing task you monitor and report on progress.  Status reports are given by each process.  For example, in the Work Management process, you will update the project plans with actual effort and progress against individual tasks.">
+		<template 
+			file ="CR070_Meeting_Minutes.ome" 
+			description="Meeting Minutes"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Consult local practice for appropriate versions."
+			tpid = "O">
+	      </template>		<template 
+			file ="CR070_Project_Progress_Report.ome" 
+			description="Project Progress Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.080"
+	      name         = "Secure Client Acceptance"
+	      phase        = "PJMD"
+	      process      = "PJM"
+	      deliverable  = "Client Acceptance"
+	      description  = "In this task you obtain approval of deliverables, to the mutual satisfaction of consulting and the client.  A well managed acceptance demonstrates that you have met your client’s needs, and, when all deliverables have been accepted.">
+		<template 
+			file ="CR080_Acceptance_Certificate.ome" 
+			description="Acceptance Certificate"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Produce this deliverable at the end of each phase."
+			tpid = "MO">
+	      </template>		<template 
+			file ="CR080_Client_Satisfaction_Report.ome" 
+			description="Client Satisfaction Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MO">
+	      </template>		<template 
+			file ="CR080_End_Report.ome" 
+			description="End Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MO">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "CR.080"
+	      name         = "Secure Client Acceptance"
+	      phase        = "PJME"
+	      process      = "PJM"
+	      deliverable  = "Client Acceptance"
+	      description  = "In this task you obtain approval of deliverables, to the mutual satisfaction of consulting and the client.  A well managed acceptance demonstrates that you have met your client’s needs, and, when all deliverables have been accepted.">
+		<template 
+			file ="CR080_Acceptance_Certificate.ome" 
+			description="Acceptance Certificate"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="CR080_Client_Satisfaction_Report.ome" 
+			description="Client Satisfaction Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>		<template 
+			file ="CR080_End_Report.ome" 
+			description="End Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#CR.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/CR.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.01"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Engagement Summary"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM01_Engagement_Summary.ome" 
+			description="Engagement Summary"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM01"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.01.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.02"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Project Memo"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM02_Project_Memo.ome" 
+			description="Project Memo"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM02"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.02.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.03"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Meeting Agenda"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM03_Meeting_Agenda.ome" 
+			description="Meeting Agenda"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM03"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.03.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.04"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Rejection Note"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM04_Rejection_Note.ome" 
+			description="Rejection Note"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM04"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.04.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.05"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Supplier Assessment Record"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM05_Supplier_Assessment_Record.ome" 
+			description="Supplier Assessment Record"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM05"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.05.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.06"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Project Document Generic"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM06_Project_Document_Generic.ome" 
+			description="Project Document Generic"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM06"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.06.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.07"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Phase End Report"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM07_Phase_End_Report.ome" 
+			description="Phase End Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM07"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.07.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.08"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Site Visit Report"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM08_Site_Visit_Report.ome" 
+			description="Site Visit Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM08"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.08.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.09"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Project Management Checklist"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM09_Project_Management_Checklist.ome" 
+			description="Project Management Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM09"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.09.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "PJM.10"
+	      name         = "Miscellaneous Project Documents"
+	      phase        = "PJMM"
+	      process      = "PJM"
+	      deliverable  = "Quality Management Checklist"
+	      description  = "Miscellaneous Tasks">
+		<template 
+			file ="PJM10_Quality_Management_Checklist.ome" 
+			description="Quality Management Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MISI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#PJM10"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/PJM.10.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.010"
+	      name         = "Define Quality Management Strategies, Standards, and Procedures"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Quality Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the Quality Management process supports and implements the project scope, objectives, and approach.">
+		<template 
+			file ="QM010_Quality_Management_Procedures.ome" 
+			description="Quality Management Procedures"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.010"
+	      name         = "Define Quality Management Strategies, Standards, and Procedures"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Quality Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the Quality Management process supports and implements the project scope, objectives, and approach.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.020"
+	      name         = "Quality Review"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Quality Review"
+	      description  = "In this task you conduct reviews of deliverables to ensure that they follow standards and fit the project needs (consistent, complete, correct, and concise).">
+		<template 
+			file ="QM020_Review_Comments_List.ome" 
+			description="Review Comments List"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="QM020_Review_Leader_Form.ome" 
+			description="Review Leader Form"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.030"
+	      name         = "Quality Audit"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Quality Audit"
+	      description  = "In this task you conduct audits of the project to assess the project performance against the project plans, and the adherence to standards and procedures.">
+		<template 
+			file ="QM030_Audit_Action_Form.ome" 
+			description="Audit Action Form"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>		<template 
+			file ="QM030_Audit_Report.ome" 
+			description="Audit Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.040"
+	      name         = "Quality Measurement"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Metrics Reports"
+	      description  = "In this ongoing task you collect measures of cost, time, and quality to help manage the development process or implementation project and implement improvements as progress occurs.">
+		<template 
+			file ="QM040_Metrics_Report.ome" 
+			description="Metrics Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.045"
+	      name         = "Support Healthcheck"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Healthcheck Review"
+	      description  = "The purpose of this task is to guide the project team in the performance of those project activities required by the Healthcheck process.  The scope of the Healthcheck varies based upon many factors such as type of project, size, and complexity.">
+		<template 
+			file ="QM045_Project_Healthcheck_Checklist.ome" 
+			description="Project Healthcheck Checklist"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "MI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.045"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.045.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.050"
+	      name         = "Perform Quality Assessment"
+	      phase        = "PJMD"
+	      process      = "PJM"
+	      deliverable  = "Quality Report"
+	      description  = "In this task you conduct an assessment of the completeness of Quality Control arrangements (reviews, audits, tests, and problem resolution) to assess the completion of the project to date.">
+		<template 
+			file ="QM050_Quality_Report.ome" 
+			description="Quality Report"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= "Produce this deliverable at the end of each phase."
+			tpid = "MO">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "QM.050"
+	      name         = "Perform Quality Assessment"
+	      phase        = "PJME"
+	      process      = "PJM"
+	      deliverable  = "Quality Report"
+	      description  = "In this task you conduct an assessment of the completeness of Quality Control arrangements (reviews, audits, tests, and problem resolution) to assess the completion of the project to date.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= ""
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#QM.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/QM.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.010"
+	      name         = "Define Resource Management Strategies, Standards, and Procedures"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Resource Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the Resource Management process will support and implement the project scope, objectives, and approach.">
+		<template 
+			file ="RM010_Resource_Management_Procedures.ome" 
+			description="Resource Management Procedures"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.010"
+	      name         = "Define Resource Management Strategies, Standards, and Procedures"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Resource Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the Resource Management process will support and implement the project scope, objectives, and approach.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.020"
+	      name         = "Establish Staffing and Organization Plan"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Staffing and Organization Plan"
+	      description  = "In this task you plan how you will organize the staff to execute the project and verify that resources are available to satisfy the plan.">
+		<template 
+			file ="RM020_Assignment_Request.ome" 
+			description="Assignment Request"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>		<template 
+			file ="RM020_Staffing_and_Organization_Plan.ome" 
+			description="Staffing and Organization Plan"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.020"
+	      name         = "Establish Staffing and Organization Plan"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Staffing and Organization Plan"
+	      description  = "In this task you plan how you will organize the staff to execute the project and verify that resources are available to satisfy the plan.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.025"
+	      name         = "Create Project Orientation Guide"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Project Orientation Guide"
+	      description  = "Within the context of this task, all of the information including standards, policies, and procedures for project team members will be collected and compiled.  Include the policies for living expenses, indicate when and if per diem is applicable.">
+		<template 
+			file ="RM025_Project_Orientation_Guide.ome" 
+			description="Project Orientation Guide"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.025"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.025.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.025"
+	      name         = "Create Project Orientation Guide"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Project Orientation Guide"
+	      description  = "Within the context of this task, all of the information including standards, policies, and procedures for project team members will be collected and compiled.  Include the policies for living expenses, indicate when and if per diem is applicable.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.025"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.025.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.030"
+	      name         = "Implement Organization"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Prepared Organization"
+	      description  = "In this task you plan how to acquire and train organization staff members for their designated roles.">
+		<template 
+			file ="RM030_Staff_Training_Plan.ome" 
+			description="Staff Training Plan"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.030"
+	      name         = "Implement Organization"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Prepared Organization"
+	      description  = "In this task you plan how to acquire and train organization staff members for their designated roles.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.040"
+	      name         = "Establish Physical Resource Plan"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Physical Resource Plan"
+	      description  = "In this task you establish, acquire, and install the physical resources required.">
+		<template 
+			file ="RM040_Physical_Resource_Plan.ome" 
+			description="Physical Resource Plan"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>		<template 
+			file ="RM040_Service_Level_Agreement.ome" 
+			description="Service Level Agreement"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.040"
+	      name         = "Establish Physical Resource Plan"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Physical Resource Plan"
+	      description  = "In this task you establish, acquire, and install the physical resources required.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.050"
+	      name         = "Establish Infrastructure"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Prepared Infrastructure"
+	      description  = "In this task you establish, acquire, and install the physical resources required.">
+		<template 
+			file ="RM050_Incoming_Item_Record.ome" 
+			description="Incoming Item Record"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>		<template 
+			file ="RM050_Installation_Plan_and_Record.ome" 
+			description="Installation Plan and Record"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.050"
+	      name         = "Establish Infrastructure"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Prepared Infrastructure"
+	      description  = "In this task you establish, acquire, and install the physical resources required.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update documents created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.050.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.060"
+	      name         = "Staff Control"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Performance Appraisals, Adjusted Organization, Adjusted Assignment Terms of Reference"
+	      description  = "In this ongoing task you deal with staff management issues that arise during execution.">
+		<template 
+			file ="RM060_Assignment_Terms_of_Reference.ome" 
+			description="Assignment Terms of Reference"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.060"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.060.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.070"
+	      name         = "Physical Resource Control"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Installation Reports, Incoming Item Records, Equipment Release Records, Fault Reports"
+	      description  = "As the project progresses, enhancements and additions to the infrastructure will be required.  In this ongoing task you implement these updates, as necessary, by managing facilities, technical resources, and service levels.">
+		<template 
+			file ="RM070_Equipment_Fault_Record.ome" 
+			description="Equipment Fault Record"
+			name = " "
+			type = "DOC"
+			state= ""
+			note= ""
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.070"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.070.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.080"
+	      name         = "Release Staff"
+	      phase        = "PJMD"
+	      process      = "PJM"
+	      deliverable  = "Released Staff"
+	      description  = "In this task you release the staff resources whose services are not required for further project work.  Release of a staff member from the project can be an emotional event for the project organization, the staff member, and even the client.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MO">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.080"
+	      name         = "Release Staff"
+	      phase        = "PJME"
+	      process      = "PJM"
+	      deliverable  = "Released Staff"
+	      description  = "In this task you release the staff resources whose services are not required for further project work.  Release of a staff member from the project can be an emotional event for the project organization, the staff member, and even the client.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.080"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.080.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.090"
+	      name         = "Release Physical Resources"
+	      phase        = "PJMD"
+	      process      = "PJM"
+	      deliverable  = "Released Physical Resources"
+	      description  = "In this task you release control of the physical resources that are no longer needed to complete project execution.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "MO">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "RM.090"
+	      name         = "Release Physical Resources"
+	      phase        = "PJME"
+	      process      = "PJM"
+	      deliverable  = "Released Physical Resources"
+	      description  = "In this task you release control of the physical resources that are no longer needed to complete project execution.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "SI">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#RM.090"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/RM.090.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.010"
+	      name         = "Define Work Management Strategies, Standards, and Procedures"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Work Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the CR process support and implement the Scope, Objectives, and Approach.  These will include the detail procedures for such things as issue management, change control, and problem management.">
+		<template 
+			file ="WM010_Work_Management_Procedures.ome" 
+			description="Work Management Procedures"
+			name = " "
+			type = "DOC"
+			state= "initial"
+			note= "Should be updated in Phase Planning"
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.010"
+	      name         = "Define Work Management Strategies, Standards, and Procedures"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Work Management Strategies, Standards, and Procedures"
+	      description  = "In this task you create or update the plans which define how the Work Management process will support and implement the Project Management Plan.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.010"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.010.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.020"
+	      name         = "Establish Workplan"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Workplan"
+	      description  = "In this task you determine, organize, estimate, link, and schedule all of the tasks representing the work to be performed on the project.  This task can be performed with varying degrees of scope, rigor, and detail, depending on the circumstances.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "initial"
+			note= "Produce documentation as appropriate."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.020"
+	      name         = "Establish Workplan"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Workplan"
+	      description  = "In this task you determine, organize, estimate, link, and schedule all of the tasks representing the work to be performed on the project.  This task can be performed with varying degrees of scope, rigor, and detail, depending on the circumstances.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update document created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.020"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.020.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.030"
+	      name         = "Establish Finance Plan"
+	      phase        = "PJMA"
+	      process      = "PJM"
+	      deliverable  = "Finance Plan"
+	      description  = "In this task you determine the expected margin of profit and financial schedules that reflect the anticipated revenue, expenses, costs, and payments to the project over its lifetime.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "IT">
+	      </template>		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "initial"
+			note= "Produce documentation as appropriate."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.030"
+	      name         = "Establish Finance Plan"
+	      phase        = "PJMB"
+	      process      = "PJM"
+	      deliverable  = "Finance Plan"
+	      description  = "In this task you determine the expected margin of profit and financial schedules that reflect the anticipated revenue, expenses, costs, and payments to the project over its lifetime.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= "revised"
+			note= "Update documents created in Project Planning."
+			tpid = "IT">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.030"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.030.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.040"
+	      name         = "Workplan Control"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Adjusted Workplan, Work Progress Statements"
+	      description  = "In this ongoing task you regularly measure the progress achieved during the project against the Workplan, take corrective actions, and prepare progress information for reporting to client and consulting management.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.040"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.040.htm"
+			text="References and Links"/>
+	</task>
+
+	<task taskid       = "WM.050"
+	      name         = "Financial Control"
+	      phase        = "PJMC"
+	      process      = "PJM"
+	      deliverable  = "Adjusted Finance Plan, Financial Progress Statements"
+	      description  = "In this ongoing task you monitor financial performance during the project and prepare financial progress information for reporting to client and consulting management.">
+		<template 
+			file ="" 
+			description=""
+			name = " "
+			type = ""
+			state= ""
+			note= "Produce documentation as appropriate."
+			tpid = "O">
+	      </template>
+		<link icon="menu/images/books.gif"
+			name="AIM Process and Task Reference"
+			url="Document/pjmptr.pdf#WM.050"
+			text="Task Guidelines"/>
+		<link icon="menu/images/reference.gif"
+			name="Oracle Web References and Links"
+			url="http://www.oracle.com/methods/pjm/2.6.1/WM.050.htm"
+			text="References and Links"/>
+	</task>
+	<method_processes>
+            <process name="PJM" description="">
+                        <link icon="menu/images/books.gif" 
+                              name="PJM Method Handbook" 
+                              url="document/pjmmh.pdf" 
+                              text="PJM Guidelines"/>
+            </process>
+       </method_processes>
+</addin>
