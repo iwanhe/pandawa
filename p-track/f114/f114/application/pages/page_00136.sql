@@ -1,0 +1,103 @@
+prompt --application/pages/page_00136
+begin
+--   Manifest
+--     PAGE: 00136
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.11'
+,p_default_workspace_id=>14430312641517637
+,p_default_application_id=>114
+,p_default_id_offset=>25570339520000058
+,p_default_owner=>'WKSP_XTD'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>136
+,p_name=>'Reports'
+,p_step_title=>'Reports'
+,p_reload_on_submit=>'A'
+,p_warn_on_unsaved_changes=>'N'
+,p_autocomplete_on_off=>'ON'
+,p_group_id=>wwv_flow_imp.id(5847486190175074984)
+,p_step_template=>wwv_flow_imp.id(6672316913709369812)
+,p_page_template_options=>'#DEFAULT#'
+,p_help_text=>'The "Reports" page provides access to several reports. There are Projects reports, Action Items reports, Milestones reports, and other additional reports that identify application and project usage.'
+,p_page_component_map=>'06'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(5253783601758290924)
+,p_plug_name=>'Projects'
+,p_region_template_options=>'#DEFAULT#:t-ContentBlock--h3:t-ContentBlock--lightBG'
+,p_component_template_options=>'#DEFAULT#:u-colors'
+,p_plug_template=>wwv_flow_imp.id(1120070264285054172)
+,p_plug_display_sequence=>20
+,p_list_id=>wwv_flow_imp.id(5253627245363136160)
+,p_plug_source_type=>'NATIVE_LIST'
+,p_list_template_id=>wwv_flow_imp.id(6672373260230369924)
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(5282044345133171792)
+,p_plug_name=>'Milestones'
+,p_region_template_options=>'#DEFAULT#:t-ContentBlock--h3:t-ContentBlock--lightBG'
+,p_component_template_options=>'#DEFAULT#:u-colors'
+,p_plug_template=>wwv_flow_imp.id(1120070264285054172)
+,p_plug_display_sequence=>30
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_new_grid_column=>false
+,p_list_id=>wwv_flow_imp.id(5253677596989895621)
+,p_plug_source_type=>'NATIVE_LIST'
+,p_list_template_id=>wwv_flow_imp.id(6672373260230369924)
+,p_required_patch=>wwv_flow_imp.id(11756681878669227855)
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(5282045767082171806)
+,p_plug_name=>'Action Items'
+,p_region_template_options=>'#DEFAULT#:t-ContentBlock--h3:t-ContentBlock--lightBG'
+,p_component_template_options=>'#DEFAULT#:u-colors'
+,p_plug_template=>wwv_flow_imp.id(1120070264285054172)
+,p_plug_display_sequence=>40
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_list_id=>wwv_flow_imp.id(8957466624617531900)
+,p_plug_source_type=>'NATIVE_LIST'
+,p_list_template_id=>wwv_flow_imp.id(6672373260230369924)
+,p_required_patch=>wwv_flow_imp.id(11756699376794143132)
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(6673697618445385231)
+,p_plug_name=>'Breadcrumb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(6672360279484369892)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_menu_id=>wwv_flow_imp.id(8863635143327529617)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>wwv_flow_imp.id(6672378019032369952)
+,p_plug_display_condition_type=>'NEVER'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(6673698197726385232)
+,p_plug_name=>'Additional Reports'
+,p_region_template_options=>'#DEFAULT#:t-ContentBlock--h3:t-ContentBlock--lightBG'
+,p_component_template_options=>'#DEFAULT#:u-colors'
+,p_plug_template=>wwv_flow_imp.id(1120070264285054172)
+,p_plug_display_sequence=>50
+,p_plug_new_grid_row=>false
+,p_plug_new_grid_column=>false
+,p_list_id=>wwv_flow_imp.id(6072733413638866072)
+,p_plug_source_type=>'NATIVE_LIST'
+,p_list_template_id=>wwv_flow_imp.id(6672373260230369924)
+);
+wwv_flow_imp_page.create_page_computation(
+ p_id=>wwv_flow_imp.id(6673698516834385234)
+,p_computation_sequence=>10
+,p_computation_item=>'LAST_VIEW'
+,p_computation_point=>'BEFORE_HEADER'
+,p_computation_type=>'STATIC_ASSIGNMENT'
+,p_computation=>'22'
+);
+wwv_flow_imp.component_end;
+end;
+/

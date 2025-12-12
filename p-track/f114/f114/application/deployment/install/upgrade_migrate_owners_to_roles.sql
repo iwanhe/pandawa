@@ -1,0 +1,145 @@
+prompt --application/deployment/install/upgrade_migrate_owners_to_roles
+begin
+--   Manifest
+--     INSTALL: UPGRADE-Migrate Owners to Roles
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.11'
+,p_default_workspace_id=>14430312641517637
+,p_default_application_id=>114
+,p_default_id_offset=>25570339520000058
+,p_default_owner=>'WKSP_XTD'
+);
+wwv_flow_imp_shared.create_install_script(
+ p_id=>wwv_flow_imp.id(11563864155082252598)
+,p_install_id=>wwv_flow_imp.id(8903256921486151716)
+,p_name=>'Migrate Owners to Roles'
+,p_sequence=>410
+,p_script_type=>'UPGRADE'
+,p_condition_type=>'EXISTS'
+,p_condition=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'select null',
+'from user_tab_cols',
+'where table_name = ''EBA_PROJ_STATUS''',
+'    and column_name = ''PROJECT_OWNER'''))
+,p_script_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'declare',
+'    l_role_id number;',
+'    l_user_id number;',
+'begin',
+'    insert into eba_proj_roles ( name, default_acl_status_level )',
+'    values ( ''Owner'', 3 )',
+'    returning id into l_role_id;',
+'',
+'    for c1 in ( select distinct project_id, owner',
+'                from (  select id project_id, project_owner owner',
+'                        from eba_proj_status$',
+'                        where project_owner is not null',
+'                        union all',
+'                        select id project_id, project_owner2 owner',
+'                        from eba_proj_status$',
+'                        where project_owner2 is not null',
+'                        union all',
+'                        select id project_id, project_owner3 owner',
+'                        from eba_proj_status$',
+'                        where project_owner3 is not null',
+'                        union all',
+'                        select id project_id, project_owner4 owner',
+'                        from eba_proj_status$',
+'                        where project_owner4 is not null',
+'                        union all',
+'                        select id project_id, project_owner5 owner',
+'                        from eba_proj_status$',
+'                        where project_owner5 is not null',
+'                        union all',
+'                        select id project_id, project_owner6 owner',
+'                        from eba_proj_status$',
+'                        where project_owner6 is not null',
+'                        union all',
+'                        select id project_id, project_owner7 owner',
+'                        from eba_proj_status$',
+'                        where project_owner7 is not null',
+'                        union all',
+'                        select id project_id, project_owner8 owner',
+'                        from eba_proj_status$',
+'                        where project_owner8 is not null',
+'                        union all',
+'                        select id project_id, project_owner9 owner',
+'                        from eba_proj_status$',
+'                        where project_owner9 is not null',
+'                        union all',
+'                        select id project_id, project_owner10 owner',
+'                        from eba_proj_status$',
+'                        where project_owner10 is not null',
+'                        union all',
+'                        select id project_id, project_owner11 owner',
+'                        from eba_proj_status$',
+'                        where project_owner11 is not null',
+'                        union all',
+'                        select id project_id, project_owner12 owner',
+'                        from eba_proj_status$',
+'                        where project_owner12 is not null',
+'                    )',
+'            ) loop',
+'        -- Check for the user in the users table.',
+'        -- May be username or email address.',
+'        l_user_id := null;',
+'',
+'        for c2 in ( select u.id user_id',
+'                    from eba_proj_status_users u',
+'                    where upper(u.username) = upper(c1.owner)',
+'                        or upper(u.email_address) = upper(c1.owner) ) loop',
+'            l_user_id := c2.user_id;',
+'        end loop;',
+'',
+'        if l_user_id is null then',
+'            insert into eba_proj_status_users( username )',
+'            values ( c1.owner )',
+'            returning id into l_user_id;',
+'        end if;',
+'',
+'        merge into eba_proj_user_ref dest using',
+'            (   select c1.project_id prj, l_user_id user_id, l_role_id role_id',
+'                from dual',
+'            ) src',
+'        on ( dest.project_id = src.prj',
+'            and dest.user_id = src.user_id )',
+'        when not matched then',
+'            insert ( project_id, user_id, role_id )',
+'            values ( src.prj, src.user_id, src.role_id );',
+'    end loop;',
+'end;',
+'',
+'-- Now we should be able to drop the ownerXX columns.',
+'alter table eba_proj_status$',
+'drop (  lockdown_to_owners_yn,',
+'        project_owner,',
+'        project_owner2,',
+'        project_owner3,',
+'        project_owner4,',
+'        project_owner5,',
+'        project_owner6,',
+'        project_owner7,',
+'        project_owner8,',
+'        project_owner9,',
+'        project_owner10,',
+'        project_owner11,',
+'        project_owner12,',
+'        owner_1_role_id,',
+'        owner_2_role_id,',
+'        owner_3_role_id,',
+'        owner_4_role_id,',
+'        owner_5_role_id,',
+'        owner_6_role_id,',
+'        owner_7_role_id,',
+'        owner_8_role_id,',
+'        owner_9_role_id,',
+'        owner_10_role_id,',
+'        owner_11_role_id,',
+'        owner_12_role_id',
+');'))
+);
+wwv_flow_imp.component_end;
+end;
+/

@@ -1,0 +1,35 @@
+prompt --application/shared_components/user_interface/lovs/project_report_filters
+begin
+--   Manifest
+--     PROJECT REPORT FILTERS
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.11'
+,p_default_workspace_id=>14430312641517637
+,p_default_application_id=>114
+,p_default_id_offset=>25570339520000058
+,p_default_owner=>'WKSP_XTD'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(5750426303753243697)
+,p_lov_name=>'PROJECT REPORT FILTERS'
+,p_lov_query=>'.'||wwv_flow_imp.id(5750426303753243697)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>39567366592580
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(5750426501925243703)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Organize by Parent Project'
+,p_lov_return_value=>'PARENTS_ONLY'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(5982086595564669455)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Show Project Keys'
+,p_lov_return_value=>'SHOW_KEYS'
+);
+wwv_flow_imp.component_end;
+end;
+/

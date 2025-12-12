@@ -1,0 +1,96 @@
+prompt --application/shared_components/user_interface/lovs/search_attribute_lov
+begin
+--   Manifest
+--     SEARCH ATTRIBUTE LOV
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.11'
+,p_default_workspace_id=>14430312641517637
+,p_default_application_id=>114
+,p_default_id_offset=>25570339520000058
+,p_default_owner=>'WKSP_XTD'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(8904383846992452650)
+,p_lov_name=>'SEARCH ATTRIBUTE LOV'
+,p_lov_query=>'.'||wwv_flow_imp.id(8904383846992452650)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>39567366592823
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(8904384033278452655)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Projects'
+,p_lov_return_value=>'P'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(8927056224106512453)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Action Items'
+,p_lov_return_value=>'I'
+,p_required_patch=>wwv_flow_imp.id(11756699376794143132)
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(8904384238013452660)
+,p_lov_disp_sequence=>20
+,p_lov_disp_value=>'Updates'
+,p_lov_return_value=>'U'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(8904384445603452660)
+,p_lov_disp_sequence=>30
+,p_lov_disp_value=>'Links'
+,p_lov_return_value=>'L'
+,p_required_patch=>wwv_flow_imp.id(11756752007201202936)
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(8904384622414452661)
+,p_lov_disp_sequence=>40
+,p_lov_disp_value=>'Owners'
+,p_lov_return_value=>'O'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(8904384918726453982)
+,p_lov_disp_sequence=>50
+,p_lov_disp_value=>'Milestones'
+,p_lov_return_value=>'M'
+,p_required_patch=>wwv_flow_imp.id(11756681878669227855)
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(8904395732249309282)
+,p_lov_disp_sequence=>60
+,p_lov_disp_value=>'Customer'
+,p_lov_return_value=>'C'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(6661692290743230560)
+,p_lov_disp_sequence=>70
+,p_lov_disp_value=>'Files'
+,p_lov_return_value=>'F'
+,p_required_patch=>wwv_flow_imp.id(11756682088337229718)
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(6097110309288926519)
+,p_lov_disp_sequence=>80
+,p_lov_disp_value=>'Status Reports'
+,p_lov_return_value=>'R'
+,p_required_patch=>wwv_flow_imp.id(6086979797456591004)
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(15180559441100597360)
+,p_lov_disp_sequence=>90
+,p_lov_disp_value=>'Resources'
+,p_lov_return_value=>'S'
+,p_required_patch=>wwv_flow_imp.id(12021369465070232745)
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(15180554862514649525)
+,p_lov_disp_sequence=>100
+,p_lov_disp_value=>'Issues'
+,p_lov_return_value=>'X'
+,p_required_patch=>wwv_flow_imp.id(7563953019503314303)
+);
+wwv_flow_imp.component_end;
+end;
+/

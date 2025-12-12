@@ -1,0 +1,95 @@
+prompt --application/shared_components/user_interface/lovs/quarter_months
+begin
+--   Manifest
+--     QUARTER_MONTHS
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.11'
+,p_default_workspace_id=>14430312641517637
+,p_default_application_id=>114
+,p_default_id_offset=>25570339520000058
+,p_default_owner=>'WKSP_XTD'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(3380098739102813926)
+,p_lov_name=>'QUARTER_MONTHS'
+,p_lov_query=>'.'||wwv_flow_imp.id(3380098739102813926)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>39567366592713
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380099028589813930)
+,p_lov_disp_sequence=>1
+,p_lov_disp_value=>'January'
+,p_lov_return_value=>'01'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380099503101813931)
+,p_lov_disp_sequence=>2
+,p_lov_disp_value=>'February'
+,p_lov_return_value=>'02'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380099828563813932)
+,p_lov_disp_sequence=>3
+,p_lov_disp_value=>'March'
+,p_lov_return_value=>'03'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380100229038813932)
+,p_lov_disp_sequence=>4
+,p_lov_disp_value=>'April'
+,p_lov_return_value=>'04'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380100636478813932)
+,p_lov_disp_sequence=>5
+,p_lov_disp_value=>'May'
+,p_lov_return_value=>'05'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380101063111813932)
+,p_lov_disp_sequence=>6
+,p_lov_disp_value=>'June'
+,p_lov_return_value=>'06'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380101433682813933)
+,p_lov_disp_sequence=>7
+,p_lov_disp_value=>'July'
+,p_lov_return_value=>'07'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380101885722813933)
+,p_lov_disp_sequence=>8
+,p_lov_disp_value=>'August'
+,p_lov_return_value=>'08'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380102260827813933)
+,p_lov_disp_sequence=>9
+,p_lov_disp_value=>'September'
+,p_lov_return_value=>'09'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380102608716813935)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'October'
+,p_lov_return_value=>'10'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380103093472813935)
+,p_lov_disp_sequence=>11
+,p_lov_disp_value=>'November'
+,p_lov_return_value=>'11'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(3380103417776813935)
+,p_lov_disp_sequence=>12
+,p_lov_disp_value=>'December'
+,p_lov_return_value=>'12'
+);
+wwv_flow_imp.component_end;
+end;
+/
