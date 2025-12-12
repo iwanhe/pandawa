@@ -1,0 +1,15 @@
+{
+    "customApps": [
+        {
+            "internalName": "P_TRACK",
+            "name": "PERMADI",
+            "description": "Project Tracking Application from Pandawa Repository. A comprehensive project management and tracking tool for Oracle APEX.",
+            "author": "Iwan Herdian",
+            "version": "1.0.0",
+            "icon": "",
+            "url": "https://github.com/iwanhe/pandawa/tree/main/p-track",
+            "source": "https://raw.githubusercontent.com/iwanhe/pandawa/main/p-track/f114.sql",
+            "zip": "https://raw.githubusercontent.com/iwanhe/pandawa/main/p-track/f114.zip"
+        }
+    ]
+}
