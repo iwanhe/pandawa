@@ -627,25 +627,25 @@ Bertanggung jawab atas seluruh aspek security dalam project lifecycle.
 │ 3. Team Training & Solution Design                   │
 │ 4. Solution Development                              │
 │    ↓                                                 │
-│    ┌──────────────────────────────────────┐         │
-│    │ 🔒 SECURITY GATE CHECKPOINT          │         │
-│    ├──────────────────────────────────────┤         │
-│    │ • APEX Sert Scan                     │         │
-│    │ • APEX Advisor Check                 │         │
-│    │ • APEX Visualizer Review             │         │
-│    │ • Vulnerability Remediation          │         │
-│    │ • Security Approval                  │         │
-│    └──────────────────┬───────────────────┘         │
+│    ┌──────────────────────────────────────┐          │
+│    │ 🔒 SECURITY GATE CHECKPOINT          │          │
+│    ├──────────────────────────────────────┤          │
+│    │ • APEX Sert Scan                     │          │
+│    │ • APEX Advisor Check                 │          │
+│    │ • APEX Visualizer Review             │          │
+│    │ • Vulnerability Remediation          │          │
+│    │ • Security Approval                  │          │
+│    └──────────────────┬───────────────────┘          │
 │                       │                              │
-│           ┌───────────┴───────────┐                 │
-│           │                       │                 │
-│        PASS ✅                  FAIL ❌             │
-│           │                       │                 │
-│           ↓                       ↓                 │
-│ 5. Solution Deployment    Return to Development    │
-│ 6. User Acceptance Test                             │
-│ 7. Go-Live & Support                                │
-│    └─> Continuous Security Monitoring               │
+│           ┌───────────┴───────────┐                  │
+│           │                       │                  │
+│        PASS ✅                  FAIL ❌              │
+│           │                       │                  │
+│           ↓                       ↓                  │
+│ 5. Solution Deployment    Return to Development      │
+│ 6. User Acceptance Test                              │
+│ 7. Go-Live & Support                                 │
+│    └─> Continuous Security Monitoring                │
 │                                                      │
 └──────────────────────────────────────────────────────┘
 ```
