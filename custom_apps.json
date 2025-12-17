@@ -1,0 +1,26 @@
+{
+    "customApps": [
+        {
+            "internalName": "P_TRACK",
+            "name": "PERMADI",
+            "description": "Project Tracking Application from Pandawa Repository. A comprehensive project management and tracking tool for Oracle APEX.",
+            "author": "Iwan Herdian",
+            "version": "1.0.0",
+            "icon": "",
+            "url": "https://github.com/iwanhe/pandawa/tree/main/p-track",
+            "source": "https://raw.githubusercontent.com/iwanhe/pandawa/main/p-track/f114.sql",
+            "zip": "https://raw.githubusercontent.com/iwanhe/pandawa/main/p-track/f114.zip"
+        },
+        {
+            "internalName": "INCIDENT_TRACK",
+            "name": "Incident Tracking",
+            "description": "Incident Tracking Application from Pandawa Repository. A comprehensive incident management and tracking system for Oracle APEX.",
+            "author": "Iwan Herdian",
+            "version": "1.0.0",
+            "icon": "",
+            "url": "https://github.com/iwanhe/pandawa/tree/main/incident-tracking",
+            "source": "https://raw.githubusercontent.com/iwanhe/pandawa/main/incident-tracking/f101.sql",
+            "zip": "https://raw.githubusercontent.com/iwanhe/pandawa/main/incident-tracking/f101.zip"
+        }
+    ]
+}
