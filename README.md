@@ -1,19 +1,21 @@
-# README
+# Project Pandawa
 
-## Language Percentages
-- PLSQL: 85.8%
-- JavaScript: 6.9%
-- HTML: 2.5%
-- PLpgSQL: 2.1%
-- Java: 2.0%
+## Deskripsi
+Project Pandawa adalah... (deskripsi lainnya)
 
-## File Utama
-- custom_apps.json
-- Kebijakan_Manajemen_Perubahan_IT_Upstream_Development.md
+## Bahasa Pemrograman
+- PLSQL 85.8%
+- JavaScript 6.9%
+- HTML 2.5%
+- PLpgSQL 2.1%
+- Java 2.0%
+- Awk 0.5%
+- CSS 0.2%
 
 ## Direktori Tambahan
 - incident-tracking
 - oracle-licensing
 - sla
 
-<!-- Maintained format and order of all existing sections -->
+## Kontak
+Untuk pertanyaan lebih lanjut, silahkan menghubungi...
