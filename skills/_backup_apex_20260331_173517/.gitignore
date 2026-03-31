@@ -1,0 +1,10 @@
+.mcp.json
+.claude/*
+!.claude/skills/
+!.claude/commands/
+!.claude/agents/
+.claude/skills/apex/app-patterns/
+!.claude/settings.json
+examples/
+docs/superpowers/specs/
+.remember/
