@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Catatan keamanan:
+# - VITE_ORDS_BASE_URL, VITE_OAUTH_CLIENT_ID, VITE_OAUTH_CLIENT_SECRET
+#   di-set sebagai Environment Variables di Netlify Dashboard (Site settings > Environment variables),
+#   JANGAN pernah commit .env berisi secret ke Git.
+# - Idealnya OAuth token exchange dilakukan lewat Netlify Function (server-side)
+#   agar client_secret tidak pernah terekspos ke browser. Lihat netlify/functions/token.js
