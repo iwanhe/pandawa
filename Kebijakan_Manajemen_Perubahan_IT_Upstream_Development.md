@@ -509,7 +509,7 @@ Dokumen harus disimpan sesuai jadwal berikut:
 Kebijakan ini mereferensikan dan melengkapi dokumen-dokumen berikut:
 
 **Standar Development Oracle v1.0**
-- Lokasi: oracle-dev-standards.md
+- Lokasi: archive/oracle-dev-standards.md (versi terkini: oracle-dev-standards-v1.1.md)
 
 **Metodologi Implementasi Aplikasi**
 - Lokasi: apps-implementation-methodology.md

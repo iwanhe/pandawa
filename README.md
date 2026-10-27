@@ -1,16 +1,21 @@
-# Pandawa 🏛️
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PL/SQL](https://img.shields.io/badge/PL%2FSQL-Oracle-F80000.svg?logo=oracle&logoColor=white)](.)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg?logo=python&logoColor=white)](.)
-[![Oracle APEX](https://img.shields.io/badge/Oracle%20APEX-24.1%20%7C%2024.2-F80000.svg?logo=oracle&logoColor=white)](.)
-[![Oracle EBS](https://img.shields.io/badge/Oracle%20EBS-R12.2-F80000.svg?logo=oracle&logoColor=white)](.)
-[![ORDS](https://img.shields.io/badge/ORDS-REST-F80000.svg?logo=oracle&logoColor=white)](.)
-[![ADT](https://img.shields.io/badge/ADT-Enabled-green.svg)](https://github.com/jkvetina/ADT)
-[![Claude Skills](https://img.shields.io/badge/Claude%20Skills-Library-D97757.svg)](skills/)
+# 🏛️ PANDAWA
 
-> **IT Upstream Development — Tim PANDAWA**
-> KCSI (Karya Cipta Solusi Internasional) · Nojorono Group · Kudus, Jawa Tengah
+**Monorepo Tim PANDAWA — IT Upstream Development**<br/>
+KCSI (Karya Cipta Solusi Internasional) · Nojorono Group · Kudus, Jawa Tengah
+
+[![License: MIT](https://img.shields.io/github/license/iwanhe/pandawa?color=blue)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/iwanhe/pandawa)](https://github.com/iwanhe/pandawa/commits/main)
+[![Oracle APEX](https://img.shields.io/badge/Oracle%20APEX-24.1%20%7C%2024.2-F80000?logo=oracle&logoColor=white)](#-aplikasi-apex-siap-install)
+[![Oracle EBS](https://img.shields.io/badge/Oracle%20EBS-R12.2-F80000?logo=oracle&logoColor=white)](#-modul-oracle-ebs)
+[![ORDS](https://img.shields.io/badge/ORDS-REST-F80000?logo=oracle&logoColor=white)](#️-arsitektur)
+[![CI/CD: ADT](https://img.shields.io/badge/CI%2FCD-ADT-2ea44f)](https://github.com/jkvetina/ADT)
+[![Claude Skills](https://img.shields.io/badge/Claude%20Skills-Library-D97757)](#-claude-ai-skills-library)
+
+</div>
+
+> 🇬🇧 **In short:** PANDAWA is the central repository of an Oracle development team in Indonesia. It holds Oracle EBS R12.2 API scripts and customizations, ready-to-install Oracle APEX apps (installable through a Custom App Gallery), a full-stack ORDS-backed portal, an ADT-based CI/CD standard, governance documents, and a large library of Claude AI skills for Oracle development. Documentation is mostly in Bahasa Indonesia.
 
 Repository pusat Tim PANDAWA untuk kode sumber, aplikasi APEX siap-install, tools, standar pengembangan, CI/CD pipeline, AI skills library, dan materi referensi seluruh project Oracle EBS & Oracle APEX di lingkungan Nojorono Group.
 
@@ -18,33 +23,35 @@ Repository pusat Tim PANDAWA untuk kode sumber, aplikasi APEX siap-install, tool
 
 ## 📑 Daftar Isi
 
-- [Deskripsi](#-deskripsi)
+- [Gambaran Umum](#-gambaran-umum)
 - [Yang Baru](#-yang-baru)
-- [Bahasa Pemrograman](#-bahasa-pemrograman)
-- [Prasyarat](#️-prasyarat)
-- [Struktur Direktori](#-struktur-direktori)
+- [Arsitektur](#️-arsitektur)
+- [Peta Repository](#️-peta-repository)
 - [Aplikasi APEX Siap-Install](#-aplikasi-apex-siap-install)
 - [Claude AI Skills Library](#-claude-ai-skills-library)
+- [Prasyarat](#️-prasyarat)
 - [Quickstart](#-quickstart)
+- [Alur Deployment](#-alur-deployment)
+- [Change Management](#-change-management)
 - [Coding Standards](#-coding-standards)
-- [Deployment Workflow](#-deployment-workflow)
+- [Bahasa Pemrograman](#-bahasa-pemrograman)
 - [Roadmap](#️-roadmap)
 - [Tim](#-tim)
 - [Lisensi](#-lisensi)
 
 ---
 
-## 📖 Deskripsi
+## 📖 Gambaran Umum
 
-Pandawa adalah monorepo Tim PANDAWA yang mencakup:
-
-- **Oracle EBS Customizations & API** — Script, package, dan dokumentasi untuk modul AP, FA, GL, INV, OPM, PO, OPC, SLA, dan E-Business Tax
-- **Oracle APEX Applications** — Export aplikasi APEX internal (FRITS, P-Track/PERMADI, Incident Tracking) yang bisa di-install langsung, termasuk via *Custom App Gallery*
-- **Full-stack Apps** — KCSI Access Vault Portal (React + Vite di Netlify, backend Oracle ORDS/PL/SQL)
-- **CI/CD Automation** — Standar deployment berbasis ADT (APEX Deployment Tool) & FNDLOAD untuk Dev → UAT → Production
-- **Subsidiary Modules** — Kode & dokumentasi spesifik subsidiary Nojorono Group (NTI, NSTI, GLT, DNN)
-- **Claude AI Skills Library** — Skill bundle untuk AI-assisted development (ADT, APEX, SQLcl, Oracle DB, standar PANDAWA) plus koleksi skill engineering/bisnis
-- **Standardisasi & Governance** — Standar pengembangan, naming convention, metodologi implementasi, change management policy, quality gate, dan analisis lisensi Oracle
+| Area | Isi |
+| --- | --- |
+| 🏢 **Oracle EBS Customizations & API** | Script, package, dan dokumentasi untuk modul AP, FA, GL, INV, OPM, PO, OPC, SLA, dan E-Business Tax |
+| 🧩 **Oracle APEX Applications** | Export aplikasi APEX internal (FRITS, P-Track/PERMADI, Incident Tracking) yang bisa di-install langsung, termasuk via *Custom App Gallery* |
+| 🌐 **Full-stack Apps** | KCSI Access Vault Portal — React + Vite di Netlify, backend Oracle ORDS/PL/SQL |
+| 🔄 **CI/CD Automation** | Standar deployment berbasis [ADT](https://github.com/jkvetina/ADT) & FNDLOAD untuk Dev → UAT → Production |
+| 🌿 **Subsidiary Modules** | Kode & dokumentasi spesifik subsidiary Nojorono Group (NTI, NSTI, GLT, DNN) |
+| 🤖 **Claude AI Skills Library** | Skill bundle untuk AI-assisted development (ADT, APEX, SQLcl, Oracle DB, standar PANDAWA) plus koleksi skill engineering/bisnis |
+| 📐 **Standardisasi & Governance** | Standar pengembangan, naming convention, metodologi implementasi, change management policy, quality gate, dan analisis lisensi Oracle |
 
 ---
 
@@ -52,68 +59,118 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 
 | Tanggal | Perubahan |
 |---------|-----------|
+| Okt 2026 | **README baru**: diagram arsitektur, peta repo, alur deployment & change management (Mermaid), ringkasan English; `oracle-dev-standards.md` v1.0 dipindah ke `archive/` |
 | Okt 2026 | Sinkronisasi README dengan kondisi repo: jumlah skill per koleksi, komposisi bahasa, versi APEX tiap app, submodule `oracons/` & `pandawa.wiki/` |
 | Sep 2026 | **KCSI Access Vault Portal** — portal internal rekap data akses/koneksi (`KCSI_Access_Vault_Portal_Code/`) |
 | Agu 2026 | **Oracle 23ai Free Capacity Check** — monitoring storage agar tidak mentok batas 12 GB (`oracle-licensing/oracle23ai-capacity-check/`) |
 | Agu 2026 | **APEXlang skill** `apexlang-2026.08.01.zip` (`skills/`) |
 | Jul 2026 | **OutSystems Log tool** — aplikasi APEX f105 (`meta/outsystem_log.zip`) |
+
+<details>
+<summary>Riwayat sebelumnya</summary>
+
+| Tanggal | Perubahan |
+|---------|-----------|
 | Jun 2026 | Update dokumentasi lisensi Oracle (`oracle-licensing/`) |
 | Mei 2026 | Skill `impeccable`, koleksi skill engineering/C-level/marketing/product/PM/RA-QM, Oracle Dev Standards v1.1 |
 | Feb–Apr 2026 | Analisis lisensi Oracle APEX (v1.1–v1.3), komparasi 6 platform database, standar CI/CD, metodologi implementasi v2.1, dokumentasi EBS NTI |
 
----
-
-## 🧑‍💻 Bahasa Pemrograman
-
-| Bahasa | Porsi | Kegunaan |
-|--------|------:|----------|
-| Python | 77,5% | Tools & script pada skill library (`skills/`), automation scripts |
-| PL/SQL & SQL | 17,8% | EBS API scripts, package, APEX application export, ORDS REST setup |
-| JavaScript / JSX | 2,5% | Frontend React (Access Vault Portal), APEX dynamic actions |
-| HTML / CSS | 0,6% | APEX templates, UI components |
-| Java / JSP | 0,4% | Integrasi & SSO APEX ↔ EBS (`apextoebs/`) |
-| PL/pgSQL · TypeScript | 0,7% | Contoh/integrasi pada koleksi skill engineering |
-| Shell · Awk · PowerShell | 0,4% | Script deployment & setup (Windows), parsing log EBS (`sysadmin/`) |
-
-> Data dari GitHub Linguist per Oktober 2026. Porsi Python didominasi oleh skill library (±345 file `.py`); kode inti PANDAWA sendiri mayoritas PL/SQL & SQL.
+</details>
 
 ---
 
-## ⚙️ Prasyarat
+## 🏗️ Arsitektur
 
-| Tool | Versi | Keterangan |
-|------|-------|-----------|
-| Oracle Database | 19c+ / 23ai | Target database utama |
-| Oracle EBS | R12.2 | Untuk EBS customizations |
-| Oracle APEX | 24.1 / 24.2 | Runtime aplikasi APEX (FRITS: 24.1, P-Track & Incident Tracking: 24.2) |
-| ORDS | 23.4+ | Oracle REST Data Services |
-| SQLcl | 24.x+ | CLI untuk Oracle, digunakan ADT & SQLcl MCP |
-| Python | 3.10+ | Runtime ADT & automation scripts |
-| ADT | Latest | [APEX Deployment Tool](https://github.com/jkvetina/ADT) — tool utama CI/CD |
-| Node.js | 18+ | Build frontend Access Vault Portal (Vite) |
-| PowerShell | 5.1+ | Deployment scripts (Windows) |
-| Git | 2.x | Version control |
-| Oracle Instant Client | 21c+ | Driver koneksi Oracle untuk Python |
+Gambaran tingkat tinggi bagaimana komponen di repository ini saling terhubung.
+
+```mermaid
+flowchart LR
+    U["👤 Pengguna bisnis<br/>subsidiary Nojorono Group"]
+
+    subgraph FE["Front-end"]
+        APEX["Oracle APEX 24.x<br/>FRITS · P-Track · Incident Tracking"]
+        VAULT["Access Vault Portal<br/>React + Vite · Netlify"]
+    end
+
+    ORDS["ORDS<br/>REST + OAuth2"]
+
+    subgraph DB["Oracle Database"]
+        APX["Schema aplikasi APEX<br/>objek APX_"]
+        XTD["Custom EBS<br/>objek XTD_ / XX_"]
+    end
+
+    EBS["Oracle EBS R12.2<br/>AP · FA · GL · INV · OPM · PO · OPC · SLA"]
+
+    U --> APEX
+    U --> VAULT
+    U --> EBS
+    VAULT -->|REST| ORDS
+    ORDS --> APX
+    APEX --> APX
+    EBS -->|"SSO JSP gateway<br/>apextoebs"| APEX
+    APX -->|PL/SQL API| XTD
+    XTD --> EBS
+```
 
 ---
 
-## 📂 Struktur Direktori
+## 🗺️ Peta Repository
 
-### 📄 File Root
+```mermaid
+mindmap
+  root((pandawa))
+    Oracle EBS
+      ap
+      ebtax
+      fa
+      gl
+      inv
+      opc
+      opm
+      po
+      sla
+      om30
+    Subsidiary
+      oracle-ebs-nti
+      nsti
+      glt
+      dnn
+      meta
+    APEX & Apps
+      frits
+      p-track
+      incident-tracking
+      apextoebs
+      apex-sert
+      KCSI Access Vault Portal
+    DevOps
+      ci-cd-oracle-apex-ebs
+      sysadmin
+      skills
+    Governance
+      standardization
+      oracle-licensing
+      archive
+    Knowledge
+      training
+      frappe
+      wiki
+```
+
+<details>
+<summary><b>📂 Detail struktur direktori</b> (klik untuk membuka)</summary>
+
+### 📄 File root
 
 | File | Deskripsi |
 |------|-----------|
-| `README.md` | Dokumentasi utama (file ini) |
-| `oracle-dev-standards.md` | Standar pengembangan Oracle — versi awal |
 | `oracle-dev-standards-v1.1.md` | **Standar pengembangan Oracle — versi terkini (gunakan ini)** |
 | `naming-convention-oracle.md` | Konvensi penamaan: prefix `XTD_` (EBS), `APX_` (APEX), dll. |
 | `apps-implementation-methodology.md` | Metodologi implementasi aplikasi (berbasis Oracle AIM 3.0) |
 | `Kebijakan_Manajemen_Perubahan_IT_Upstream_Development.md` | Change Management Policy — wajib dibaca semua developer |
 | `custom_apps.json` | Registry *Custom App Gallery* APEX (P-Track & Incident Tracking) |
 | `update-apex-component-modifier.ps1` | Script PowerShell untuk update skill APEX Component Modifier |
-| `.gitignore` | Git exclusion rules |
-
----
+| `archive/oracle-dev-standards.md` | Standar pengembangan Oracle v1.0 (arsip, digantikan v1.1) |
 
 ### 🏢 Modul Oracle EBS
 
@@ -134,8 +191,6 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | `sla/` | Subledger Accounting | Query setup SLA NTI (ADR, AAD, JLD, JED, SLAM, custom source) |
 | `om30/` | AIM Templates | Template dokumen Oracle AIM 3.0 (`AIM30/`) & PJM 2.6.1 (`PJM261/`) |
 
----
-
 ### 🌿 Subsidiary Modules
 
 | Direktori | Entitas | Isi |
@@ -147,8 +202,6 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | `meta/po/` | META | Query penerimaan & ship confirm, solusi approve PO tanpa workflow |
 
 > **KDK** (PT Karunia Daun Kencana — cengkih) dikelola di repository terpisah menggunakan schema `KDK` di Oracle ADB.
-
----
 
 ### 🏗️ Oracle APEX & Aplikasi
 
@@ -162,8 +215,6 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | `apextoebs/` | — | Integrasi & SSO Oracle APEX ↔ Oracle EBS (JSP gateway `XXAPEXGWY.jsp`, Java `XXApexExternalAppManager`) |
 | `apex-sert/` | — | APEX SERT 5.1 user guide & ringkasan security scanning |
 
----
-
 ### 🔧 DevOps & Infrastructure
 
 | Direktori | Deskripsi |
@@ -172,9 +223,6 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | `sysadmin/` | EBS Audit Scripts — 13 query SQL (audit setting, object/system privilege auditing, login & session per responsibility, PAT session, unsuccessful login) + 2 parser `awk` web usage — serta query password EBS |
 | `skills/` | Claude AI skills library — lihat [bagian khusus](#-claude-ai-skills-library) |
 | `oracons/` | Submodule (gitlink) tanpa `.gitmodules` — folder kosong saat di-clone; isi aslinya dikelola di luar repo ini |
-| `update-apex-component-modifier.ps1` | Script PowerShell untuk menyinkronkan skill `apex-component-modifier` |
-
----
 
 ### 📐 Standardization & Governance
 
@@ -186,8 +234,6 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | `oracle-licensing/` | Analisis lisensi Oracle APEX (v1.1–v1.3), komparasi 6 platform database, materi licensing Oracle, SR Oracle Support |
 | `oracle-licensing/oracle23ai-capacity-check/` | Script cek kapasitas manual & setup monitoring otomatis Oracle 23ai Free / XE |
 
----
-
 ### 📚 Knowledge & Training
 
 | Direktori | Deskripsi |
@@ -197,18 +243,20 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | `frappe/Dokumentasi Instalasi Frappe/` | Dokumentasi instalasi Frappe framework |
 | [Wiki](https://github.com/iwanhe/pandawa/wiki) | GitHub Wiki repository (folder `pandawa.wiki/` di repo hanya pointer submodule ke wiki ini) |
 
+</details>
+
 ---
 
 ## 📦 Aplikasi APEX Siap-Install
 
-Aplikasi berikut tersedia dalam bentuk export `.sql` / `.zip` dan terdaftar di [`custom_apps.json`](custom_apps.json) sehingga bisa dipasang lewat **Custom App Gallery** APEX:
+Aplikasi berikut tersedia dalam bentuk export `.sql` / `.zip` dan terdaftar di [`custom_apps.json`](custom_apps.json), sehingga bisa dipasang lewat **Custom App Gallery** APEX:
 
-| App | Internal Name | Source | Zip |
-|-----|---------------|--------|-----|
-| P-Track (PERMADI) | `P_TRACK` | [`p-track/f114.sql`](p-track/f114.sql) | [`p-track/f114.zip`](p-track/f114.zip) |
-| Incident Tracking | `INCIDENT_TRACK` | [`incident-tracking/f101.sql`](incident-tracking/f101.sql) | [`incident-tracking/f101.zip`](incident-tracking/f101.zip) |
+| App | Internal Name | Versi APEX | Source | Zip |
+|-----|---------------|-----------|--------|-----|
+| P-Track (PERMADI) | `P_TRACK` | 24.2.11 | [`p-track/f114.sql`](p-track/f114.sql) | [`p-track/f114.zip`](p-track/f114.zip) |
+| Incident Tracking | `INCIDENT_TRACK` | 24.2.11 | [`incident-tracking/f101.sql`](incident-tracking/f101.sql) | [`incident-tracking/f101.zip`](incident-tracking/f101.zip) |
 
-Cara pakai: di APEX Workspace → **App Gallery** → tambahkan URL raw berikut sebagai custom gallery:
+**Cara pakai:** di APEX Workspace → **App Gallery** → tambahkan URL raw berikut sebagai custom gallery:
 
 ```
 https://raw.githubusercontent.com/iwanhe/pandawa/main/custom_apps.json
@@ -240,7 +288,8 @@ Folder `skills/` berisi skill bundle untuk AI-assisted development dengan Claude
 | `oracle-db/`, `oracle-db-skills.skill`, `oracle-db-skills-main.zip` | 150 referensi Oracle Database dalam 17 kategori (admin, agent, appdev, architecture, containers, design, devops, features, frameworks, migrations, monitoring, ORDS, performance, PL/SQL, security, SQL dev, SQLcl) |
 | `impeccable-skill.zip` | Skill desain UI *impeccable* |
 
-### Koleksi Skill Umum
+<details>
+<summary><b>Koleksi skill umum</b> (±196 skill)</summary>
 
 | Folder | Jumlah | Isi |
 |--------|-------:|-----|
@@ -254,34 +303,54 @@ Folder `skills/` berisi skill bundle untuk AI-assisted development dengan Claude
 | `finance/` | 3 | Financial analyst, business investment advisor, SaaS metrics coach |
 | `business-growth/` | 1 | Business growth |
 
-> Total ±196 skill pada koleksi umum. Folder `_backup_apex_20260331_173517/` dan `_backup_oracle-db_20260428/` berisi snapshot skill lama sebelum update.
+> Folder `_backup_apex_20260331_173517/` dan `_backup_oracle-db_20260428/` berisi snapshot skill lama sebelum update.
+
+</details>
+
+---
+
+## ⚙️ Prasyarat
+
+| Tool | Versi | Keterangan |
+|------|-------|-----------|
+| Oracle Database | 19c+ / 23ai | Target database utama |
+| Oracle EBS | R12.2 | Untuk EBS customizations |
+| Oracle APEX | 24.1 / 24.2 | Runtime aplikasi APEX (FRITS: 24.1, P-Track & Incident Tracking: 24.2) |
+| ORDS | 23.4+ | Oracle REST Data Services |
+| SQLcl | 24.x+ | CLI untuk Oracle, digunakan ADT & SQLcl MCP |
+| Python | 3.10+ | Runtime ADT & automation scripts |
+| [ADT](https://github.com/jkvetina/ADT) | Latest | APEX Deployment Tool — tool utama CI/CD |
+| Node.js | 18+ | Build frontend Access Vault Portal (Vite) |
+| PowerShell | 5.1+ | Deployment scripts (Windows) |
+| Git | 2.x | Version control |
+| Oracle Instant Client | 21c+ | Driver koneksi Oracle untuk Python |
 
 ---
 
 ## 🚀 Quickstart
 
-### 1. Clone Repository
+**1. Clone repository**
 
 ```bash
 git clone https://github.com/iwanhe/pandawa.git
 cd pandawa
 ```
 
-### 2. Koneksi ke Oracle Database
+**2. Koneksi ke Oracle Database dengan SQLcl**
 
-**SQLcl (recommended):**
 ```bash
-sql user/password@//host:port/service_name
-```
+# Database on-premise (password akan diminta)
+sql user@//host:port/service_name
 
-**SQLcl dengan Oracle Wallet (OCI/ADB):**
-```bash
+# Autonomous Database dengan wallet
 sql /nolog
 SQL> set cloudconfig /path/to/wallet.zip
-SQL> connect user/password@service_name_high
+SQL> connect user@service_name_high
 ```
 
-### 3. Menjalankan Script PL/SQL
+> 🔐 Jangan commit password, wallet, atau file koneksi ke repository ini.
+
+**3. Menjalankan script PL/SQL**
 
 ```sql
 -- Contoh: compile package AP Single Payment
@@ -292,25 +361,20 @@ SQL> connect user/password@service_name_high
 @oracle-licensing/oracle23ai-capacity-check/oracle23ai-capacity-check/01_cek_kapasitas_manual.sql
 ```
 
-### 4. Deploy dengan ADT
+**4. Deploy dengan ADT**
 
 Instalasi ADT: lihat [jkvetina/ADT](https://github.com/jkvetina/ADT) atau skill `adt-setup.skill`.
 
 ```bash
-# Export database objects yang berubah 7 hari terakhir
-adt export_db -recent 7
-
-# Export APEX application (split & readable)
-adt export_apex -app 216180 -split -readable
-
-# Preview, buat, dan deploy patch ke UAT
-adt patch -target UAT -patch TASK_ID
-adt patch -target UAT -patch TASK_ID -create -deploy
+adt export_db -recent 7                                      # objek DB yang berubah 7 hari terakhir
+adt export_apex -app 216180 -only -split -readable -recent 0 # export aplikasi APEX
+adt patch -target UAT -patch TASK_ID                         # preview commit yang cocok
+adt patch -target UAT -patch TASK_ID -create -deploy         # buat & deploy patch ke UAT
 ```
 
-Lihat [`ci-cd-oracle-apex-ebs/cicd_deployment_standard.md`](ci-cd-oracle-apex-ebs/cicd_deployment_standard.md) untuk standar pipeline lengkap.
+Standar pipeline lengkap: [`ci-cd-oracle-apex-ebs/cicd_deployment_standard.md`](ci-cd-oracle-apex-ebs/cicd_deployment_standard.md)
 
-### 5. Access Vault Portal (development)
+**5. Access Vault Portal (development)**
 
 ```bash
 # Backend: jalankan berurutan di schema APX
@@ -324,64 +388,27 @@ Detail: [`KCSI_Access_Vault_Portal_Code/README.md`](KCSI_Access_Vault_Portal_Cod
 
 ---
 
-## 📏 Coding Standards
+## 🔄 Alur Deployment
 
-Seluruh pengembangan **wajib** mengikuti dokumen standar berikut:
-
-### Naming Convention (ringkasan)
-
-| Konteks | Prefix/Suffix | Contoh |
-|---------|--------------|--------|
-| EBS Objects | `XTD_` | `XTD_AP_UTILS_PKG` |
-| APEX Objects | `APX_` | `APX_FRITS_PKG` |
-| Package | `_PKG` | `XTD_GL_REPORT_PKG` |
-| Procedure | `_PRC` | `XTD_AP_POST_PRC` |
-| Function | `_FNC` | `XTD_INV_CALC_FNC` |
-| View | `_V` | `XTD_PO_HEADERS_V` |
-| Trigger | `_TRG` | `XTD_AP_INVOICE_TRG` |
-
-### Konvensi Variabel PL/SQL
-
-| Prefix | Tipe | Contoh |
-|--------|------|--------|
-| `l_` | Local variable | `l_vendor_name` |
-| `g_` | Global variable | `g_org_id` |
-| `k_` | Constant | `k_max_lines` |
-| `p_` | IN parameter | `p_invoice_id` |
-| `x_` | OUT parameter | `x_return_status` |
-| `r_` | Record type | `r_invoice` |
-| `t_` | Table/collection | `t_line_ids` |
-| `e_` | Exception | `e_invalid_amount` |
-
-### Style
-
-- **Indentasi**: 3 spasi
-- **SQL keywords**: lowercase (`select`, `from`, `where`)
-- **Koma**: di depan kolom (`,  col_name`)
-- **Anchored declarations**: `l_name employee.name%TYPE`
-
-📄 Detail lengkap: [`oracle-dev-standards-v1.1.md`](oracle-dev-standards-v1.1.md) · [`naming-convention-oracle.md`](naming-convention-oracle.md)
-
----
-
-## 🔄 Deployment Workflow
-
-```
-Feature Branch → Dev → UAT → main (Production)
+```mermaid
+flowchart LR
+    A["📋 Task + acceptance<br/>criteria"] --> B["🌿 Feature branch"]
+    B --> C["🛠️ Develop di DEV<br/>DB + APEX Builder"]
+    C --> D["📤 adt export_db<br/>adt export_apex"]
+    D --> E["💾 Commit<br/>prefix TASK_ID"]
+    E --> F["📦 adt patch -create"]
+    F --> G["🔍 Pull request<br/>+ code review"]
+    G --> Q{"🚦 QG010<br/>Pre-UAT Quality Gate"}
+    Q -->|Lolos| H{"🧪 UAT"}
+    Q -->|Gagal| C
+    H -->|"BPO sign-off"| I{"✅ CR approved?"}
+    H -->|Gagal| C
+    I -->|Ya| J["🚀 Deploy Production<br/>di luar jam operasional"]
+    I -->|Tidak| C
+    J --> K["📝 PG010<br/>Post Go-Live Review"]
 ```
 
-### Kategori Perubahan
-
-| Kategori | Waktu Proses | Approval |
-|----------|-------------|---------|
-| Emergency Change | < 4 jam | Manager IT + BPO |
-| Standard Change | 1–3 hari | Analyst + PMO |
-| Normal Change | 5–10 hari | BPO + PMO |
-| Major Change | > 10 hari | Steering Committee |
-
-📄 Detail lengkap: [`Kebijakan_Manajemen_Perubahan_IT_Upstream_Development.md`](Kebijakan_Manajemen_Perubahan_IT_Upstream_Development.md)
-
-### Checklist Deployment
+### ✅ Checklist deployment
 
 - [ ] Code review selesai
 - [ ] Script sudah ditest di Dev
@@ -391,6 +418,101 @@ Feature Branch → Dev → UAT → main (Production)
 - [ ] Change Request (CR) approved
 - [ ] Deployment dilakukan di luar jam operasional (jika production)
 - [ ] Post Go-Live Review ([PG010](standardization/2026/PG010-Post-GoLive-Review-Feedback.md))
+
+---
+
+## 🧭 Change Management
+
+```mermaid
+flowchart TD
+    S(["Ada permintaan perubahan"]) --> Q1{"Production down /<br/>dampak kritis?"}
+    Q1 -->|Ya| EM["🚨 Emergency Change<br/>kurang dari 4 jam<br/>Manager IT + BPO"]
+    Q1 -->|Tidak| Q2{"Rutin, risiko rendah,<br/>prosedur baku?"}
+    Q2 -->|Ya| ST["🟢 Standard Change<br/>1–3 hari<br/>Analyst + PMO"]
+    Q2 -->|Tidak| Q3{"Lintas modul /<br/>proyek besar?"}
+    Q3 -->|Tidak| NO["🟡 Normal Change<br/>5–10 hari<br/>BPO + PMO"]
+    Q3 -->|Ya| MA["🔴 Major Change<br/>lebih dari 10 hari<br/>Steering Committee"]
+```
+
+📄 Detail lengkap: [`Kebijakan_Manajemen_Perubahan_IT_Upstream_Development.md`](Kebijakan_Manajemen_Perubahan_IT_Upstream_Development.md)
+
+---
+
+## 📏 Coding Standards
+
+Seluruh pengembangan **wajib** mengikuti [`oracle-dev-standards-v1.1.md`](oracle-dev-standards-v1.1.md) dan [`naming-convention-oracle.md`](naming-convention-oracle.md). Ringkasannya:
+
+<table>
+<tr>
+<td valign="top">
+
+**Prefix & suffix objek**
+
+| Konteks | Pola | Contoh |
+|---------|------|--------|
+| EBS | `XTD_` | `XTD_AP_UTILS_PKG` |
+| APEX | `APX_` | `APX_FRITS_PKG` |
+| Package | `_PKG` | `XTD_GL_REPORT_PKG` |
+| Procedure | `_PRC` | `XTD_AP_POST_PRC` |
+| Function | `_FNC` | `XTD_INV_CALC_FNC` |
+| View | `_V` | `XTD_PO_HEADERS_V` |
+| Trigger | `_TRG` | `XTD_AP_INVOICE_TRG` |
+
+</td>
+<td valign="top">
+
+**Variabel PL/SQL**
+
+| Prefix | Tipe | Contoh |
+|--------|------|--------|
+| `l_` | Local | `l_vendor_name` |
+| `g_` | Global | `g_org_id` |
+| `k_` | Constant | `k_max_lines` |
+| `p_` | IN param | `p_invoice_id` |
+| `x_` | OUT param | `x_return_status` |
+| `r_` | Record | `r_invoice` |
+| `t_` | Collection | `t_line_ids` |
+| `e_` | Exception | `e_invalid_amount` |
+
+</td>
+</tr>
+</table>
+
+**Style:** indentasi 3 spasi · SQL keyword lowercase · koma di depan kolom · anchored declaration (`%TYPE`, `%ROWTYPE`)
+
+```sql
+procedure post_invoice (
+   p_invoice_id     in  ap_invoices_all.invoice_id%type
+,  x_return_status  out varchar2
+) is
+   l_vendor_name  ap_suppliers.vendor_name%type;
+begin
+   select sup.vendor_name
+     into l_vendor_name
+     from ap_invoices_all inv
+        , ap_suppliers    sup
+    where inv.vendor_id  = sup.vendor_id
+      and inv.invoice_id = p_invoice_id;
+
+   x_return_status := 'S';
+end post_invoice;
+```
+
+---
+
+## 💻 Bahasa Pemrograman
+
+| Bahasa | Porsi | Kegunaan |
+|--------|------:|----------|
+| Python | 77,5% | Tools & script pada skill library (`skills/`), automation scripts |
+| PL/SQL & SQL | 17,8% | EBS API scripts, package, APEX application export, ORDS REST setup |
+| JavaScript / JSX | 2,5% | Frontend React (Access Vault Portal), APEX dynamic actions |
+| HTML / CSS | 0,6% | APEX templates, UI components |
+| Java / JSP | 0,4% | Integrasi & SSO APEX ↔ EBS (`apextoebs/`) |
+| PL/pgSQL · TypeScript | 0,7% | Contoh/integrasi pada koleksi skill engineering |
+| Shell · Awk · PowerShell | 0,4% | Script deployment & setup (Windows), parsing log EBS (`sysadmin/`) |
+
+> Data dari GitHub Linguist per Oktober 2026. Porsi Python didominasi oleh skill library (±345 file `.py`); kode inti PANDAWA sendiri mayoritas PL/SQL & SQL.
 
 ---
 
@@ -406,6 +528,7 @@ Feature Branch → Dev → UAT → main (Production)
 - [x] Quality gate & OWASP compliance checklist (`standardization/2026/`)
 - [x] Oracle 23ai Free capacity monitoring
 - [x] KCSI Access Vault Portal
+- [ ] Kesiapan upgrade Oracle APEX 26.1
 - [ ] utPLSQL automated test suite per modul
 - [ ] Docker containerized dev environment
 - [ ] API documentation otomatis per package/function
@@ -425,7 +548,10 @@ Feature Branch → Dev → UAT → main (Production)
 | **Induk** | Nojorono Group |
 | **Lokasi** | Kudus, Jawa Tengah |
 | **Stack Utama** | Oracle EBS R12.2 · Oracle APEX 24.x · ORDS · PL/SQL · ADT · SQLcl · Python |
-| **Repository** | https://github.com/iwanhe/pandawa |
+
+<a href="https://github.com/iwanhe/pandawa/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=iwanhe/pandawa" alt="Contributors"/>
+</a>
 
 Pertanyaan, laporan bug, atau permintaan fitur → [buka GitHub Issue](https://github.com/iwanhe/pandawa/issues)
 
@@ -433,13 +559,8 @@ Pertanyaan, laporan bug, atau permintaan fitur → [buka GitHub Issue](https://g
 
 ## 📄 Lisensi
 
-Repository ini dilisensikan di bawah [MIT License](LICENSE).
-Bebas digunakan, dimodifikasi, dan didistribusikan dengan tetap mencantumkan attribution yang sesuai.
+Repository ini dilisensikan di bawah [MIT License](LICENSE). Bebas digunakan, dimodifikasi, dan didistribusikan dengan tetap mencantumkan atribusi yang sesuai.
 
 > Skill pihak ketiga di folder `skills/` (mis. `oracle-db/`, koleksi engineering/marketing/dll.) mengikuti lisensi masing-masing sumbernya.
 
----
-
-> **Catatan:** Repository ini terus berkembang seiring dengan penambahan modul dan fitur baru.
-> Dokumentasi diperbarui secara berkala mengikuti kondisi aktual repository.
-> Terakhir diperbarui: 27 Oktober 2026 — hasil scan ±3.860 file, sinkron dengan isi repo per commit `b727c8d` (perubahan konten terakhir: `68a2b3b`, KCSI Access Vault Portal)
+<sub>Terakhir diperbarui: 27 Oktober 2026</sub>
