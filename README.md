@@ -52,6 +52,7 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 
 | Tanggal | Perubahan |
 |---------|-----------|
+| Okt 2026 | Sinkronisasi README dengan kondisi repo: jumlah skill per koleksi, komposisi bahasa, versi APEX tiap app, submodule `oracons/` & `pandawa.wiki/` |
 | Sep 2026 | **KCSI Access Vault Portal** — portal internal rekap data akses/koneksi (`KCSI_Access_Vault_Portal_Code/`) |
 | Agu 2026 | **Oracle 23ai Free Capacity Check** — monitoring storage agar tidak mentok batas 12 GB (`oracle-licensing/oracle23ai-capacity-check/`) |
 | Agu 2026 | **APEXlang skill** `apexlang-2026.08.01.zip` (`skills/`) |
@@ -64,16 +65,17 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 
 ## 🧑‍💻 Bahasa Pemrograman
 
-| Bahasa | Kegunaan |
-|--------|----------|
-| PL/SQL & SQL | EBS API scripts, package, APEX application export, ORDS REST setup |
-| Python | Tools pada skill library, automation scripts |
-| JavaScript / JSX | Frontend React (Access Vault Portal), APEX dynamic actions |
-| Java / JSP | Integrasi & SSO APEX ↔ EBS (`apextoebs/`) |
-| HTML / CSS | APEX templates, UI components |
-| PowerShell / Shell | Script deployment & setup (Windows) |
+| Bahasa | Porsi | Kegunaan |
+|--------|------:|----------|
+| Python | 77,5% | Tools & script pada skill library (`skills/`), automation scripts |
+| PL/SQL & SQL | 17,8% | EBS API scripts, package, APEX application export, ORDS REST setup |
+| JavaScript / JSX | 2,5% | Frontend React (Access Vault Portal), APEX dynamic actions |
+| HTML / CSS | 0,6% | APEX templates, UI components |
+| Java / JSP | 0,4% | Integrasi & SSO APEX ↔ EBS (`apextoebs/`) |
+| PL/pgSQL · TypeScript | 0,7% | Contoh/integrasi pada koleksi skill engineering |
+| Shell · Awk · PowerShell | 0,4% | Script deployment & setup (Windows), parsing log EBS (`sysadmin/`) |
 
-> Persentase komposisi bahasa terkini bisa dilihat di panel **Languages** pada halaman GitHub repository.
+> Data dari GitHub Linguist per Oktober 2026. Porsi Python didominasi oleh skill library (±345 file `.py`); kode inti PANDAWA sendiri mayoritas PL/SQL & SQL.
 
 ---
 
@@ -152,11 +154,11 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 
 | Direktori | App | Deskripsi |
 |-----------|-----|-----------|
-| `frits/f216180/` | 216180 | **FRITS** — Form Request IT System (schema `WKSP_NTIAPPS`, APEX 24.1) |
-| `p-track/` | 114 | **P-Track / PERMADI** — Project tracking & monitoring (APEX 24.2) |
-| `incident-tracking/` | 101 | **Incident Tracking** — manajemen & tracking insiden IT (APEX 24.2) |
+| `frits/f216180/` | 216180 | **FRITS** — Form Request IT System (schema `WKSP_NTIAPPS`, export APEX 24.1.5, split + `install.sql` + `f216180.zip`) |
+| `p-track/` | 114 | **P-Track / PERMADI** — Project tracking & monitoring (export APEX 24.2.11) |
+| `incident-tracking/` | 101 | **Incident Tracking** — manajemen & tracking insiden IT (export APEX 24.2.11) |
 | `meta/outsystem_log.zip` | 105 | OutSystems Log — aplikasi APEX untuk log viewer |
-| `KCSI_Access_Vault_Portal_Code/` | — | **Access Vault Portal** — React + Vite (Netlify) dengan backend ORDS + OAuth2 & enkripsi AES-256 (schema `APX`) |
+| `KCSI_Access_Vault_Portal_Code/` | — | **Access Vault Portal** — React 18 + Vite 5 + React Router (Netlify) dengan backend ORDS + OAuth2 & enkripsi AES-256 (schema `APX`, 5 script backend berurutan) |
 | `apextoebs/` | — | Integrasi & SSO Oracle APEX ↔ Oracle EBS (JSP gateway `XXAPEXGWY.jsp`, Java `XXApexExternalAppManager`) |
 | `apex-sert/` | — | APEX SERT 5.1 user guide & ringkasan security scanning |
 
@@ -167,8 +169,10 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | Direktori | Deskripsi |
 |-----------|-----------|
 | `ci-cd-oracle-apex-ebs/` | Standar CI/CD deployment Oracle APEX & EBS (ADT) dan panduan FNDLOAD R12.2 |
-| `sysadmin/` | EBS Audit Scripts (audit setting, session, responsibility, PAT) & query password EBS |
+| `sysadmin/` | EBS Audit Scripts — 13 query SQL (audit setting, object/system privilege auditing, login & session per responsibility, PAT session, unsuccessful login) + 2 parser `awk` web usage — serta query password EBS |
 | `skills/` | Claude AI skills library — lihat [bagian khusus](#-claude-ai-skills-library) |
+| `oracons/` | Submodule (gitlink) tanpa `.gitmodules` — folder kosong saat di-clone; isi aslinya dikelola di luar repo ini |
+| `update-apex-component-modifier.ps1` | Script PowerShell untuk menyinkronkan skill `apex-component-modifier` |
 
 ---
 
@@ -191,7 +195,7 @@ Pandawa adalah monorepo Tim PANDAWA yang mencakup:
 | `training/Integration PO Distributor - SO Prinsipal/` | Materi integrasi PO Distributor ↔ SO Prinsipal, MD050 OM Ship Confirm v1.2, EUT script |
 | `training/SQL Practice - Hands On/` | Materi & soal latihan SQL beserta ERD |
 | `frappe/Dokumentasi Instalasi Frappe/` | Dokumentasi instalasi Frappe framework |
-| [Wiki](https://github.com/iwanhe/pandawa/wiki) | GitHub Wiki repository |
+| [Wiki](https://github.com/iwanhe/pandawa/wiki) | GitHub Wiki repository (folder `pandawa.wiki/` di repo hanya pointer submodule ke wiki ini) |
 
 ---
 
@@ -223,33 +227,34 @@ Folder `skills/` berisi skill bundle untuk AI-assisted development dengan Claude
 | File / Folder | Fungsi |
 |---------------|--------|
 | `adt.skill`, `adt-setup.skill` | Operasional & instalasi ADT (export, patch, deploy, recompile) |
-| `apex.skill`, `apex/` | Export/patch/import komponen APEX via SQLcl |
-| `apex-component-modifier/`, `apex-component-modifier.zip` | Modifikasi komponen APEX (global/app patterns, evals, tools) |
+| `apex.skill`, `apex/` | Export/patch/import komponen APEX via SQLcl (global patterns, references, tools) |
+| `apex-component-modifier/`, `apex-component-modifier.zip`, `apex-component-modifier-SKILL.md` | Modifikasi komponen APEX (global/app patterns, evals, templates, tools) |
 | `apex-qa-pandawa.skill` | Standar QA APEX PANDAWA (MVC, naming `APX_`, page design) |
 | `apex-rest-pandawa.skill` | Standar REST/ORDS PANDAWA |
 | `apex-sert.skill` | APEX SERT security evaluation & remediation |
-| `apexlang-*.zip` | Skill APEXlang (terbaru: `apexlang-2026.08.01.zip`) |
+| `apexlang-*.zip` | Skill APEXlang — terbaru `apexlang-2026.08.01.zip`; varian lama: `apexlang-skill-install.zip`, `apexlang-skill-slim.zip`, `apexlang-skill-slim-v2.zip` |
 | `redwood-apex.skill` | Oracle Redwood Design System untuk APEX |
 | `oracle-dev-standards.skill` | Standar development Oracle EBS & APEX PANDAWA |
 | `upstream-change-management.skill` | Change Management Policy IT Upstream Development |
-| `sqlcl.skill`, `sqlcl/` | SQLcl & SQLcl MCP |
-| `oracle-db/`, `oracle-db-skills.skill` | 117 referensi Oracle Database (SQL, PL/SQL, tuning, security, ORDS, migrasi) |
+| `sqlcl.skill`, `sqlcl.zip`, `sqlcl/` | SQLcl & SQLcl MCP (references + templates) |
+| `oracle-db/`, `oracle-db-skills.skill`, `oracle-db-skills-main.zip` | 150 referensi Oracle Database dalam 17 kategori (admin, agent, appdev, architecture, containers, design, devops, features, frameworks, migrations, monitoring, ORDS, performance, PL/SQL, security, SQL dev, SQLcl) |
 | `impeccable-skill.zip` | Skill desain UI *impeccable* |
 
 ### Koleksi Skill Umum
 
-| Folder | Isi |
-|--------|-----|
-| `engineering/` | 25 skill advanced engineering (agent design, RAG, MCP server, CI/CD, database design, observability) |
-| `engineering-team/` | 23 skill engineering (architecture, frontend, backend, QA, DevOps, security, AI/ML, data) |
-| `c-level-advisor/` | 10 advisor C-level (CEO, CTO, CFO, CISO, dll.) + board meeting |
-| `product-team/` | 10 skill product (RICE, agile PO, OKR, UX research) |
-| `project-management/` | 6 skill PM (senior PM, scrum master, Jira, Confluence) |
-| `marketing-skill/` | 42 skill marketing (content, SEO, CRO, growth) |
-| `ra-qm-team/` | 12 skill regulatory & QM (ISO 13485, ISO 27001, GDPR) |
-| `finance/`, `business-growth/` | Analisis finansial & business growth |
+| Folder | Jumlah | Isi |
+|--------|-------:|-----|
+| `engineering/` | 48 | Advanced engineering (agent design, RAG, MCP server, CI/CD, database design, observability, release, runbook, dll.) |
+| `engineering-team/` | 35 | Engineering per peran (architect, frontend, backend, fullstack, QA, DevOps, security, AI/ML, data, cloud AWS/Azure/GCP) |
+| `c-level-advisor/` | 28 | Advisor C-level (CEO, CTO, CFO, CISO, COO, CPO, dll.), board meeting & board deck, M&A, change management |
+| `marketing-skill/` | 44 | Content, SEO, CRO, paid ads, pricing, growth |
+| `product-team/` | 16 | Product (RICE, agile PO, OKR, UX research) |
+| `ra-qm-team/` | 13 | Regulatory & quality management (ISO 13485, ISO 27001, GDPR) |
+| `project-management/` | 8 | PM (senior PM, scrum master, Jira, Confluence) |
+| `finance/` | 3 | Financial analyst, business investment advisor, SaaS metrics coach |
+| `business-growth/` | 1 | Business growth |
 
-> Folder `_backup_*` berisi snapshot skill lama sebelum update.
+> Total ±196 skill pada koleksi umum. Folder `_backup_apex_20260331_173517/` dan `_backup_oracle-db_20260428/` berisi snapshot skill lama sebelum update.
 
 ---
 
@@ -437,4 +442,4 @@ Bebas digunakan, dimodifikasi, dan didistribusikan dengan tetap mencantumkan att
 
 > **Catatan:** Repository ini terus berkembang seiring dengan penambahan modul dan fitur baru.
 > Dokumentasi diperbarui secara berkala mengikuti kondisi aktual repository.
-> Terakhir diperbarui: Oktober 2026 (sinkron dengan commit `68a2b3b`)
+> Terakhir diperbarui: 27 Oktober 2026 — hasil scan ±3.860 file, sinkron dengan isi repo per commit `b727c8d` (perubahan konten terakhir: `68a2b3b`, KCSI Access Vault Portal)
