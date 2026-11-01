@@ -142,7 +142,7 @@ export default tseslint.config(
           },
         },
       ],
-      'no-duplicate-imports': 'error', // JS-703
+      'no-duplicate-imports': ['error', { allowSeparateTypeImports: true }], // JS-703
 
       // JS-8xx Keamanan
       'no-eval': 'error', // JS-801
