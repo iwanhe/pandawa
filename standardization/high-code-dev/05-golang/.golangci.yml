@@ -1,0 +1,118 @@
+# Konfigurasi golangci-lint standar PANDAWA untuk Go (golangci-lint v2).
+# Sumber aturan: 05-golang/Standar_Golang.xlsx. Kolom "Alat" di file itu
+# menunjukkan linter yang menegakkan setiap aturan.
+#
+# Pemakaian:   golangci-lint run ./...
+# Salin file ini ke root repo. Perubahan aturan diajukan lewat PR ke folder standar.
+
+version: "2"
+
+run:
+  timeout: 5m
+  modules-download-mode: readonly # GO-609
+
+linters:
+  default: none
+  enable:
+    # Minimum Uber Go Style Guide
+    - errcheck          # GO-116, GO-117
+    - govet             # GO-104, GO-319, GO-324
+    - revive            # GO-125, GO-306, GO-310
+    - staticcheck
+    # Tambahan bawaan
+    - ineffassign
+    - unused
+    # Error
+    - errorlint         # GO-113
+    - errname           # GO-114
+    - forcetypeassert   # GO-117
+    # Struktur dan penamaan
+    - recvcheck                 # GO-103
+    - predeclared               # GO-122
+    - gochecknoinits            # GO-123, GO-124
+    - embeddedstructfieldcheck  # GO-313
+    - nestif                    # GO-309
+    - goprintffuncname          # GO-325
+    # Serialisasi
+    - musttag           # GO-126
+    - tagliatelle       # GO-126
+    # Performa
+    - perfsprint        # GO-201
+    - prealloc          # GO-203
+    # Resource, context, HTTP, database
+    - bodyclose         # GO-106
+    - sqlclosecheck     # GO-106
+    - rowserrcheck      # GO-106
+    - contextcheck      # GO-605
+    - containedctx      # GO-605
+    - noctx             # GO-605, GO-606
+    # Keamanan dan logging
+    - gosec             # GO-604, GO-608
+    - sloglint          # GO-607
+    # Disiplin pengecualian
+    - nolintlint        # GO-503
+
+  settings:
+    errcheck:
+      check-type-assertions: true
+    revive:
+      rules:
+        # Aturan bawaan revive (setara golint)
+        - name: blank-imports
+        - name: context-as-argument
+        - name: context-keys-type
+        - name: dot-imports
+        - name: error-return
+        - name: error-strings
+        - name: error-naming
+        - name: exported
+        - name: increment-decrement
+        - name: var-naming
+        - name: var-declaration
+        - name: package-comments
+        - name: range
+        - name: receiver-naming
+        - name: time-naming
+        - name: unexported-return
+        - name: indent-error-flow
+        - name: errorf
+        - name: empty-block
+        - name: superfluous-else
+        - name: unused-parameter
+        - name: unreachable-code
+        - name: redefines-builtin-id
+        # Tambahan PANDAWA
+        - name: deep-exit   # GO-125
+    tagliatelle:
+      case:
+        rules:
+          json: camel
+          yaml: camel
+    nestif:
+      min-complexity: 4
+    sloglint:
+      no-mixed-args: true
+      static-msg: true
+    nolintlint:
+      require-explanation: true
+      require-specific: true
+
+  exclusions:
+    presets:
+      - std-error-handling
+    rules:
+      # Test boleh memakai type assertion langsung dan pola yang lebih bebas.
+      - path: _test\.go
+        linters:
+          - forcetypeassert
+          - gosec
+
+formatters:
+  enable:
+    - gofmt     # GO-501
+    - goimports # GO-304, GO-501
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  uniq-by-line: false
