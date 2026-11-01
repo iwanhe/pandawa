@@ -1,20 +1,32 @@
 # Contoh Kode — JavaScript & TypeScript
 
-Contoh kode untuk menjelaskan aturan. Setiap contoh merujuk ke satu ID aturan.
-
-## Konvensi
+Setiap file diawali ID aturan utama yang dicontohkan. Komentar di baris pertama menyebut aturan lain yang ikut ditunjukkan (benar) atau dilanggar (salah).
 
 ```
 examples/
-├── benar/   <ID-aturan>_<ringkasan>.<ext>
-└── salah/   <ID-aturan>_<ringkasan>.<ext>
+├── benar/   tsc lulus, ESLint 0 temuan
+│   ├── JS-203_objek_parameter.ts
+│   ├── JS-402_async_paralel.ts
+│   ├── JS-802_nominal_desimal.ts
+│   ├── TS-207_validasi_data_luar.ts
+│   └── TS-402_union_exhaustive.ts
+└── salah/   sengaja melanggar; ESLint harus menemukan pelanggaran
+    ├── JS-101_gaya_lama.ts
+    ├── JS-402_promise_diabaikan.ts
+    ├── JS-702_default_export.ts
+    └── JS-804_innerhtml_eval.ts
 ```
 
-Contoh: `benar/JS-301_<ringkasan>.<ext>` dan `salah/JS-301_<ringkasan>.<ext>`.
-Ekstensi yang umum di folder ini: ts/js.
+## Menjalankan
 
-## Aturan
+Dari folder `02-javascript-typescript`:
 
-- Contoh sesingkat mungkin, hanya cukup untuk menunjukkan aturannya.
-- Tidak berisi data, nama server, atau kredensial asli.
-- Contoh di `salah/` diberi komentar di baris pertama: aturan yang dilanggar dan alasannya.
+```bash
+npm ci
+npm run typecheck          # tsc lulus untuk benar dan salah (pelanggaran ada di level lint)
+npm run lint:benar         # harus 0 temuan
+npm run lint:salah         # harus menampilkan pelanggaran
+npm run format:check
+```
+
+Folder ini juga berfungsi sebagai uji regresi: bila `eslint.config.js` diubah, jalankan kedua perintah lint dan pastikan hasilnya tetap sama.

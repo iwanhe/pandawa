@@ -1,0 +1,5 @@
+# Salin file ini menjadi .npmrc di root proyek (nama .npmrc tidak dapat dikirim lewat alat sinkronisasi).
+# Standar PANDAWA (JS-806): install script paket pihak ketiga tidak dijalankan otomatis,
+# dan versi dependency disimpan tepat (tanpa ^ atau ~).
+ignore-scripts=true
+save-exact=true

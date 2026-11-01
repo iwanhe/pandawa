@@ -1,0 +1,29 @@
+{
+  "name": "pandawa-standar-js-ts",
+  "version": "0.2.0",
+  "description": "Konfigurasi dan contoh Standar JavaScript & TypeScript PANDAWA",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:benar": "eslint examples/benar",
+    "lint:salah": "eslint examples/salah",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "17.14.0",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "decimal.js": "10.6.0"
+  }
+}
