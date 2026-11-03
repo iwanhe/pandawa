@@ -3,7 +3,7 @@
 # 🏛️ PANDAWA
 
 **Monorepo Tim PANDAWA — IT Upstream Development**<br/>
-KCSI (Karya Cipta Solusi Internasional) · Nojorono Group · Kudus, Jawa Tengah
+KCSI (Karya Cipta Solusi Internasional) · Kudus, Jawa Tengah
 
 [![License: MIT](https://img.shields.io/github/license/iwanhe/pandawa?color=blue)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/iwanhe/pandawa)](https://github.com/iwanhe/pandawa/commits/main)
@@ -17,7 +17,7 @@ KCSI (Karya Cipta Solusi Internasional) · Nojorono Group · Kudus, Jawa Tengah
 
 > 🇬🇧 **In short:** PANDAWA is the central repository of an Oracle development team in Indonesia. It holds Oracle EBS R12.2 API scripts and customizations, ready-to-install Oracle APEX apps (installable through a Custom App Gallery), a full-stack ORDS-backed portal, an ADT-based CI/CD standard, governance documents, and a large library of Claude AI skills for Oracle development. Documentation is mostly in Bahasa Indonesia.
 
-Repository pusat Tim PANDAWA untuk kode sumber, aplikasi APEX siap-install, tools, standar pengembangan, CI/CD pipeline, AI skills library, dan materi referensi seluruh project Oracle EBS & Oracle APEX di lingkungan Nojorono Group.
+Repository pusat Tim PANDAWA untuk kode sumber, aplikasi APEX siap-install, tools, standar pengembangan, CI/CD pipeline, AI skills library, dan materi referensi seluruh project Oracle EBS & Oracle APEX yang ditangani KCSI.
 
 ---
 
@@ -49,7 +49,7 @@ Repository pusat Tim PANDAWA untuk kode sumber, aplikasi APEX siap-install, tool
 | 🧩 **Oracle APEX Applications** | Export aplikasi APEX internal (FRITS, P-Track/PERMADI, Incident Tracking) yang bisa di-install langsung, termasuk via *Custom App Gallery* |
 | 🌐 **Full-stack Apps** | KCSI Access Vault Portal — React + Vite di Netlify, backend Oracle ORDS/PL/SQL |
 | 🔄 **CI/CD Automation** | Standar deployment berbasis [ADT](https://github.com/jkvetina/ADT) & FNDLOAD untuk Dev → UAT → Production |
-| 🌿 **Subsidiary Modules** | Kode & dokumentasi spesifik subsidiary Nojorono Group (NTI, NSTI, GLT, DNN) |
+| 🌿 **Subsidiary Modules** | Kode & dokumentasi spesifik per entitas yang dilayani KCSI (NTI, NSTI, GLT, DNN) |
 | 🤖 **Claude AI Skills Library** | Skill bundle untuk AI-assisted development (ADT, APEX, SQLcl, Oracle DB, standar PANDAWA) plus koleksi skill engineering/bisnis |
 | 📐 **Standardisasi & Governance** | Standar pengembangan, naming convention, metodologi implementasi, change management policy, quality gate, dan analisis lisensi Oracle |
 
@@ -85,7 +85,7 @@ Gambaran tingkat tinggi bagaimana komponen di repository ini saling terhubung.
 
 ```mermaid
 flowchart LR
-    U["👤 Pengguna bisnis<br/>subsidiary Nojorono Group"]
+    U["👤 Pengguna bisnis<br/>entitas yang dilayani KCSI"]
 
     subgraph FE["Front-end"]
         APEX["Oracle APEX 24.x<br/>FRITS · P-Track · Incident Tracking"]
@@ -545,7 +545,6 @@ end post_invoice;
 | | |
 |---|---|
 | **Organisasi** | KCSI — Karya Cipta Solusi Internasional |
-| **Induk** | Nojorono Group |
 | **Lokasi** | Kudus, Jawa Tengah |
 | **Stack Utama** | Oracle EBS R12.2 · Oracle APEX 24.x · ORDS · PL/SQL · ADT · SQLcl · Python |
 
