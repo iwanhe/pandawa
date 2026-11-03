@@ -1,5 +1,5 @@
 # Knowledge Base: Ringkasan Implementasi Oracle EBS 2016
-**PT Nojorono Group**
+**Entitas yang dilayani KCSI**
 **Dokumen Sumber:** 01_Oracle_EBS_2016_Summary.docx
 **Dirangkum per:** 23 March 2026
 **Sumber Asli:** Folder Oracle EBS 2016 — Google Drive (owner: iwan.herdian.erp@gmail.com)
@@ -8,7 +8,7 @@
 
 ## 1. Ringkasan Eksekutif
 
-Proyek Oracle E-Business Suite (EBS) 2016 merupakan inisiatif strategis PT Nojorono Group untuk mengimplementasikan sistem ERP terintegrasi. Implementasi menggunakan **Oracle EBS versi 12.2** dengan metodologi **AIM (Application Implementation Methodology)** yang mencakup fase:
+Proyek Oracle E-Business Suite (EBS) 2016 merupakan inisiatif strategis grup perusahaan untuk mengimplementasikan sistem ERP terintegrasi. Implementasi menggunakan **Oracle EBS versi 12.2** dengan metodologi **AIM (Application Implementation Methodology)** yang mencakup fase:
 - Inception
 - Design
 - Construction
@@ -19,7 +19,7 @@ Proyek Oracle E-Business Suite (EBS) 2016 merupakan inisiatif strategis PT Nojor
 
 ## 2. Latar Belakang dan Tujuan
 
-PT Nojorono Group bergerak di industri rokok (SKT/SKM) dengan berbagai anak perusahaan di bidang tembakau, cengkeh, percetakan, dan distribusi. Sebelum implementasi Oracle EBS, perusahaan belum memiliki sistem ERP terintegrasi sehingga terdapat gap dalam pencatatan keuangan, manajemen inventory, produksi, dan pelaporan konsolidasi.
+Grup perusahaan bergerak di industri rokok (SKT/SKM) dengan berbagai anak perusahaan di bidang tembakau, cengkeh, percetakan, dan distribusi. Sebelum implementasi Oracle EBS, perusahaan belum memiliki sistem ERP terintegrasi sehingga terdapat gap dalam pencatatan keuangan, manajemen inventory, produksi, dan pelaporan konsolidasi.
 
 ### Tujuan Implementasi
 1. Mengintegrasikan seluruh proses bisnis dalam satu sistem ERP

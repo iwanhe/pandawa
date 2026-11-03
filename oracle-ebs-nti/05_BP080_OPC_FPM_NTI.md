@@ -1,5 +1,5 @@
 # Knowledge Base: Oracle Project Costing (OPC) — Future Process Model
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** BP080-OPC_OPC NTI v1.0.docx
 **Versi:** 1.0 | **Tanggal:** 14-Apr-21 (Revisi: 29-Oct-21)
 **Penyusun:** Citra Andriani (Trees Solutions) | **Functional Leader:** Francisco Edo

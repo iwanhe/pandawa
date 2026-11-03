@@ -20,9 +20,9 @@ wwv_imp_workspace.create_flow(
 ,p_page_protection_enabled_y_n=>'Y'
 ,p_checksum_salt=>'21079D6DA8782BB2E9D54354A1631E522D4625663C1B7F9AC04CE717C4BF65D1'
 ,p_bookmark_checksum_function=>'SH512'
-,p_on_max_session_timeout_url=>'https://sites.google.com/nojorono.com/ntimisportal/home'
+,p_on_max_session_timeout_url=>'https://intranet.example.com/ntimisportal/home'
 ,p_max_session_idle_sec=>1800
-,p_on_max_idle_timeout_url=>'https://sites.google.com/nojorono.com/ntimisportal/home'
+,p_on_max_idle_timeout_url=>'https://intranet.example.com/ntimisportal/home'
 ,p_compatibility_mode=>'21.2'
 ,p_accessible_read_only=>'N'
 ,p_flow_language=>'en'

@@ -1,5 +1,5 @@
 # Knowledge Base: Invoice to Payment (ITP) — Integrasi dengan Oracle Project Costing (OPC)
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** BP080_FIN_ITP NTI v1.0.docx
 **Versi:** 1.0 | **Tanggal:** 19-Apr-21 (Revisi: 1-Sep-21)
 **Penyusun:** Juliana Inahyani (Trees Solutions) | **Functional Leader:** Francisco Edo

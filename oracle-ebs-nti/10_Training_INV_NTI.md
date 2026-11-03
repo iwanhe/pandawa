@@ -1,5 +1,5 @@
 # Knowledge Base: Training Material — Inventory OU Jakarta
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** OPC - INV Training Material v1.0.docx & OPC - INV Training Material v1.0 (master item).docx
 **Versi:** 1.0 | **Dibuat:** 18-Jul-21 | **Last Updated:** 8-Sep-21
 **Author:** Arif Aqim

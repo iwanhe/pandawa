@@ -1,5 +1,5 @@
 # Knowledge Base: Project 12 — OPM Restructure & DB Upgrade
-**PT Nojorono Group — Oracle EBS**
+**Oracle EBS — entitas yang dilayani KCSI**
 **Dokumen Sumber:** 02_Project_12_OPM_Restructure_DB_Upgrade.docx
 **Dirangkum per:** 23 March 2026
 **Sumber Asli:** Folder 12 OPM Restructure & DB Upgrade — Google Drive (01 PROJECT)
@@ -8,7 +8,7 @@
 
 ## 1. Ringkasan Eksekutif
 
-Project 12 adalah proyek strategis PT Nojorono Group yang bertujuan melakukan:
+Project 12 adalah proyek strategis grup perusahaan yang bertujuan melakukan:
 - **Restrukturisasi modul Oracle Process Manufacturing (OPM)**
 - **Upgrade database Oracle EBS**
 
@@ -17,7 +17,7 @@ Project 12 adalah proyek strategis PT Nojorono Group yang bertujuan melakukan:
 **Tim Inti:**
 | Email | Peran | Pihak |
 |---|---|---|
-| it.pmo@nojorono.com | PMO / Project Owner | Nojorono |
+| IT PMO | PMO / Project Owner | Grup |
 | wara.sunindya@gmail.com | Lead Technical Consultant | Vendor/Konsultan |
 | bimawapratama@gmail.com | Technical Consultant (FSD & TDD / Trees Development) | Vendor/Konsultan |
 
@@ -25,7 +25,7 @@ Project 12 adalah proyek strategis PT Nojorono Group yang bertujuan melakukan:
 
 ## 2. Latar Belakang
 
-Setelah implementasi awal Oracle EBS 2016, PT Nojorono Group mengidentifikasi kebutuhan:
+Setelah implementasi awal Oracle EBS 2016, grup perusahaan mengidentifikasi kebutuhan:
 1. Restrukturisasi setup OPM agar lebih sesuai dengan proses bisnis aktual tembakau dan cengkeh
 2. Upgrade database Oracle untuk meningkatkan performa, stabilitas, dan keamanan sistem
 3. Perbaikan struktur trees (hierarki organisasi/GL) dalam database
@@ -55,7 +55,7 @@ Setelah implementasi awal Oracle EBS 2016, PT Nojorono Group mengidentifikasi ke
 - Performance tuning dan optimize indexing
 - Simulasi upgrade database (September 2024)
 - Perubahan jam kerja sementara selama proses upgrade simulasi
-- Travel dinas tim IT ke lokasi: NCT (Nojorono Cigarette Tulungagung), ATI, NSTI
+- Travel dinas tim IT ke lokasi: NCT, ATI, NSTI
 - Post-upgrade validation dan testing
 
 ---
@@ -98,7 +98,7 @@ Setelah implementasi awal Oracle EBS 2016, PT Nojorono Group mengidentifikasi ke
 ### 5.2 Integrasi Baru
 
 **NNA Integration — Auto Ship Confirm**
-- Otomasi proses ship confirm untuk NNA (Nojorono Niaga Abadi)
+- Otomasi proses ship confirm untuk NNA
 - Mengurangi manual entry di Order Management
 - Status: ✅ Selesai (dokumen FSD Okt 2024, implementasi ~Feb 2025)
 
@@ -163,4 +163,4 @@ Setelah implementasi awal Oracle EBS 2016, PT Nojorono Group mengidentifikasi ke
 
 ## 9. Catatan
 
-Project 12 merupakan proyek dengan dampak besar terhadap performa sistem Oracle EBS Nojorono Group. Dengan selesainya proyek ini pada Februari 2025, sistem Oracle EBS berjalan di atas database yang lebih baru dan OPM yang lebih terstruktur, mendukung akurasi costing, kualitas data produksi, dan integrasi dengan sistem pihak ketiga.
+Project 12 merupakan proyek dengan dampak besar terhadap performa sistem Oracle EBS grup perusahaan. Dengan selesainya proyek ini pada Februari 2025, sistem Oracle EBS berjalan di atas database yang lebih baru dan OPM yang lebih terstruktur, mendukung akurasi costing, kualitas data produksi, dan integrasi dengan sistem pihak ketiga.

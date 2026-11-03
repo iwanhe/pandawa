@@ -1,7 +1,7 @@
 # Standar High-Code Development — Tim PANDAWA
 
 > **IT Upstream Development · Karya Cipta Solusi Internasional (KCSI)**
-> Standar rekayasa perangkat lunak untuk aplikasi high-code di lingkungan Nojorono Group.
+> Standar rekayasa perangkat lunak untuk aplikasi high-code di lingkungan KCSI.
 
 | Atribut | Nilai |
 |---|---|

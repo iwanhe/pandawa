@@ -332,7 +332,7 @@ wwv_flow_imp_shared.create_task_def_participant(
 ,p_participant_type=>'BUSINESS_ADMIN'
 ,p_identity_type=>'USER'
 ,p_value_type=>'STATIC'
-,p_value=>'nti-mis@nojorono.com'
+,p_value=>'nti-mis@example.com'
 );
 wwv_flow_imp.component_end;
 end;

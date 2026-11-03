@@ -727,7 +727,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_type=>'NATIVE_PLSQL'
 ,p_process_name=>'Ambil Nama User Login'
 ,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
-'select employee_name, employee_id,position_title, supervisor_name,email_supervisor,''SONGKY HARTANTO'',''SONGKY.HARTANTO@NOJORONO.COM'',''PENDING''',
+'select employee_name, employee_id,position_title, supervisor_name,email_supervisor,''SONGKY HARTANTO'',''SONGKY.HARTANTO@EXAMPLE.COM'',''PENDING''',
 'into :P3_PEMINTA, :P3_NIK_PEMINTA,:P3_JABATAN_PEMINTA,:P3_APPROVER1,:P3_EMAIL_APPROVER1,:P3_APPROVER2,:P3_EMAIL_APPROVER2,:P3_STATUS',
 'from nti_employee_tbl',
 'where 1=1',

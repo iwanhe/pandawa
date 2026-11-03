@@ -4,7 +4,7 @@
 
 **Versi APEX 24.2** | Oracle E-Business Suite (EBS) 12.2 | February 2026 | Created by: Iwan Herdian
 
-> **Audiens Dokumen:** Dokumen ini ditujukan untuk **manajemen non-teknis, tim legal/compliance, dan IT leadership** di lingkungan Nojorono Group / KCSI yang memerlukan pemahaman menyeluruh tentang posisi lisensi Oracle APEX sebelum membuat keputusan adopsi atau deployment.
+> **Audiens Dokumen:** Dokumen ini ditujukan untuk **manajemen non-teknis, tim legal/compliance, dan IT leadership** di lingkungan KCSI yang memerlukan pemahaman menyeluruh tentang posisi lisensi Oracle APEX sebelum membuat keputusan adopsi atau deployment.
 
 > **⚠️ Disclaimer Penting:** Dokumen ini merupakan analisa teknis berdasarkan dokumentasi publik Oracle. Untuk kepastian hukum — terutama pada implementasi yang menyentuh proses bisnis berskala besar — organisasi **wajib mendapatkan konfirmasi tertulis dari Oracle** melalui Oracle License Management Services (LMS) atau Oracle Sales Representative, dengan menyertakan deskripsi use case spesifik organisasi.
 
@@ -236,7 +236,7 @@ Oracle Database Free memberikan nilai yang sangat signifikan untuk workload inte
 | Oracle Cloud (OCI DBCS/ADB) | Variabel — PAYG | Lihat Section 8 |
 | Tetap di DB Free | Rp 0 | Dengan batasan resource & support |
 
-### Rekomendasi untuk KCSI / Nojorono Group
+### Rekomendasi untuk KCSI
 
 Berdasarkan karakteristik workload saat ini:
 

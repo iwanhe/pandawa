@@ -1,5 +1,5 @@
 # Knowledge Base: Training Material — Marketing OU Jakarta dengan Oracle Project Costing (OPC)
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** OPC - MKT Training Material.docx
 **Versi:** 1.0 | **Dibuat:** 18-Jul-21 | **Last Updated:** 26-Aug-21
 **Author:** Citra Andriani

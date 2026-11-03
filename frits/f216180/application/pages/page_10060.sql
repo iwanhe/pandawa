@@ -38,11 +38,11 @@ wwv_flow_imp_page.create_page_plug(
 '<p><br></p>',
 '<p>Aplikasi ini dibuat oleh Iwan Herdian (IT NTI).</p>',
 '<p><br></p>',
-'<p>Jika ada masukkan atau bug yang terjadi selama digunakan bisa kontak email berikut: <a data-fr-linked="true" href="mailto:iwan.herdian@nojorono.com">iwan.herdian@nojorono.com</a></p>',
+'<p>Jika ada masukkan atau bug yang terjadi selama digunakan bisa kontak email berikut: <a data-fr-linked="true" href="mailto:iwan.herdian@example.com">iwan.herdian@example.com</a></p>',
 '<p><br></p>',
 '<p>Copyright @2023</p>',
 '<p><a href="http://bit.ly/ntisupport" target="_blank" rel="noopener noreferrer">Portal Ticket</a></p>',
-'<p><a href="https://sites.google.com/nojorono.com/ntimisportal/home" target="_blank" rel="noopener noreferrer">Intranet IT NTI</a></p>'))
+'<p><a href="https://intranet.example.com/ntimisportal/home" target="_blank" rel="noopener noreferrer">Intranet IT NTI</a></p>'))
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'expand_shortcuts', 'N',
   'output_as', 'HTML')).to_clob

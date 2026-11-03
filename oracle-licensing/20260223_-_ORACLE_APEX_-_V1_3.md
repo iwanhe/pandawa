@@ -4,7 +4,7 @@
 
 **Versi APEX 24.2** | Oracle E-Business Suite (EBS) 12.2 | February 2026 | Created by: Iwan Herdian | **Dokumen Versi: 1.3**
 
-> **Audiens Dokumen:** Dokumen ini ditujukan untuk **manajemen non-teknis, tim legal/compliance, dan IT leadership** di lingkungan Nojorono Group / KCSI yang memerlukan pemahaman menyeluruh tentang posisi lisensi Oracle APEX sebelum membuat keputusan adopsi atau deployment.
+> **Audiens Dokumen:** Dokumen ini ditujukan untuk **manajemen non-teknis, tim legal/compliance, dan IT leadership** di lingkungan KCSI yang memerlukan pemahaman menyeluruh tentang posisi lisensi Oracle APEX sebelum membuat keputusan adopsi atau deployment.
 
 > **✅ Status Konfirmasi:** Dokumen ini didukung oleh jawaban resmi Oracle Support (SR 4-0002135490, Feb 24, 2026) yang secara eksplisit menyatakan *"There is no separate APEX license fee"* dan *"You can build and host production apps if you comply with database limits"* — diberikan setelah Oracle mengetahui konteks penggunaan KCSI. Lihat Section 6 untuk detail lengkap.
 
@@ -275,7 +275,7 @@ Oracle Database Free memberikan nilai yang sangat signifikan untuk workload inte
 | Oracle Cloud (OCI DBCS/ADB) | Variabel — PAYG | Lihat Section 8 |
 | Tetap di DB Free | Rp 0 | Dengan batasan resource & support |
 
-### Rekomendasi untuk KCSI / Nojorono Group
+### Rekomendasi untuk KCSI
 
 Berdasarkan karakteristik workload saat ini:
 

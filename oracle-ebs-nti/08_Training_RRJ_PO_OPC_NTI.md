@@ -1,5 +1,5 @@
 # Knowledge Base: Training Material — Requisition to Receipt (RRJ) dengan Integrasi OPC
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** OPC - PO Training Material v1.0.docx
 **Versi:** 1.0 | **Dibuat:** 18-Jul-21 | **Last Updated:** 7-Sep-21
 **Author:** Arif Aqim

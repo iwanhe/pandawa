@@ -182,7 +182,7 @@ wwv_flow_imp_page.create_page_item(
 'select no_form from FORM_REQUEST_IT_TRX',
 'where status=''APPROVED'' ',
 'and no_form is not null ',
-'and peminta not in (''HR.RECRUITMENT.JKT@NOJORONO.COM'')',
+'and peminta not in (''HR.RECRUITMENT.JKT@EXAMPLE.COM'')',
 'order by no_form desc'))
 ,p_lov_display_null=>'YES'
 ,p_cSize=>20

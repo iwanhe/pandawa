@@ -1,15 +1,15 @@
 # Knowledge Base: Project 44 — Relabelling Raw Material Master Data
-**PT Nojorono Group — Oracle EBS**
+**Oracle EBS — entitas yang dilayani KCSI**
 **Dokumen Sumber:** 03_Project_44_Relabelling_Raw_Material.docx
 **Dirangkum per:** 23 March 2026
 **Sumber Asli:** Folder 44 RELABELLING RAW MATERIAL MASTER DATA — Google Drive (01 PROJECT)
-**PMO:** it.pmo@nojorono.com
+**PMO:** IT PMO
 
 ---
 
 ## 1. Ringkasan Eksekutif
 
-Project 44 adalah proyek pembersihan dan restrukturisasi **master data bahan baku (raw material)** di Oracle EBS Nojorono Group.
+Project 44 adalah proyek pembersihan dan restrukturisasi **master data bahan baku (raw material)** di Oracle EBS grup perusahaan.
 
 - **Periode:** Agustus 2025 — Desember 2025
 - **Durasi:** ±5 bulan
@@ -96,7 +96,7 @@ Setelah bertahun-tahun operasional Oracle EBS (sejak 2016), item master bahan ba
    └── Inventarisasi seluruh item raw material yang perlu di-relabel
 
 2. Definisi Standar Penamaan Baru
-   └── Berdasarkan konvensi terbaru Nojorono Group
+   └── Berdasarkan konvensi terbaru grup perusahaan
 
 3. Gap Analysis
    └── Item mana yang perlu rename, merge, inactivate, atau update atribut

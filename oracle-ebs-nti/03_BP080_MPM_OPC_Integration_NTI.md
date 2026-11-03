@@ -1,5 +1,5 @@
 # Knowledge Base: Marketing Planning to Monitoring (MPM) — Integrasi dengan Oracle Project Costing (OPC)
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** BP080-MKT_MPM NTI v1.0.docx
 **Versi:** 1.0 | **Tanggal:** 14-Apr-21 (Revisi: 29-Oct-21)
 **Penyusun:** Citra Andriani (Trees Solutions) | **Functional Leader:** Francisco Edo

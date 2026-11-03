@@ -475,8 +475,8 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_name=>'Send Email'
 ,p_attribute_01=>'&APP_EMAIL.'
 ,p_attribute_02=>'&P14_MGR_NAME.'
-,p_attribute_03=>'&P14_EMP_NAME., nti-mis@nojorono.com'
-,p_attribute_05=>'nti-mis@nojorono.com'
+,p_attribute_03=>'&P14_EMP_NAME., nti-mis@example.com'
+,p_attribute_05=>'nti-mis@example.com'
 ,p_attribute_10=>'Y'
 ,p_attribute_11=>wwv_flow_imp.id(43230812872246980790)
 ,p_attribute_12=>wwv_flow_string.join(wwv_flow_t_varchar2(

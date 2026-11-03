@@ -49,7 +49,7 @@ select   --distinct
 --			and not exists (select '1' from XTD_RCV_PRINCIPAL_TXTFILE_STG where dist_rcv_transaction_id = rt.transaction_id)
 --			and xopds.no_do between 227235 and 227235
 --            and
---            and asp.vendor_name like 'NOJORONO TOBACCO INTERNATIONAL, PT'
+--            and asp.vendor_name like 'NTI, PT'
 --            and rt.po_header_id='1970003'
 --            and asp.vendor_name like 'AROMA%'
 --            and xopds.no_do in ('2521100005','2521100006','2521100007')

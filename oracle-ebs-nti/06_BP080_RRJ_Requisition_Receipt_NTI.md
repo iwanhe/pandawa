@@ -1,5 +1,5 @@
 # Knowledge Base: Requisition to Receipt OU Jakarta (RRJ) — Future Process Model
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** BP080-DIST-RRJ NTI v1.0.docx
 **Versi:** 1.0 | **Tanggal:** 14-Apr-2021 (Revisi: 29-Oct-21)
 **Penyusun:** Arif Aqim (Trees Solutions) | **Functional Leader:** Francisco Edo

@@ -1,5 +1,5 @@
 # Knowledge Base: Training Material — Account Payables (AP) OU Jakarta
-**PT Nojorono Tobacco International (NTI)**
+**PT NTI**
 **Dokumen Sumber:** OPC - AP Training Material v.1.0.docx
 **Versi:** 1.0 | **Dibuat:** 26-Aug-21 | **Last Updated:** 24-Mar-26
 **Author:** Juliana Inahyani

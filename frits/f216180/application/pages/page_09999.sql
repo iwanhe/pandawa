@@ -28,7 +28,7 @@ wwv_flow_imp_page.create_page(
 '',
 '.t-Login-container {',
 '',
-'background: url(#APP_FILES#icons/Nojorono.png) no-repeat center center fixed; !important;',
+'background: url(#APP_FILES#icons/logo.png) no-repeat center center fixed; !important;',
 'background-size: cover !important;',
 '',
 '}'))
@@ -120,7 +120,7 @@ wwv_flow_imp_page.create_page_button(
 ,p_button_is_hot=>'Y'
 ,p_button_image_alt=>'IT MIS Portal'
 ,p_button_position=>'NEXT'
-,p_button_redirect_url=>'https://sites.google.com/nojorono.com/ntimisportal/home'
+,p_button_redirect_url=>'https://intranet.example.com/ntimisportal/home'
 );
 wwv_flow_imp_page.create_page_button(
  p_id=>wwv_flow_imp.id(33669873092475552402)

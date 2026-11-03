@@ -78,7 +78,7 @@ wwv_flow_imp_shared.create_email_template(
 'Regards,',
 '%0a',
 '#P14_MGR_NAME#"><button>Approve</button></a>',
-'<a href="mailto:#P14_EMP_NAME#?cc=nti-mis@nojorono.com&subject=Re:%20[#P14_APPROVER_IT#]%20-%20LOKASI%20#P14_LOKASI_PEMINTA#%20-%20UNTUK%20#P14_PENGGUNA#&body=Rejected"><button>Reject</button></a>',
+'<a href="mailto:#P14_EMP_NAME#?cc=nti-mis@example.com&subject=Re:%20[#P14_APPROVER_IT#]%20-%20LOKASI%20#P14_LOKASI_PEMINTA#%20-%20UNTUK%20#P14_PENGGUNA#&body=Rejected"><button>Reject</button></a>',
 '</body>',
 '</html>'))
 ,p_html_header=>'FORM REQUEST IT SYSTEM (FRITS) - #P14_APPROVER_IT#'

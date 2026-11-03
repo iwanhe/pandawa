@@ -24,7 +24,7 @@ prompt --install
 @@application/shared_components/files/frits_reviewupdate_docx.sql
 @@application/shared_components/files/frits_userreviewdetailrep_docx.sql
 @@application/shared_components/files/frits_userreviewsummaryrep_docx.sql
-@@application/shared_components/files/icons_nojorono_png.sql
+@@application/shared_components/files/icons_logo_png.sql
 @@application/shared_components/files/frits_userreviewformitrequestrep_docx.sql
 @@application/shared_components/files/check_internet_connection_javascript_gif.sql
 @@application/plugin_settings.sql
