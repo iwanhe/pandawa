@@ -8,7 +8,7 @@
 | Lokasi | `pandawa/standardization/high-code-dev` |
 | Status | **DRAFT**: kerangka disiapkan, isi tiap standar menyusul |
 | Pemilik | Development Manager, IT Upstream Development |
-| Pembaruan terakhir | 1 November 2026 |
+| Pembaruan terakhir | 5 November 2026 |
 
 ---
 
@@ -88,6 +88,7 @@ Rincian template arsitektur referensi, katalog komponen per profil, dan mekanism
 | 06 | **CI/CD Oracle APEX** | [`06-cicd-oracle-apex/`](06-cicd-oracle-apex/) | Pipeline ADT, runner per environment, gerbang kualitas dan keamanan, promosi DEV → UAT → PROD, backup, rollback | ADT (APEX Deployment Tool), Deployment Process PANDAWA | Siap pilot: template repo belum di-commit |
 | 07 | **Java Spring Boot** | [`07-java-spring-boot/`](07-java-spring-boot/) | Struktur modul, layering, transaksi, persistence PostgreSQL, keamanan, testing, supply chain Maven | Dokumentasi resmi Spring Boot; hasil spike | Evaluasi: spike NestJS vs Spring Boot berjalan |
 | 08 | **NestJS** | [`08-nestjs/`](08-nestjs/) | Modul dan DI, controller / service / repository, validasi, persistence PostgreSQL, keamanan, testing, supply chain npm | Dokumentasi resmi NestJS; hasil spike | Evaluasi: spike NestJS vs Spring Boot berjalan |
+| 09 | **React Native** | [`09-react-native/`](09-react-native/) | Struktur proyek mobile, komponen dan styling, navigasi, klien HTTP dan sesi, penyimpanan token aman, aksesibilitas, keamanan build rilis, testing; **template aplikasi** | mobile-boilerplate-reactnative (dimaswahyu-official); dokumentasi resmi React Native | Draft v0.1.0: 58 aturan, template lulus typecheck/lint/test/bundle |
 
 **Keterangan status:** `Direncanakan` → `Draft` → `Review` → `Pilot` → `Resmi`.
 
@@ -110,8 +111,9 @@ Rincian template arsitektur referensi, katalog komponen per profil, dan mekanism
 | 06 CI/CD Oracle APEX | K | W | — |
 | 07 Java Spring Boot | K | K | K |
 | 08 NestJS | K | K | K |
+| 09 React Native | K | K | K |
 
-Standar 02 (JS/TS) adalah fondasi untuk 03, 04, dan 08. Membaca 02 lebih dulu adalah prasyarat.
+Standar 02 (JS/TS) adalah fondasi untuk 03, 04, 08, dan 09; standar 03 (ReactJS) juga prasyarat untuk 09. Membaca 02 lebih dulu adalah prasyarat.
 
 ---
 
@@ -129,6 +131,7 @@ high-code-dev/
 ├── 06-cicd-oracle-apex/           CI/CD Oracle APEX (ADT)
 ├── 07-java-spring-boot/           Java Spring Boot
 ├── 08-nestjs/                     NestJS
+├── 09-react-native/               React Native + template aplikasi mobile
 ├── adr/                           Architecture Decision Record (ADR-NNN-*.md)
 ├── waiver/                        Pengecualian berbatas waktu
 └── templates/                     Template aturan, ADR, waiver, checklist PR
@@ -161,7 +164,7 @@ Setiap aturan di semua standar memakai format yang sama agar bisa dirujuk dari r
 | **Penegakan** | Alat otomatis (linter, scanner, test) atau review manual |
 | **Referensi** | Sumber asal aturan |
 
-**Prefix ID:** `ARC` Arsitektur · `PLS` PL/SQL · `APX` Oracle APEX · `JS` JavaScript · `TS` TypeScript · `RCT` ReactJS · `NXT` Next.js · `GO` Golang · `CIA` CI/CD APEX · `JSB` Spring Boot · `NST` NestJS
+**Prefix ID:** `ARC` Arsitektur · `PLS` PL/SQL · `APX` Oracle APEX · `JS` JavaScript · `TS` TypeScript · `RCT` ReactJS · `NXT` Next.js · `GO` Golang · `CIA` CI/CD APEX · `JSB` Spring Boot · `NST` NestJS · `RN` React Native
 
 **Bahasa normatif:**
 
@@ -184,6 +187,7 @@ Setiap aturan di semua standar memakai format yang sama agar bisa dirujuk dari r
 | Golang | gofmt, go vet, golangci-lint | go test | govulncheck |
 | Java Spring Boot | Checkstyle / Spotless | JUnit | OWASP Dependency-Check, Trivy |
 | NestJS | ESLint, Prettier | Jest / Vitest | npm audit, Trivy |
+| React Native | ESLint (react-native, react-hooks), Prettier, `tsc --strict`, bundle Metro | Jest, React Native Testing Library | npm audit, OSV-Scanner |
 | CI/CD (semua) | — | — | Gitleaks, Trivy, action dikunci ke commit SHA |
 
 Temuan keamanan **High / Critical** memblokir merge dan rilis.
@@ -235,7 +239,7 @@ Temuan keamanan **High / Critical** memblokir merge dan rilis.
 |---|---|
 | 1 | Finalisasi `00-architecture`: profil Mandiri, Oracle EBS, dan SAP digabung dalam satu kerangka |
 | 2 | Susun standar bahasa: `01-plsql`, `02-javascript-typescript`, `05-golang` |
-| 3 | Susun standar framework: `03-reactjs`, `04-nextjs`, dan backend terpilih (`07` / `08`) setelah spike selesai |
+| 3 | Susun standar framework: `03-reactjs`, `04-nextjs`, `09-react-native`, dan backend terpilih (`07` / `08`) setelah spike selesai |
 | 4 | Pilot `06-cicd-oracle-apex` ke database sungguhan; commit template repo |
 | 5 | Pilot satu aplikasi per profil, kalibrasi aturan, lalu tetapkan status Resmi |
 

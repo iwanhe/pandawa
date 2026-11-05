@@ -1,0 +1,32 @@
+// tsconfig standar PANDAWA untuk React Native (TS-101, RN-102).
+// Dasar dari @react-native/typescript-config, lalu dikencangkan sesuai standar 02.
+// Proyek boleh menambah opsi, tetapi tidak boleh melonggarkan opsi pemeriksaan di bawah.
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "types": ["jest"],
+
+    // @react-native/typescript-config mematikan opsi ini. Dinyalakan kembali (RN-102):
+    // salah huruf besar-kecil pada path impor lolos di Windows/macOS tetapi gagal di CI Linux.
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "__tests__/**/*.ts",
+    "__tests__/**/*.tsx",
+    "env.d.ts",
+    "jest.setup.ts"
+  ],
+  "exclude": ["**/node_modules", "**/Pods", "android", "ios"]
+}

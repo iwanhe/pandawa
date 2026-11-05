@@ -1,0 +1,4 @@
+template/node_modules/
+template/.lint-salah/
+template/coverage/
+template/.env
