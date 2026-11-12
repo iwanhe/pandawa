@@ -1,0 +1,53 @@
+{
+  "name": "pandawa-standar-nestjs",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Konfigurasi dan contoh Standar NestJS PANDAWA",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p examples/benar-app/tsconfig.json",
+    "build": "tsc -p examples/benar-app/tsconfig.build.json",
+    "lint": "eslint . --ignore-pattern \"examples/salah/**\" --max-warnings 0",
+    "lint:salah": "eslint examples/salah",
+    "format": "prettier --check .",
+    "test": "vitest run --root examples/benar-app .spec.ts",
+    "test:e2e": "vitest run --root examples/benar-app e2e-spec",
+    "audit": "npm audit --omit=dev --audit-level=high"
+  },
+  "dependencies": {
+    "@nestjs/common": "12.4.2",
+    "@nestjs/config": "12.1.1",
+    "@nestjs/core": "12.4.2",
+    "@nestjs/platform-express": "12.4.2",
+    "@nestjs/typeorm": "12.0.3",
+    "jose": "6.2.17",
+    "pg": "8.23.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "typeorm": "1.1.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@nestjs/testing": "12.4.2",
+    "@types/express": "5.0.6",
+    "@types/node": "24.19.2",
+    "@types/pg": "8.23.1",
+    "@types/supertest": "7.2.1",
+    "eslint": "10.14.0",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "17.14.0",
+    "prettier": "3.9.10",
+    "supertest": "7.3.2",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  },
+  "overrides": {
+    "minimatch": "11.0.8"
+  }
+}

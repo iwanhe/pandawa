@@ -1,0 +1,5 @@
+{
+  "extends": "../benar-app/tsconfig.json",
+  "compilerOptions": { "rootDir": "." },
+  "include": ["src/**/*.ts"]
+}

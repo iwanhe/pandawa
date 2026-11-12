@@ -87,7 +87,7 @@ Rincian template arsitektur referensi, katalog komponen per profil, dan mekanism
 | 05 | **Golang** | [`05-golang/`](05-golang/) | Gaya kode, penamaan, error handling, konkurensi, struktur package, testing | Uber Go Style Guide | Draft v0.2.0: 77 aturan, konfigurasi linter teruji |
 | 06 | **CI/CD Oracle APEX** | [`06-cicd-oracle-apex/`](06-cicd-oracle-apex/) | Pipeline ADT, runner per environment, gerbang kualitas dan keamanan, promosi DEV → UAT → PROD, backup, rollback | ADT (APEX Deployment Tool), Deployment Process PANDAWA | Siap pilot: template repo belum di-commit |
 | 07 | **Java Spring Boot** | [`07-java-spring-boot/`](07-java-spring-boot/) | Struktur modul, layering, transaksi, persistence PostgreSQL, keamanan, testing, supply chain Maven | Dokumentasi resmi Spring Boot; hasil spike | Evaluasi: spike NestJS vs Spring Boot berjalan |
-| 08 | **NestJS** | [`08-nestjs/`](08-nestjs/) | Modul dan DI, controller / service / repository, validasi, persistence PostgreSQL, keamanan, testing, supply chain npm | Dokumentasi resmi NestJS; hasil spike | Evaluasi: spike NestJS vs Spring Boot berjalan |
+| 08 | **NestJS** | [`08-nestjs/`](08-nestjs/) | Modul dan DI, controller / service / repository, validasi, persistence PostgreSQL, keamanan, testing, supply chain npm | Dokumentasi resmi NestJS; hasil spike | Draft v0.2.0: 57 aturan, API contoh dengan 16 test (termasuk e2e PostgreSQL) |
 | 09 | **React Native** | [`09-react-native/`](09-react-native/) | Struktur proyek mobile, komponen dan styling, navigasi, klien HTTP dan sesi, penyimpanan token aman, aksesibilitas, keamanan build rilis, testing; **template aplikasi** | mobile-boilerplate-reactnative (dimaswahyu-official); dokumentasi resmi React Native | Draft v0.1.0: 58 aturan, template lulus typecheck/lint/test/bundle |
 
 **Keterangan status:** `Direncanakan` → `Draft` → `Review` → `Pilot` → `Resmi`.
@@ -186,7 +186,7 @@ Setiap aturan di semua standar memakai format yang sama agar bisa dirujuk dari r
 | ReactJS / Next.js | ESLint (react, react-hooks, next) | Vitest, React Testing Library, Playwright | npm audit, OSV-Scanner |
 | Golang | gofmt, go vet, golangci-lint | go test | govulncheck |
 | Java Spring Boot | Checkstyle / Spotless | JUnit | OWASP Dependency-Check, Trivy |
-| NestJS | ESLint, Prettier | Jest / Vitest | npm audit, Trivy |
+| NestJS | ESLint, Prettier | Vitest + supertest | npm audit, Trivy |
 | React Native | ESLint (react-native, react-hooks), Prettier, `tsc --strict`, bundle Metro | Jest, React Native Testing Library | npm audit, OSV-Scanner |
 | CI/CD (semua) | — | — | Gitleaks, Trivy, action dikunci ke commit SHA |
 
