@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔐 Laporkan celah keamanan
+    url: https://github.com/iwanhe/pandawa/security/advisories/new
+    about: Laporkan secara privat — jangan buka issue publik untuk masalah keamanan.
+  - name: 📚 Wiki PANDAWA
+    url: https://github.com/iwanhe/pandawa/wiki
+    about: Quick Start, standar, dan FAQ.

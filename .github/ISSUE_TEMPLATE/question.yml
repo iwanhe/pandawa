@@ -1,0 +1,19 @@
+name: ❓ Pertanyaan
+description: Tanya cara pakai script, aplikasi, standar, atau skill
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: Cek dulu [Wiki](https://github.com/iwanhe/pandawa/wiki) dan [FAQ](https://github.com/iwanhe/pandawa/wiki/FAQ).
+  - type: textarea
+    id: question
+    attributes:
+      label: Pertanyaan
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Konteks
+      description: Apa yang sudah dicoba, file/modul terkait, versi yang dipakai.

@@ -1,0 +1,68 @@
+name: 🐛 Bug report
+description: Laporkan error atau perilaku yang tidak sesuai
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah melapor! Untuk **celah keamanan**, jangan gunakan form ini — ikuti [SECURITY.md](https://github.com/iwanhe/pandawa/blob/main/.github/SECURITY.md).
+        Jangan cantumkan password, token, atau data produksi.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Komponen
+      options:
+        - Oracle EBS script / API
+        - Aplikasi APEX
+        - ORDS / REST
+        - Access Vault Portal
+        - Claude skill
+        - Dokumentasi / wiki / situs
+        - Lainnya
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: File, modul, atau App ID
+      placeholder: "mis. fa/API Retirement, App 114 halaman 10"
+  - type: textarea
+    id: description
+    attributes:
+      label: Apa yang terjadi?
+      description: Jelaskan masalahnya dan sertakan pesan error (ORA-xxxxx, stack trace, dll.).
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah reproduksi
+      placeholder: |
+        1. Buka ...
+        2. Jalankan ...
+        3. Muncul error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Hasil yang diharapkan
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Versi yang dipakai.
+      placeholder: |
+        - Oracle Database: 19c / 23ai
+        - Oracle EBS: R12.2.x
+        - Oracle APEX: 24.2
+        - ORDS: 24.x
+        - Environment: DEV / UAT / PROD
+  - type: textarea
+    id: extra
+    attributes:
+      label: Informasi tambahan
+      description: Screenshot, log, atau konteks lain.

@@ -1,0 +1,41 @@
+name: ✨ Feature request
+description: Usulkan fitur, aplikasi, script, atau skill baru
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Area
+      options:
+        - Oracle EBS script / API
+        - Aplikasi APEX
+        - ORDS / REST
+        - CI/CD & deployment
+        - Claude skill
+        - Standar & dokumentasi
+        - Lainnya
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah yang ingin diselesaikan
+      description: Kebutuhan bisnis atau kendala teknis apa yang ada saat ini?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Usulan solusi
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif yang sudah dipertimbangkan
+  - type: textarea
+    id: impact
+    attributes:
+      label: Dampak & pengguna
+      description: Siapa yang terbantu, entitas/modul mana yang terdampak?
