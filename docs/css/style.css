@@ -34,7 +34,7 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
 
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 
-.skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: #fff; padding: 8px 12px; border-radius: 6px; z-index: 100; }
+.skip { position: absolute; left: -999px; top: 8px; background: #c23f2b; color: #fff; padding: 8px 12px; border-radius: 6px; z-index: 100; }
 .skip:focus { left: 8px; }
 
 :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
@@ -63,8 +63,8 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
 }
 .btn:hover { text-decoration: none; }
 .btn svg { width: 16px; height: 16px; fill: currentColor; }
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: var(--accent-hi); }
+.btn-primary { background: #c23f2b; color: #fff; }
+.btn-primary:hover { background: #ad3624; }
 .btn-ghost { color: var(--text); border-color: var(--border); background: transparent; }
 .btn-ghost:hover { border-color: var(--muted); }
 .btn-small { padding: 7px 14px; font-size: 13px; background: var(--surface-hi); color: var(--text); border-color: var(--border); }
@@ -168,3 +168,6 @@ a.card:hover { border-color: var(--accent); background: var(--surface-hi); text-
   .sec { padding: 60px 0; }
   .hdr-in .btn-ghost span { display: none; }
 }
+
+/* Tautan di dalam paragraf selalu bergaris bawah (WCAG 1.4.1) */
+.sec-hdr p a, .gallery p a, .closing p a { text-decoration: underline; text-underline-offset: 2px; }

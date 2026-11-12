@@ -1,0 +1,45 @@
+name: ♿ Accessibility
+description: Laporkan hambatan aksesibilitas di situs, dokumentasi, atau aplikasi
+title: "[A11y] "
+labels: ["accessibility"]
+body:
+  - type: markdown
+    attributes:
+      value: Lihat [pernyataan aksesibilitas](https://github.com/iwanhe/pandawa/blob/main/.github/ACCESSIBILITY.md) untuk cakupan dan keterbatasan yang sudah diketahui.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Situs iwanhe.github.io/pandawa
+        - README / Wiki / dokumentasi
+        - Aplikasi APEX
+        - Access Vault Portal
+        - Lainnya
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Halaman / lokasi
+      placeholder: "mis. bagian Aplikasi APEX, App 114 halaman 10"
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Hambatan yang dialami
+      description: Apa yang Anda coba lakukan dan apa yang menghalangi?
+    validations:
+      required: true
+  - type: textarea
+    id: tools
+    attributes:
+      label: Browser & alat bantu
+      placeholder: |
+        - Browser: Chrome 130 / Firefox / Safari
+        - Alat bantu: NVDA, VoiceOver, keyboard saja, zoom 200%, dll.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Saran perbaikan (opsional)
