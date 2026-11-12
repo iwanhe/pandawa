@@ -1,0 +1,3 @@
+# google-java-format dan Checkstyle mengharapkan akhir baris LF (penting di Windows).
+* text=auto eol=lf
+*.xlsx binary

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  POM induk Standar Spring Boot PANDAWA (07-java-spring-boot).
+  Aplikasi memakai POM ini sebagai <parent> sehingga semua pemeriksaan standar ikut berjalan di `mvn verify`:
+    enforcer (JSB-101, JSB-905) · Spotless/google-java-format (JSB-107) · Checkstyle (config/checkstyle)
+    SpotBugs + FindSecBugs (config/spotbugs) · failsafe untuk uji integrasi *IT (JSB-902) · JaCoCo (JSB-908)
+  Komentar menyebut ID aturan di Standar_Java_Spring_Boot.xlsx.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <!-- JSB-101: patch terbaru di lini 4.1 saat penyusunan (23 Okt 2026). 4.2.0 dijadwalkan 19 Nov 2026. -->
+    <version>4.1.2</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>id.kcsi.pandawa.standar</groupId>
+  <artifactId>standar-spring-induk</artifactId>
+  <version>0.2.0</version>
+  <packaging>pom</packaging>
+  <name>Standar Spring Boot PANDAWA - POM induk</name>
+
+  <modules>
+    <module>examples/benar-app</module>
+  </modules>
+
+  <properties>
+    <java.version>21</java.version>
+    <!-- Versi alat pemeriksa (JSB-904). Dikunci tepat; dinaikkan lewat PR tersendiri. -->
+    <checkstyle.version>13.4.2</checkstyle.version>
+    <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
+    <spotbugs-maven-plugin.version>4.9.8.5</spotbugs-maven-plugin.version>
+    <findsecbugs.version>1.13.0</findsecbugs.version>
+    <spotless-maven-plugin.version>3.6.0</spotless-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
+    <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
+    <archunit.version>1.5.1</archunit.version>
+    <!-- Root proyek = folder yang berisi .mvn/ (salinan mvn.template/). -->
+    <standar.dir>${maven.multiModuleProjectDirectory}</standar.dir>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.tngtech.archunit</groupId>
+        <artifactId>archunit-junit5</artifactId>
+        <version>${archunit.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>${maven-enforcer-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.diffplug.spotless</groupId>
+          <artifactId>spotless-maven-plugin</artifactId>
+          <version>${spotless-maven-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>${maven-checkstyle-plugin.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>com.puppycrawl.tools</groupId>
+              <artifactId>checkstyle</artifactId>
+              <version>${checkstyle.version}</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>com.github.spotbugs</groupId>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <version>${spotbugs-maven-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${jacoco-maven-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <!-- JSB-101, JSB-905: versi Java/Maven minimum dan dependency yang dilarang. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>standar-pandawa</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>[3.9,)</version>
+                </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>[21,)</version>
+                </requireJavaVersion>
+                <banDuplicatePomDependencyVersions/>
+                <bannedDependencies>
+                  <excludes>
+                    <!-- JUnit 4, log4j 1, Jackson 2 databind di kode aplikasi (Boot 4 memakai Jackson 3). -->
+                    <exclude>junit:junit</exclude>
+                    <exclude>log4j:log4j</exclude>
+                    <exclude>com.h2database:h2</exclude>
+                    <exclude>org.springframework.boot:spring-boot-starter-classic</exclude>
+                  </excludes>
+                </bannedDependencies>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- JSB-107: format kode google-java-format. Perbaiki dengan `mvn spotless:apply`. -->
+      <plugin>
+        <groupId>com.diffplug.spotless</groupId>
+        <artifactId>spotless-maven-plugin</artifactId>
+        <configuration>
+          <java>
+            <googleJavaFormat/>
+            <removeUnusedImports/>
+            <formatAnnotations/>
+          </java>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+            <phase>validate</phase>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- JSB-104, JSB-504, JSB-702, JSB-801: aturan Checkstyle standar. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <configLocation>${standar.dir}/config/checkstyle/checkstyle.xml</configLocation>
+          <consoleOutput>true</consoleOutput>
+          <failOnViolation>true</failOnViolation>
+          <violationSeverity>warning</violationSeverity>
+          <includeTestSourceDirectory>true</includeTestSourceDirectory>
+          <linkXRef>false</linkXRef>
+        </configuration>
+        <executions>
+          <execution>
+            <id>checkstyle</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- JSB-402, JSB-904: SpotBugs + FindSecBugs. Pengecualian hanya di config/spotbugs/spotbugs-exclude.xml. -->
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <configuration>
+          <effort>Max</effort>
+          <threshold>Medium</threshold>
+          <failOnError>true</failOnError>
+          <excludeFilterFile>${standar.dir}/config/spotbugs/spotbugs-exclude.xml</excludeFilterFile>
+          <plugins>
+            <plugin>
+              <groupId>com.h3xstream.findsecbugs</groupId>
+              <artifactId>findsecbugs-plugin</artifactId>
+              <version>${findsecbugs.version}</version>
+            </plugin>
+          </plugins>
+        </configuration>
+        <executions>
+          <execution>
+            <id>spotbugs</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- JSB-902: uji integrasi *IT dijalankan failsafe di fase integration-test/verify. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- JSB-908: laporan cakupan uji unit dan integrasi (target/site/jacoco*). -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>agen-unit</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>agen-integrasi</id>
+            <goals>
+              <goal>prepare-agent-integration</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>laporan-unit</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>laporan-integrasi</id>
+            <phase>post-integration-test</phase>
+            <goals>
+              <goal>report-integration</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <!-- `mvn verify -P contoh-salah`: ikut membangun examples/salah yang memang harus gagal. -->
+    <profile>
+      <id>contoh-salah</id>
+      <modules>
+        <module>examples/salah</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>

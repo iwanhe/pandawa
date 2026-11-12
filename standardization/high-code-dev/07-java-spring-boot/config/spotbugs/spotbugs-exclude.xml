@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Pengecualian SpotBugs standar Spring Boot PANDAWA (JSB-904).
+  Setiap pengecualian WAJIB disertai alasan. Pengecualian khusus aplikasi ditambahkan di file aplikasi,
+  bukan di sini, dan direview seperti waiver.
+-->
+<FindBugsFilter
+    xmlns="https://github.com/spotbugs/filter/3.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://github.com/spotbugs/filter/3.0.0 https://raw.githubusercontent.com/spotbugs/spotbugs/master/spotbugs/etc/findbugsfilter.xsd">
+
+  <!-- Bean Spring menyimpan dependency hasil injeksi constructor; ini bukan kebocoran representasi. -->
+  <Match>
+    <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/>
+  </Match>
+
+  <!-- Constructor bean dan record boleh melempar exception validasi saat konteks dibuat. -->
+  <Match>
+    <Bug pattern="CT_CONSTRUCTOR_THROW"/>
+  </Match>
+
+  <!-- Field ID entity JPA diisi Hibernate lewat refleksi. -->
+  <Match>
+    <Class name="~.*Entity"/>
+    <Bug pattern="UWF_UNWRITTEN_FIELD,NP_UNWRITTEN_FIELD,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"/>
+  </Match>
+
+  <!-- Informasi saja: FindSecBugs menandai setiap endpoint Spring agar direview. Review tetap lewat checklist. -->
+  <Match>
+    <Bug pattern="SPRING_ENDPOINT"/>
+  </Match>
+
+  <!-- JSB-604: API stateless dengan Bearer token tidak memakai cookie sesi, jadi CSRF dimatikan dengan sengaja. -->
+  <Match>
+    <Class name="~.*\.keamanan\.KeamananConfig"/>
+    <Bug pattern="SPRING_CSRF_PROTECTION_DISABLED"/>
+  </Match>
+
+  <!-- X-Correlation-Id dari klien hanya dipantulkan setelah lolos pola ^[\w-]{8,100}$. -->
+  <Match>
+    <Class name="~.*\.umum\.FilterKorelasi"/>
+    <Bug pattern="HRS_REQUEST_PARAMETER_TO_HTTP_HEADER,HTTP_RESPONSE_SPLITTING"/>
+  </Match>
+</FindBugsFilter>

@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+    "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+    "https://checkstyle.org/dtds/configuration_1_3.dtd">
+<!--
+  Checkstyle standar Spring Boot PANDAWA (Checkstyle 13).
+  Format (indentasi, spasi, urutan import, panjang baris) diatur google-java-format lewat Spotless (JSB-107),
+  jadi konfigurasi ini hanya memeriksa hal yang tidak diurus formatter.
+  Komentar menyebut ID aturan di Standar_Java_Spring_Boot.xlsx.
+-->
+<module name="Checker">
+  <property name="charset" value="UTF-8"/>
+  <property name="severity" value="error"/>
+  <property name="fileExtensions" value="java"/>
+
+  <!-- Pengecualian per baris lewat @SuppressWarnings("checkstyle:NamaCek") disertai komentar alasan. -->
+  <module name="SuppressWarningsFilter"/>
+
+  <module name="FileTabCharacter"/>
+  <module name="NewlineAtEndOfFile"/>
+  <module name="LineLength">
+    <property name="max" value="120"/>
+    <property name="ignorePattern" value="^(package|import) .*$|https?://"/>
+  </module>
+
+  <module name="TreeWalker">
+    <module name="SuppressWarningsHolder"/>
+
+    <!-- JSB-104 Penamaan -->
+    <module name="PackageName">
+      <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
+    </module>
+    <module name="TypeName"/>
+    <module name="MethodName"/>
+    <module name="MemberName"/>
+    <module name="ParameterName"/>
+    <module name="LambdaParameterName"/>
+    <module name="LocalVariableName"/>
+    <module name="LocalFinalVariableName"/>
+    <module name="StaticVariableName"/>
+    <module name="ConstantName"/>
+    <module name="RecordComponentName"/>
+    <module name="ClassTypeParameterName"/>
+    <module name="MethodTypeParameterName"/>
+    <module name="AbbreviationAsWordInName">
+      <property name="allowedAbbreviationLength" value="1"/>
+      <!-- Sufiks IT untuk kelas uji integrasi failsafe. -->
+      <property name="allowedAbbreviations" value="IT"/>
+    </module>
+    <module name="OuterTypeFilename"/>
+    <module name="OneTopLevelClass"/>
+
+    <!-- JSB-104 Import: tanpa wildcard dan tanpa paket lama -->
+    <module name="AvoidStarImport"/>
+    <module name="RedundantImport"/>
+    <module name="UnusedImports"/>
+    <module name="IllegalImport">
+      <!-- javax.* Jakarta EE lama tidak dipakai di Spring Boot 4; Jackson 2 databind diganti Jackson 3 (tools.jackson). -->
+      <property name="illegalPkgs"
+                value="sun, com.sun, javax.persistence, javax.validation, javax.servlet, javax.annotation, com.fasterxml.jackson.databind"/>
+    </module>
+
+    <!-- JSB-504 Penanganan error -->
+    <module name="EmptyCatchBlock"/>
+    <module name="IllegalCatch"/>
+    <module name="IllegalThrows"/>
+
+    <!-- Alur kontrol dan kejelasan kode -->
+    <module name="NeedBraces"/>
+    <module name="MissingSwitchDefault"/>
+    <module name="DefaultComesLast"/>
+    <module name="FallThrough"/>
+    <module name="OneStatementPerLine"/>
+    <module name="MultipleVariableDeclarations"/>
+    <module name="ModifiedControlVariable"/>
+    <module name="InnerAssignment"/>
+    <module name="EmptyStatement"/>
+    <module name="SimplifyBooleanExpression"/>
+    <module name="SimplifyBooleanReturn"/>
+    <module name="StringLiteralEquality"/>
+    <module name="EqualsHashCode"/>
+    <module name="EqualsAvoidNull"/>
+    <module name="CovariantEquals"/>
+    <module name="ArrayTypeStyle"/>
+    <module name="UpperEll"/>
+    <module name="NestedIfDepth">
+      <property name="max" value="2"/>
+    </module>
+    <module name="NestedTryDepth"/>
+
+    <!-- Ukuran: method dan constructor yang terlalu besar dipecah -->
+    <module name="CyclomaticComplexity">
+      <property name="max" value="10"/>
+    </module>
+    <module name="MethodLength">
+      <property name="max" value="60"/>
+    </module>
+    <module name="ParameterNumber">
+      <property name="max" value="5"/>
+      <property name="ignoreOverriddenMethods" value="true"/>
+    </module>
+
+    <!-- Desain kelas -->
+    <module name="FinalClass"/>
+    <module name="VisibilityModifier"/>
+
+    <!-- JSB-801: log lewat SLF4J, bukan System.out/err atau printStackTrace. -->
+    <module name="RegexpSinglelineJava">
+      <property name="id" value="logLewatSlf4j"/>
+      <property name="format" value="System\.(out|err)\.|\.printStackTrace\(\)"/>
+      <property name="message" value="Gunakan logger SLF4J, bukan System.out/err atau printStackTrace (JSB-801)."/>
+      <property name="ignoreComments" value="true"/>
+    </module>
+
+    <!-- JSB-702: konfigurasi dibaca lewat record @ConfigurationProperties, bukan @Value atau System.getenv. -->
+    <module name="RegexpSinglelineJava">
+      <property name="id" value="konfigurasiLewatProperties"/>
+      <property name="format" value="@Value\(|System\.getenv\("/>
+      <property name="message" value="Baca konfigurasi lewat record @ConfigurationProperties (JSB-702)."/>
+      <property name="ignoreComments" value="true"/>
+    </module>
+
+    <!-- JSB-403: nilai uang dan kuantitas tidak memakai double/float. Hanya menangkap nama yang jelas. -->
+    <module name="RegexpSinglelineJava">
+      <property name="id" value="uangBigDecimal"/>
+      <property name="format"
+                value="(?i)\b(double|float)\s+\w*(harga|jumlah|nilai|kredit|saldo|total|biaya|amount|price|qty)\w*"/>
+      <property name="message" value="Nilai uang/kuantitas wajib BigDecimal, bukan double/float (JSB-403)."/>
+      <property name="ignoreComments" value="true"/>
+    </module>
+  </module>
+</module>

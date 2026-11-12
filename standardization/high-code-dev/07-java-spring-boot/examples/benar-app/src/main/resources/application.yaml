@@ -1,0 +1,64 @@
+# Konfigurasi aplikasi contoh. Nilai lingkungan diambil dari variabel lingkungan (JSB-606, JSB-701).
+# Variabel tanpa nilai bawaan wajib diisi; aplikasi gagal start bila kosong.
+spring:
+  application:
+    name: contoh-supplier
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    hikari:
+      maximum-pool-size: ${DATABASE_POOL_MAKS:10}
+      connection-timeout: 5s
+  jpa:
+    open-in-view: false # JSB-404
+    hibernate:
+      ddl-auto: none # JSB-401: skema dikelola Flyway lewat pipeline
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true # JSB-301: field tak dikenal ditolak
+  threads:
+    virtual:
+      enabled: true # JSB-806
+  lifecycle:
+    timeout-per-shutdown-phase: 20s # JSB-805
+  servlet:
+    multipart:
+      max-file-size: 5MB # JSB-608
+      max-request-size: 5MB
+
+server:
+  port: ${PORT:8080}
+  shutdown: graceful # JSB-805
+  forward-headers-strategy: framework # JSB-605: di belakang Kong/Cloudflare
+  error:
+    include-stacktrace: never # JSB-502
+    include-message: never
+
+aplikasi:
+  auth:
+    issuer: ${AUTH_ISSUER:}
+    audience: ${AUTH_AUDIENCE:}
+    jwks-url: ${AUTH_JWKS_URL:}
+    cors-origins: ${CORS_ORIGINS:}
+
+# JSB-607, JSB-803: hanya health yang dibuka; probe liveness/readiness, readiness ikut memeriksa database.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: never
+      group:
+        readiness:
+          include: readinessState,db
+
+# JSB-801: log JSON (format ECS); correlationId dari MDC ikut di setiap baris.
+logging:
+  structured:
+    format:
+      console: ecs
