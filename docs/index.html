@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PANDAWA · Oracle APEX & EBS Toolkit</title>
+  <meta name="description" content="PANDAWA — repository Tim IT Upstream Development KCSI: aplikasi Oracle APEX siap-install, API & kustomisasi Oracle EBS R12.2, standar pengembangan, CI/CD, dan Claude AI Skills Library.">
+  <meta property="og:title" content="PANDAWA · Oracle APEX & EBS Toolkit">
+  <meta property="og:description" content="Aplikasi APEX siap-install, API Oracle EBS, standar pengembangan, dan AI skills dari Tim PANDAWA (KCSI).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://iwanhe.github.io/pandawa/">
+  <meta name="theme-color" content="#14110f">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+
+  <header class="hdr">
+    <div class="wrap hdr-in">
+      <a class="brand" href="#top" aria-label="PANDAWA beranda">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>PANDAWA</span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#apps">Aplikasi</a>
+        <a href="#ebs">Modul EBS</a>
+        <a href="#skills">AI Skills</a>
+        <a href="#standards">Standar</a>
+        <a href="#devops">DevOps</a>
+      </nav>
+      <a class="btn btn-ghost" href="https://github.com/iwanhe/pandawa">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>View on GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">Tim PANDAWA · IT Upstream Development · KCSI</p>
+        <h1>Oracle APEX &amp; EBS<br><span>Apps, API, dan Standar</span></h1>
+        <p class="lead">Kumpulan aplikasi Oracle APEX siap-install, API dan kustomisasi Oracle EBS R12.2, standar pengembangan, pipeline CI/CD, serta Claude AI Skills Library — dibangun dan dipakai langsung oleh tim pengembang Oracle di Kudus, Indonesia.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#apps">Lihat Aplikasi</a>
+          <a class="btn btn-ghost" href="https://github.com/iwanhe/pandawa#-quickstart">Quickstart</a>
+        </div>
+        <ul class="stats" aria-label="Ringkasan isi repository">
+          <li><b>9+</b><span>Modul Oracle EBS</span></li>
+          <li><b id="stat-apps">4</b><span>Aplikasi APEX</span></li>
+          <li><b>200+</b><span>Claude skills</span></li>
+          <li><b>R12.2</b><span>Oracle EBS</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="apps">
+      <div class="wrap">
+        <header class="sec-hdr">
+          <h2>Aplikasi APEX Siap-Install</h2>
+          <p>Aplikasi yang terdaftar di <code>custom_apps.json</code> bisa dipasang langsung lewat <b>Custom App Gallery</b> APEX. Aplikasi lain tersedia sebagai export <code>.sql</code> / <code>.zip</code>.</p>
+        </header>
+        <div class="grid grid-3" id="apps-grid" aria-live="polite"></div>
+
+        <div class="gallery">
+          <div>
+            <h3>Pasang lewat App Gallery</h3>
+            <p>Di APEX Workspace → <b>App Gallery</b> → tambahkan URL berikut sebagai custom gallery:</p>
+          </div>
+          <div class="copy">
+            <code id="gallery-url">https://raw.githubusercontent.com/iwanhe/pandawa/main/custom_apps.json</code>
+            <button class="btn btn-small" type="button" data-copy="gallery-url">Salin</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-alt" id="ebs">
+      <div class="wrap">
+        <header class="sec-hdr">
+          <h2>Modul Oracle EBS</h2>
+          <p>Script, package PL/SQL, dan dokumentasi kustomisasi Oracle E-Business Suite R12.2.</p>
+        </header>
+        <div class="grid grid-4" id="ebs-grid"></div>
+      </div>
+    </section>
+
+    <section class="sec" id="skills">
+      <div class="wrap">
+        <header class="sec-hdr">
+          <h2>Claude AI Skills Library</h2>
+          <p>Skill bundle untuk AI-assisted development dengan Claude — dari export APEX via SQLcl sampai standar QA dan change management PANDAWA.</p>
+        </header>
+        <div class="grid grid-3" id="skills-grid"></div>
+        <p class="more"><a href="https://github.com/iwanhe/pandawa/tree/main/skills">Lihat semua skill di folder <code>skills/</code> →</a></p>
+      </div>
+    </section>
+
+    <section class="sec sec-alt" id="standards">
+      <div class="wrap">
+        <header class="sec-hdr">
+          <h2>Standar &amp; Governance</h2>
+          <p>Dokumen acuan yang wajib dipahami setiap developer Tim PANDAWA.</p>
+        </header>
+        <div class="grid grid-2" id="std-grid"></div>
+      </div>
+    </section>
+
+    <section class="sec" id="devops">
+      <div class="wrap">
+        <header class="sec-hdr">
+          <h2>DevOps &amp; Tools</h2>
+          <p>Deployment Dev → UAT → Production berbasis <a href="https://github.com/jkvetina/ADT">ADT</a> dan FNDLOAD, plus tooling pendukung.</p>
+        </header>
+        <div class="grid grid-3" id="devops-grid"></div>
+
+        <div class="flow" aria-label="Alur deployment">
+          <span>Task</span><i></i><span>Feature branch</span><i></i><span>Develop di DEV</span><i></i><span>adt export</span><i></i><span>adt patch</span><i></i><span>Pull request</span><i></i><span>UAT</span><i></i><span>Production</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap">
+        <h2>Mulai pakai PANDAWA</h2>
+        <p>Clone repository, pasang aplikasi lewat App Gallery, atau install skill ke Claude.</p>
+        <div class="copy copy-center">
+          <code id="clone-cmd">git clone https://github.com/iwanhe/pandawa.git</code>
+          <button class="btn btn-small" type="button" data-copy="clone-cmd">Salin</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <p>© <span id="year">2026</span> Tim PANDAWA · KCSI (Karya Cipta Solusi Internasional) · Kudus, Jawa Tengah</p>
+      <nav aria-label="Tautan footer">
+        <a href="https://github.com/iwanhe/pandawa">Repository</a>
+        <a href="https://github.com/iwanhe/pandawa/wiki">Wiki</a>
+        <a href="https://github.com/iwanhe/pandawa/blob/main/LICENSE">Lisensi MIT</a>
+        <a href="https://github.com/iwanhe">@iwanhe</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
