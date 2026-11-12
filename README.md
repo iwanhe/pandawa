@@ -222,7 +222,6 @@ mindmap
 | `ci-cd-oracle-apex-ebs/` | Standar CI/CD deployment Oracle APEX & EBS (ADT) dan panduan FNDLOAD R12.2 |
 | `sysadmin/` | EBS Audit Scripts — 13 query SQL (audit setting, object/system privilege auditing, login & session per responsibility, PAT session, unsuccessful login) + 2 parser `awk` web usage — serta query password EBS |
 | `skills/` | Claude AI skills library — lihat [bagian khusus](#-claude-ai-skills-library) |
-| `oracons/` | Submodule (gitlink) tanpa `.gitmodules` — folder kosong saat di-clone; isi aslinya dikelola di luar repo ini |
 
 ### 📐 Standardization & Governance
 
@@ -241,7 +240,7 @@ mindmap
 | `training/Integration PO Distributor - SO Prinsipal/` | Materi integrasi PO Distributor ↔ SO Prinsipal, MD050 OM Ship Confirm v1.2, EUT script |
 | `training/SQL Practice - Hands On/` | Materi & soal latihan SQL beserta ERD |
 | `frappe/Dokumentasi Instalasi Frappe/` | Dokumentasi instalasi Frappe framework |
-| [Wiki](https://github.com/iwanhe/pandawa/wiki) | GitHub Wiki repository (folder `pandawa.wiki/` di repo hanya pointer submodule ke wiki ini) |
+| [Wiki](https://github.com/iwanhe/pandawa/wiki) | GitHub Wiki repository  |
 
 </details>
 

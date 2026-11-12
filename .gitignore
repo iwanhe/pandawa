@@ -21,3 +21,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Repo git terpisah di lokal (bukan bagian repo ini)
+oracons/
+pandawa.wiki/
